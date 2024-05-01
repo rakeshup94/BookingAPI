@@ -511,7 +511,7 @@
     </None>
     <Content Include="TransferService.svc" />
     <Content Include="TravayooOUTService.svc" />
-    <Content Include="TravillioXMLOutService %282%29.csproj" />
+    <Content Include="TravillioXMLOutService .csproj" />
     <Content Include="TravillioXMLOutService.csproj %282%29.user" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
