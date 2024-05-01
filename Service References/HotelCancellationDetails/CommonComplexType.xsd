@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:smp="http://www.travco.co.uk/trlink/xsd/simpletype" xmlns:tns="http://www.travco.co.uk/trlink/xsd/complextype" targetNamespace="http://www.travco.co.uk/trlink/xsd/complextype" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="CommonSimpleType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/simpletype" />
+  <xs:complexType name="AgentBaseType">
+    <xs:attribute name="AgentCode" type="smp:String6Type" use="required" />
+    <xs:attribute name="AgentPassword" type="smp:String10Type" use="required" />
+  </xs:complexType>
+  <xs:complexType name="RequestBaseType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AgentBaseType">
+        <xs:attribute default="en-GB" name="Lang" type="smp:LangType" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RequestNonSecBaseType">
+    <xs:attribute default="en-GB" name="Lang" type="smp:LangType" />
+  </xs:complexType>
+  <xs:complexType name="InfoType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="Code" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="CurrencyType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="Code" type="smp:String3Type" />
+  </xs:complexType>
+  <xs:complexType name="ResponseDataFaultType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FaultDescription" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="FaultCode" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="ReceiveParserFaultType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FaultDescription" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="FaultCode" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="UserFaultType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FaultDescription" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="FaultCode" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="SendParserFaultType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FaultDescription" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="FaultCode" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="CommunicationFaultType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FaultDescription" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="FaultCode" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="ServerFaultType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FaultDescription" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="FaultCode" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:element name="ResponseDataFault" type="tns:ResponseDataFaultType" />
+  <xs:element name="ReceiveParserFault" type="tns:ReceiveParserFaultType" />
+  <xs:element name="SendParserFault" type="tns:SendParserFaultType" />
+  <xs:element name="UserFault" type="tns:UserFaultType" />
+  <xs:element name="CommunicationFault" type="tns:CommunicationFaultType" />
+  <xs:element name="ServerFault" type="tns:ServerFaultType" />
+</xs:schema>

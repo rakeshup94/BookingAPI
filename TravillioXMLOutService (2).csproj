@@ -1,0 +1,1216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC0EC4A1-1A22-40A3-B827-4CFC23A2956F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TravillioXMLOutService</RootNamespace>
+    <AssemblyName>TravillioXMLOutService</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\INGM.Web\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AirService.svc" />
+    <Content Include="App_Data\Common\CityMapping.xml" />
+    <Content Include="App_Data\Common\CityMappingold.xml" />
+    <Content Include="App_Data\Common\MealType.xml" />
+    <Content Include="App_Data\Darina\cities.xml" />
+    <Content Include="App_Data\Darina\country.xml" />
+    <Content Include="App_Data\Darina\currency.xml" />
+    <Content Include="App_Data\Darina\Language.xml" />
+    <Content Include="App_Data\Darina\Market.xml" />
+    <Content Include="App_Data\Darina\MealPlan.xml" />
+    <Content Include="App_Data\Darina\Occupancy.xml" />
+    <Compile Include="AirService.svc.cs">
+      <DependentUpon>AirService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Air\Mystifly\MystiAir_Book.cs" />
+    <Compile Include="Air\Mystifly\MystiAir_FareRule.cs" />
+    <Compile Include="Air\Mystifly\MystiAir_GetAvail.cs" />
+    <Compile Include="Air\Mystifly\MystiAir_PriceCheck.cs" />
+    <Compile Include="Air\Mystifly\Mysti_SupplierResponse.cs" />
+    <Compile Include="App_Code\SerializeXMLOut.cs" />
+    <Content Include="App_Code\Soap_280417 - Copy.cs" />
+    <Compile Include="App_Code\TouricoModel.cs" />
+    <Compile Include="App_Code\TouricoRoomAvail.cs" />
+    <Compile Include="App_Code\Travco.cs" />
+    <Compile Include="App_Code\TrvAirBook.cs" />
+    <Compile Include="App_Code\TrvAirFareRule.cs" />
+    <Compile Include="App_Code\TrvAirPreBook.cs" />
+    <Compile Include="App_Code\TrvAirSearch.cs" />
+    <Compile Include="App_Code\TrvHotelSearch.cs" />
+    <Compile Include="App_Code\TrvRoomAvailability.cs" />
+    <Compile Include="App_Code\TrvHotelCancellation.cs" />
+    <Compile Include="App_Code\TrvHotelCancellationFee.cs" />
+    <Compile Include="App_Code\TrvHotelDetails.cs" />
+    <Compile Include="App_Code\TrvHotelImportBooking.cs" />
+    <Compile Include="App_Code\TrvHotelPreBooking.cs" />
+    <Compile Include="Common\DotW\CommonHelper.cs" />
+    <Compile Include="Common\DotW\GlobalVars.cs" />
+    <Compile Include="Common\DotW\TestHelper.cs" />
+    <Compile Include="Common\JacTravel\JacHelper.cs" />
+    <Compile Include="Common\Miki\Utility.cs" />
+    <Compile Include="Common\Travco\TravcoHelper.cs" />
+    <Compile Include="IAirService.cs" />
+    <Compile Include="ITransferService.cs" />
+    <Compile Include="ITravayooOUTService.cs" />
+    <Compile Include="Models\Air\AirSearchRequest.cs" />
+    <Compile Include="Models\APILog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\APILogDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\CustomException.cs" />
+    <Compile Include="Models\Darina\DarinaCredentials.cs" />
+    <Compile Include="Models\Darina\Darina_Htdetail.cs" />
+    <Compile Include="Models\Darina\Darina_HtlDetailStatic.cs" />
+    <Compile Include="Models\DotW\Client.cs" />
+    <Compile Include="Models\DotW\DotWCredentials.cs" />
+    <Compile Include="Models\DotW\LogModel.cs" />
+    <Compile Include="Models\helper.cs" />
+    <Compile Include="Models\HotelBeds\HB_CXLPolicyDetail.cs" />
+    <Compile Include="Models\HotelBeds\HB_TransferCred.cs" />
+    <Compile Include="Models\HotelBeds\HotelBedsCredential.cs" />
+    <Compile Include="Models\HotelBeds_Detail.cs" />
+    <Compile Include="Models\HotelBeds_HtStatic.cs" />
+    <Compile Include="Models\HotelsPro\HotelsProCredentials.cs" />
+    <Compile Include="Models\HotelsPro_Detail.cs" />
+    <Compile Include="Models\HotelsPro_Hotelstatic.cs" />
+    <Compile Include="Models\Miki\Credentials.cs" />
+    <Compile Include="Models\Miki\MikiStaticData.cs" />
+    <Compile Include="Models\Restel\RestelCredentials.cs" />
+    <Compile Include="Models\Restel\RestelLogAccess.cs" />
+    <Compile Include="Models\RTS\HTlStaticData.cs" />
+    <Compile Include="Models\SaveAPILog.cs" />
+    <Compile Include="Models\Supplier_Cred\Supplier_Cred.cs" />
+    <Compile Include="Models\Tourico_HtDetail.cs" />
+    <Compile Include="Models\Tourico_HtlDetailStatic.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Service References\AllocationEnquiryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BookEnquiryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HotelAvailabilityService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HotelBookingRequestService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HotelCancellationDetails\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HotelExtranet\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TouricoReservation\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Tourico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceLog\ServiceLog.txt" />
+    <Content Include="App_Data\Dotw\Country.xml" />
+    <Content Include="App_Data\Dotw\CurrencyList.xml" />
+    <Content Include="App_Data\Dotw\Error\Speed.txt" />
+    <Content Include="App_Data\Dotw\HotelClassification.xml" />
+    <Content Include="App_Data\Dotw\Hotels\City-364.xml" />
+    <Content Include="App_Data\Dotw\Ratebasisi.xml" />
+    <Content Include="App_Data\Dotw\Salutations.xml" />
+    <Content Include="App_Data\extranet.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\Flight\Mystifly\airlinelist.xml" />
+    <Content Include="App_Data\Flight\Mystifly\airportlist.xml" />
+    <Content Include="App_Data\HotelBeds\hotelimage.xml" />
+    <Content Include="App_Data\HotelBeds\hotelstatic_hb.xml" />
+    <Content Include="App_Data\HotelBeds\sample.xml" />
+    <Content Include="App_Data\HotelsPro\Facilities.xml" />
+    <Content Include="App_Data\HotelsPro\mealtype.xml" />
+    <Content Include="App_Data\JacTravel\Facility.xml" />
+    <Content Include="App_Data\JacTravel\Htl_Static.txt" />
+    <Content Include="App_Data\JacTravel\MealBasis.xml" />
+    <Content Include="App_Data\JacTravel\Property\0.xml" />
+    <Content Include="App_Data\JacTravel\Property\1001.xml" />
+    <Content Include="App_Data\JacTravel\Property\1002.xml" />
+    <Content Include="App_Data\JacTravel\Property\1004.xml" />
+    <Content Include="App_Data\JacTravel\Property\1007.xml" />
+    <Content Include="App_Data\JacTravel\Property\1009.xml" />
+    <Content Include="App_Data\JacTravel\Property\101.xml" />
+    <Content Include="App_Data\JacTravel\Property\1011.xml" />
+    <Content Include="App_Data\JacTravel\Property\1012.xml" />
+    <Content Include="App_Data\JacTravel\Property\1014.xml" />
+    <Content Include="App_Data\JacTravel\Property\1017.xml" />
+    <Content Include="App_Data\JacTravel\Property\1019.xml" />
+    <Content Include="App_Data\JacTravel\Property\102.xml" />
+    <Content Include="App_Data\JacTravel\Property\1020.xml" />
+    <Content Include="App_Data\JacTravel\Property\1022.xml" />
+    <Content Include="App_Data\JacTravel\Property\1023.xml" />
+    <Content Include="App_Data\JacTravel\Property\1024.xml" />
+    <Content Include="App_Data\JacTravel\Property\1026.xml" />
+    <Content Include="App_Data\JacTravel\Property\1029.xml" />
+    <Content Include="App_Data\JacTravel\Property\1030.xml" />
+    <Content Include="App_Data\JacTravel\Property\1031.xml" />
+    <Content Include="App_Data\JacTravel\Property\1033.xml" />
+    <Content Include="App_Data\JacTravel\Property\1034.xml" />
+    <Content Include="App_Data\JacTravel\Property\1035.xml" />
+    <Content Include="App_Data\JacTravel\Property\1036.xml" />
+    <Content Include="App_Data\JacTravel\Property\1037.xml" />
+    <Content Include="App_Data\JacTravel\Property\1038.xml" />
+    <Content Include="App_Data\JacTravel\Property\1040.xml" />
+    <Content Include="App_Data\JacTravel\Property\1043.xml" />
+    <Content Include="App_Data\JacTravel\Property\1044.xml" />
+    <Content Include="App_Data\JacTravel\Property\1045.xml" />
+    <Content Include="App_Data\JacTravel\Property\1046.xml" />
+    <Content Include="App_Data\JacTravel\Property\1047.xml" />
+    <Content Include="App_Data\JacTravel\Property\1048.xml" />
+    <Content Include="App_Data\JacTravel\Property\1051.xml" />
+    <Content Include="App_Data\JacTravel\Property\1053.xml" />
+    <Content Include="App_Data\JacTravel\Property\1054.xml" />
+    <Content Include="App_Data\JacTravel\Property\1055.xml" />
+    <Content Include="App_Data\JacTravel\Property\1057.xml" />
+    <Content Include="App_Data\JacTravel\Property\1061.xml" />
+    <Content Include="App_Data\JacTravel\Property\1062.xml" />
+    <Content Include="App_Data\JacTravel\Property\1064.xml" />
+    <Content Include="App_Data\JacTravel\Property\1065.xml" />
+    <Content Include="App_Data\JacTravel\Property\1066.xml" />
+    <Content Include="App_Data\JacTravel\Property\1067.xml" />
+    <Content Include="App_Data\JacTravel\Property\1068.xml" />
+    <Content Include="App_Data\JacTravel\Property\1070.xml" />
+    <Content Include="App_Data\JacTravel\Property\1071.xml" />
+    <Content Include="App_Data\JacTravel\Property\1075.xml" />
+    <Content Include="App_Data\JacTravel\Property\1076.xml" />
+    <Content Include="App_Data\JacTravel\Property\1077.xml" />
+    <Content Include="App_Data\JacTravel\Property\1078.xml" />
+    <Content Include="App_Data\JacTravel\Property\1079.xml" />
+    <Content Include="App_Data\JacTravel\Property\1080.xml" />
+    <Content Include="App_Data\JacTravel\Property\1081.xml" />
+    <Content Include="App_Data\JacTravel\Property\1083.xml" />
+    <Content Include="App_Data\JacTravel\Property\1084.xml" />
+    <Content Include="App_Data\JacTravel\Property\1085.xml" />
+    <Content Include="App_Data\JacTravel\Property\1086.xml" />
+    <Content Include="App_Data\JacTravel\Property\1088.xml" />
+    <Content Include="App_Data\JacTravel\Property\1089.xml" />
+    <Content Include="App_Data\JacTravel\Property\1090.xml" />
+    <Content Include="App_Data\JacTravel\Property\1091.xml" />
+    <Content Include="App_Data\JacTravel\Property\1092.xml" />
+    <Content Include="App_Data\JacTravel\Property\1094.xml" />
+    <Content Include="App_Data\JacTravel\Property\1095.xml" />
+    <Content Include="App_Data\JacTravel\Property\1096.xml" />
+    <Content Include="App_Data\JacTravel\Property\1099.xml" />
+    <Content Include="App_Data\JacTravel\Property\1102.xml" />
+    <Content Include="App_Data\JacTravel\Property\1103.xml" />
+    <Content Include="App_Data\JacTravel\Property\1105.xml" />
+    <Content Include="App_Data\JacTravel\Property\1107.xml" />
+    <Content Include="App_Data\JacTravel\Property\1109.xml" />
+    <Content Include="App_Data\JacTravel\Property\111.xml" />
+    <Content Include="App_Data\JacTravel\Property\1110.xml" />
+    <Content Include="App_Data\JacTravel\Property\1112.xml" />
+    <Content Include="App_Data\JacTravel\Property\1116.xml" />
+    <Content Include="App_Data\JacTravel\Property\1117.xml" />
+    <Content Include="App_Data\JacTravel\Property\1119.xml" />
+    <Content Include="App_Data\JacTravel\Property\1120.xml" />
+    <Content Include="App_Data\JacTravel\Property\1121.xml" />
+    <Content Include="App_Data\JacTravel\Property\1122.xml" />
+    <Content Include="App_Data\JacTravel\Property\1127.xml" />
+    <Content Include="App_Data\JacTravel\Property\1128.xml" />
+    <Content Include="App_Data\JacTravel\Property\1129.xml" />
+    <Content Include="App_Data\JacTravel\Property\1131.xml" />
+    <Content Include="App_Data\JacTravel\Property\1132.xml" />
+    <Content Include="App_Data\JacTravel\Property\1133.xml" />
+    <Content Include="App_Data\JacTravel\Property\1134.xml" />
+    <Content Include="App_Data\JacTravel\Property\1135.xml" />
+    <Content Include="App_Data\JacTravel\Property\1136.xml" />
+    <Content Include="App_Data\JacTravel\Property\1141.xml" />
+    <Content Include="App_Data\JacTravel\Property\1142.xml" />
+    <Content Include="App_Data\JacTravel\Property\1145.xml" />
+    <Content Include="App_Data\JacTravel\Property\1149.xml" />
+    <Content Include="App_Data\JacTravel\Property\1150.xml" />
+    <Content Include="App_Data\JacTravel\Property\1154.xml" />
+    <Content Include="App_Data\JacTravel\Property\116.xml" />
+    <Content Include="App_Data\JacTravel\Property\1160.xml" />
+    <Content Include="App_Data\JacTravel\Property\1161.xml" />
+    <Content Include="App_Data\JacTravel\Property\1164.xml" />
+    <Content Include="App_Data\JacTravel\Property\1166.xml" />
+    <Content Include="App_Data\JacTravel\Property\1169.xml" />
+    <Content Include="App_Data\JacTravel\Property\117.xml" />
+    <Content Include="App_Data\JacTravel\Property\118.xml" />
+    <Content Include="App_Data\JacTravel\Property\1180.xml" />
+    <Content Include="App_Data\JacTravel\Property\1181.xml" />
+    <Content Include="App_Data\JacTravel\Property\1186.xml" />
+    <Content Include="App_Data\JacTravel\Property\119.xml" />
+    <Content Include="App_Data\JacTravel\Property\1190.xml" />
+    <Content Include="App_Data\JacTravel\Property\1197.xml" />
+    <Content Include="App_Data\JacTravel\Property\1201.xml" />
+    <Content Include="App_Data\JacTravel\Property\1203.xml" />
+    <Content Include="App_Data\JacTravel\Property\1204.xml" />
+    <Content Include="App_Data\JacTravel\Property\1206.xml" />
+    <Content Include="App_Data\JacTravel\Property\1219.xml" />
+    <Content Include="App_Data\JacTravel\Property\1227.xml" />
+    <Content Include="App_Data\JacTravel\Property\123.xml" />
+    <Content Include="App_Data\JacTravel\Property\1232.xml" />
+    <Content Include="App_Data\JacTravel\Property\1237.xml" />
+    <Content Include="App_Data\JacTravel\Property\1243.xml" />
+    <Content Include="App_Data\JacTravel\Property\1253.xml" />
+    <Content Include="App_Data\JacTravel\Property\1267.xml" />
+    <Content Include="App_Data\JacTravel\Property\1276.xml" />
+    <Content Include="App_Data\JacTravel\Property\1278.xml" />
+    <Content Include="App_Data\JacTravel\Property\1279.xml" />
+    <Content Include="App_Data\JacTravel\Property\128.xml" />
+    <Content Include="App_Data\JacTravel\Property\1280.xml" />
+    <Content Include="App_Data\JacTravel\Property\1283.xml" />
+    <Content Include="App_Data\JacTravel\Property\1284.xml" />
+    <Content Include="App_Data\JacTravel\Property\1285.xml" />
+    <Content Include="App_Data\JacTravel\Property\1287.xml" />
+    <Content Include="App_Data\JacTravel\Property\1288.xml" />
+    <Content Include="App_Data\JacTravel\Property\1289.xml" />
+    <Content Include="App_Data\JacTravel\Property\1291.xml" />
+    <Content Include="App_Data\JacTravel\Property\1292.xml" />
+    <Content Include="App_Data\JacTravel\Property\1293.xml" />
+    <Content Include="App_Data\JacTravel\Property\1294.xml" />
+    <Content Include="App_Data\JacTravel\Property\1295.xml" />
+    <Content Include="App_Data\JacTravel\Property\1296.xml" />
+    <Content Include="App_Data\JacTravel\Property\1297.xml" />
+    <Content Include="App_Data\JacTravel\Property\1298.xml" />
+    <Content Include="App_Data\JacTravel\Property\1299.xml" />
+    <Content Include="App_Data\JacTravel\Property\130.xml" />
+    <Content Include="App_Data\JacTravel\Property\1300.xml" />
+    <Content Include="App_Data\JacTravel\Property\1301.xml" />
+    <Content Include="App_Data\JacTravel\Property\1302.xml" />
+    <Content Include="App_Data\JacTravel\Property\1303.xml" />
+    <Content Include="App_Data\JacTravel\Property\1304.xml" />
+    <Content Include="App_Data\JacTravel\Property\1305.xml" />
+    <Content Include="App_Data\JacTravel\Property\1306.xml" />
+    <Content Include="App_Data\JacTravel\Property\1307.xml" />
+    <Content Include="App_Data\JacTravel\Property\1309.xml" />
+    <Content Include="App_Data\JacTravel\Property\1310.xml" />
+    <Content Include="App_Data\JacTravel\Property\1311.xml" />
+    <Content Include="App_Data\JacTravel\Property\1312.xml" />
+    <Content Include="App_Data\JacTravel\Property\1313.xml" />
+    <Content Include="App_Data\JacTravel\Property\1314.xml" />
+    <Content Include="App_Data\JacTravel\Property\1316.xml" />
+    <Content Include="App_Data\JacTravel\Property\1317.xml" />
+    <Content Include="App_Data\JacTravel\Property\1318.xml" />
+    <Content Include="App_Data\JacTravel\Property\1321.xml" />
+    <Content Include="App_Data\JacTravel\Property\1322.xml" />
+    <Content Include="App_Data\JacTravel\Property\1323.xml" />
+    <Content Include="App_Data\JacTravel\Property\1324.xml" />
+    <Content Include="App_Data\JacTravel\Property\1325.xml" />
+    <Content Include="App_Data\JacTravel\Property\1327.xml" />
+    <Content Include="App_Data\JacTravel\Property\1328.xml" />
+    <Content Include="App_Data\JacTravel\Property\1330.xml" />
+    <Content Include="App_Data\JacTravel\Property\1331.xml" />
+    <Content Include="App_Data\JacTravel\Property\1332.xml" />
+    <Content Include="App_Data\JacTravel\Property\1333.xml" />
+    <Content Include="App_Data\JacTravel\Property\1334.xml" />
+    <Content Include="App_Data\JacTravel\Property\1335.xml" />
+    <Content Include="App_Data\JacTravel\Property\1336.xml" />
+    <Content Include="App_Data\JacTravel\Property\1337.xml" />
+    <Content Include="App_Data\JacTravel\Property\1338.xml" />
+    <Content Include="App_Data\JacTravel\Property\1339.xml" />
+    <Content Include="App_Data\JacTravel\Property\134.xml" />
+    <Content Include="App_Data\JacTravel\Property\1341.xml" />
+    <Content Include="App_Data\JacTravel\Property\1342.xml" />
+    <Content Include="App_Data\JacTravel\Property\1344.xml" />
+    <Content Include="App_Data\JacTravel\Property\1346.xml" />
+    <Content Include="App_Data\JacTravel\Property\1347.xml" />
+    <Content Include="App_Data\JacTravel\Property\1349.xml" />
+    <Content Include="App_Data\JacTravel\Property\135.xml" />
+    <Content Include="App_Data\JacTravel\Property\1350.xml" />
+    <Content Include="App_Data\JacTravel\Property\1351.xml" />
+    <Content Include="App_Data\JacTravel\Property\1352.xml" />
+    <Content Include="App_Data\JacTravel\Property\1353.xml" />
+    <Content Include="App_Data\JacTravel\Property\1354.xml" />
+    <Content Include="App_Data\JacTravel\Property\1355.xml" />
+    <Content Include="App_Data\JacTravel\Property\1357.xml" />
+    <Content Include="App_Data\JacTravel\Property\1359.xml" />
+    <Content Include="App_Data\JacTravel\Property\1361.xml" />
+    <Content Include="App_Data\JacTravel\Property\1362.xml" />
+    <Content Include="App_Data\JacTravel\Property\1363.xml" />
+    <Content Include="App_Data\JacTravel\Property\1364.xml" />
+    <Content Include="App_Data\JacTravel\Property\1365.xml" />
+    <Content Include="App_Data\JacTravel\Property\1366.xml" />
+    <Content Include="App_Data\JacTravel\Property\1369.xml" />
+    <Content Include="App_Data\JacTravel\Property\137.xml" />
+    <Content Include="App_Data\JacTravel\Property\1370.xml" />
+    <Content Include="App_Data\JacTravel\Property\1371.xml" />
+    <Content Include="App_Data\JacTravel\Property\1373.xml" />
+    <Content Include="App_Data\JacTravel\Property\1374.xml" />
+    <Content Include="App_Data\JacTravel\Property\1375.xml" />
+    <Content Include="App_Data\JacTravel\Property\1376.xml" />
+    <Content Include="App_Data\JacTravel\Property\1378.xml" />
+    <Content Include="App_Data\JacTravel\Property\1379.xml" />
+    <Content Include="App_Data\JacTravel\Property\1380.xml" />
+    <Content Include="App_Data\JacTravel\Property\1381.xml" />
+    <Content Include="App_Data\JacTravel\Property\1382.xml" />
+    <Content Include="App_Data\JacTravel\Property\1383.xml" />
+    <Content Include="App_Data\JacTravel\Property\1384.xml" />
+    <Content Include="App_Data\JacTravel\Property\1385.xml" />
+    <Content Include="App_Data\JacTravel\Property\1386.xml" />
+    <Content Include="App_Data\JacTravel\Property\1387.xml" />
+    <Content Include="App_Data\JacTravel\Property\1388.xml" />
+    <Content Include="App_Data\JacTravel\Property\1389.xml" />
+    <Content Include="App_Data\JacTravel\Property\139.xml" />
+    <Content Include="App_Data\JacTravel\Property\1390.xml" />
+    <Content Include="App_Data\JacTravel\Property\1391.xml" />
+    <Content Include="App_Data\JacTravel\Property\1393.xml" />
+    <Content Include="App_Data\JacTravel\Property\1394.xml" />
+    <Content Include="App_Data\JacTravel\Property\1395.xml" />
+    <Content Include="App_Data\JacTravel\Property\1396.xml" />
+    <Content Include="App_Data\JacTravel\Property\1397.xml" />
+    <Content Include="App_Data\JacTravel\Property\1398.xml" />
+    <Content Include="App_Data\JacTravel\Property\1399.xml" />
+    <Content Include="App_Data\JacTravel\Property\14.xml" />
+    <Content Include="App_Data\JacTravel\Property\1400.xml" />
+    <Content Include="App_Data\JacTravel\Property\1401.xml" />
+    <Content Include="App_Data\JacTravel\Property\1402.xml" />
+    <Content Include="App_Data\JacTravel\Property\1403.xml" />
+    <Content Include="App_Data\JacTravel\Property\1405.xml" />
+    <Content Include="App_Data\JacTravel\Property\1407.xml" />
+    <Content Include="App_Data\JacTravel\Property\1409.xml" />
+    <Content Include="App_Data\JacTravel\Property\1410.xml" />
+    <Content Include="App_Data\JacTravel\Property\1411.xml" />
+    <Content Include="App_Data\JacTravel\Property\1412.xml" />
+    <Content Include="App_Data\JacTravel\Property\1414.xml" />
+    <Content Include="App_Data\JacTravel\Property\1416.xml" />
+    <Content Include="App_Data\JacTravel\Property\1417.xml" />
+    <Content Include="App_Data\JacTravel\Property\1418.xml" />
+    <Content Include="App_Data\JacTravel\Property\1420.xml" />
+    <Content Include="App_Data\JacTravel\Property\1422.xml" />
+    <Content Include="App_Data\JacTravel\Property\1423.xml" />
+    <Content Include="App_Data\JacTravel\Property\1424.xml" />
+    <Content Include="App_Data\JacTravel\Property\1425.xml" />
+    <Content Include="App_Data\JacTravel\Property\1427.xml" />
+    <Content Include="App_Data\JacTravel\Property\1428.xml" />
+    <Content Include="App_Data\JacTravel\Property\1430.xml" />
+    <Content Include="App_Data\JacTravel\Property\1431.xml" />
+    <Content Include="App_Data\JacTravel\Property\1432.xml" />
+    <Content Include="App_Data\JacTravel\Property\1433.xml" />
+    <Content Include="App_Data\JacTravel\Property\1435.xml" />
+    <Content Include="App_Data\JacTravel\Property\1436.xml" />
+    <Content Include="App_Data\JacTravel\Property\1437.xml" />
+    <Content Include="App_Data\JacTravel\Property\1438.xml" />
+    <Content Include="App_Data\JacTravel\Property\1440.xml" />
+    <Content Include="App_Data\JacTravel\Property\1442.xml" />
+    <Content Include="App_Data\JacTravel\Property\1443.xml" />
+    <Content Include="App_Data\JacTravel\Property\1444.xml" />
+    <Content Include="App_Data\JacTravel\Property\1445.xml" />
+    <Content Include="App_Data\JacTravel\Property\1447.xml" />
+    <Content Include="App_Data\JacTravel\Property\1448.xml" />
+    <Content Include="App_Data\JacTravel\Property\1451.xml" />
+    <Content Include="App_Data\JacTravel\Property\1452.xml" />
+    <Content Include="App_Data\JacTravel\Property\1453.xml" />
+    <Content Include="App_Data\JacTravel\Property\1454.xml" />
+    <Content Include="App_Data\JacTravel\Property\1455.xml" />
+    <Content Include="App_Data\JacTravel\Property\1456.xml" />
+    <Content Include="App_Data\JacTravel\Property\1457.xml" />
+    <Content Include="App_Data\JacTravel\Property\1458.xml" />
+    <Content Include="App_Data\JacTravel\Property\1459.xml" />
+    <Content Include="App_Data\JacTravel\Property\1460.xml" />
+    <Content Include="App_Data\JacTravel\Property\1461.xml" />
+    <Content Include="App_Data\JacTravel\Property\1463.xml" />
+    <Content Include="App_Data\JacTravel\Property\1464.xml" />
+    <Content Include="App_Data\JacTravel\Property\1465.xml" />
+    <Content Include="App_Data\JacTravel\Property\1466.xml" />
+    <Content Include="App_Data\JacTravel\Property\1468.xml" />
+    <Content Include="App_Data\JacTravel\Property\1469.xml" />
+    <Content Include="App_Data\JacTravel\Property\147.xml" />
+    <Content Include="App_Data\JacTravel\Property\1470.xml" />
+    <Content Include="App_Data\JacTravel\Property\1471.xml" />
+    <Content Include="App_Data\JacTravel\Property\1472.xml" />
+    <Content Include="App_Data\JacTravel\Property\1473.xml" />
+    <Content Include="App_Data\JacTravel\Property\1474.xml" />
+    <Content Include="App_Data\JacTravel\Property\1475.xml" />
+    <Content Include="App_Data\JacTravel\Property\1476.xml" />
+    <Content Include="App_Data\JacTravel\Property\1477.xml" />
+    <Content Include="App_Data\JacTravel\Property\1479.xml" />
+    <Content Include="App_Data\JacTravel\Property\1482.xml" />
+    <Content Include="App_Data\JacTravel\Property\1483.xml" />
+    <Content Include="App_Data\JacTravel\Property\1484.xml" />
+    <Content Include="App_Data\JacTravel\Property\1485.xml" />
+    <Content Include="App_Data\JacTravel\Property\1486.xml" />
+    <Content Include="App_Data\JacTravel\Property\1487.xml" />
+    <Content Include="App_Data\JacTravel\Property\1488.xml" />
+    <Content Include="App_Data\JacTravel\Property\1489.xml" />
+    <Content Include="App_Data\JacTravel\Property\149.xml" />
+    <Content Include="App_Data\JacTravel\Property\1490.xml" />
+    <Content Include="App_Data\JacTravel\Property\1492.xml" />
+    <Content Include="App_Data\JacTravel\Property\1493.xml" />
+    <Content Include="App_Data\JacTravel\Property\1494.xml" />
+    <Content Include="App_Data\JacTravel\Property\1495.xml" />
+    <Content Include="App_Data\JacTravel\Property\1496.xml" />
+    <Content Include="App_Data\JacTravel\Property\1497.xml" />
+    <Content Include="App_Data\JacTravel\Property\1499.xml" />
+    <Content Include="App_Data\JacTravel\Property\150.xml" />
+    <Content Include="App_Data\JacTravel\Property\1500.xml" />
+    <Content Include="App_Data\JacTravel\Property\1501.xml" />
+    <Content Include="App_Data\JacTravel\Property\1502.xml" />
+    <Content Include="App_Data\JacTravel\Property\1504.xml" />
+    <Content Include="App_Data\JacTravel\Property\1505.xml" />
+    <Content Include="App_Data\JacTravel\Property\1508.xml" />
+    <Content Include="App_Data\JacTravel\Property\1512.xml" />
+    <Content Include="App_Data\JacTravel\Property\1513.xml" />
+    <Content Include="App_Data\JacTravel\Property\1515.xml" />
+    <Content Include="App_Data\JacTravel\Property\1516.xml" />
+    <Content Include="App_Data\JacTravel\Property\1519.xml" />
+    <Content Include="App_Data\JacTravel\Property\1520.xml" />
+    <Content Include="App_Data\JacTravel\Property\1521.xml" />
+    <Content Include="App_Data\JacTravel\Property\1522.xml" />
+    <Content Include="App_Data\JacTravel\Property\1523.xml" />
+    <Content Include="App_Data\JacTravel\Property\1526.xml" />
+    <Content Include="App_Data\JacTravel\Property\1529.xml" />
+    <Content Include="App_Data\JacTravel\Property\1530.xml" />
+    <Content Include="App_Data\JacTravel\Property\1531.xml" />
+    <Content Include="App_Data\JacTravel\Property\1532.xml" />
+    <Content Include="App_Data\JacTravel\Property\1536.xml" />
+    <Content Include="App_Data\JacTravel\Property\1538.xml" />
+    <Content Include="App_Data\JacTravel\Property\1539.xml" />
+    <Content Include="App_Data\JacTravel\Property\1542.xml" />
+    <Content Include="App_Data\JacTravel\Property\1543.xml" />
+    <Content Include="App_Data\JacTravel\Property\1544.xml" />
+    <Content Include="App_Data\JacTravel\Property\1545.xml" />
+    <Content Include="App_Data\JacTravel\Property\1547.xml" />
+    <Content Include="App_Data\JacTravel\Property\1548.xml" />
+    <Content Include="App_Data\JacTravel\Property\1549.xml" />
+    <Content Include="App_Data\JacTravel\Property\155.xml" />
+    <Content Include="App_Data\JacTravel\Property\1550.xml" />
+    <Content Include="App_Data\JacTravel\Property\1551.xml" />
+    <Content Include="App_Data\JacTravel\Property\1552.xml" />
+    <Content Include="App_Data\JacTravel\Property\1553.xml" />
+    <Content Include="App_Data\JacTravel\Property\1554.xml" />
+    <Content Include="App_Data\JacTravel\Property\1555.xml" />
+    <Content Include="App_Data\JacTravel\Property\1558.xml" />
+    <Content Include="App_Data\JacTravel\Property\1559.xml" />
+    <Content Include="App_Data\JacTravel\Property\1560.xml" />
+    <Content Include="App_Data\JacTravel\Property\1561.xml" />
+    <Content Include="App_Data\JacTravel\Property\1562.xml" />
+    <Content Include="App_Data\JacTravel\Property\1563.xml" />
+    <Content Include="App_Data\JacTravel\Property\1564.xml" />
+    <Content Include="App_Data\JacTravel\Property\1565.xml" />
+    <Content Include="App_Data\JacTravel\Property\1568.xml" />
+    <Content Include="App_Data\JacTravel\Property\1569.xml" />
+    <Content Include="App_Data\JacTravel\Property\1570.xml" />
+    <Content Include="App_Data\JacTravel\Property\1571.xml" />
+    <Content Include="App_Data\JacTravel\Property\1572.xml" />
+    <Content Include="App_Data\JacTravel\Property\1573.xml" />
+    <Content Include="App_Data\JacTravel\Property\1575.xml" />
+    <Content Include="App_Data\JacTravel\Property\1576.xml" />
+    <Content Include="App_Data\JacTravel\Property\1577.xml" />
+    <Content Include="App_Data\JacTravel\Property\1579.xml" />
+    <Content Include="App_Data\JacTravel\Property\1580.xml" />
+    <Content Include="App_Data\JacTravel\Property\1581.xml" />
+    <Content Include="App_Data\JacTravel\Property\1582.xml" />
+    <Content Include="App_Data\JacTravel\Property\1583.xml" />
+    <Content Include="App_Data\JacTravel\Property\1584.xml" />
+    <Content Include="App_Data\JacTravel\Property\1585.xml" />
+    <Content Include="App_Data\JacTravel\Property\1588.xml" />
+    <Content Include="App_Data\JacTravel\Property\1589.xml" />
+    <Content Include="App_Data\JacTravel\Property\1595.xml" />
+    <Content Include="App_Data\JacTravel\Property\1597.xml" />
+    <Content Include="App_Data\JacTravel\Property\1598.xml" />
+    <Content Include="App_Data\JacTravel\Property\1599.xml" />
+    <Content Include="App_Data\JacTravel\Property\16.xml" />
+    <Content Include="App_Data\JacTravel\Property\1600.xml" />
+    <Content Include="App_Data\JacTravel\Property\1601.xml" />
+    <Content Include="App_Data\JacTravel\Property\1602.xml" />
+    <Content Include="App_Data\JacTravel\Property\1603.xml" />
+    <Content Include="App_Data\JacTravel\Property\1604.xml" />
+    <Content Include="App_Data\JacTravel\Property\1605.xml" />
+    <Content Include="App_Data\JacTravel\Property\1606.xml" />
+    <Content Include="App_Data\JacTravel\Property\1607.xml" />
+    <Content Include="App_Data\JacTravel\Property\1611.xml" />
+    <Content Include="App_Data\JacTravel\Property\1612.xml" />
+    <Content Include="App_Data\JacTravel\Property\1613.xml" />
+    <Content Include="App_Data\JacTravel\Property\1614.xml" />
+    <Content Include="App_Data\JacTravel\Property\1615.xml" />
+    <Content Include="App_Data\JacTravel\Property\1616.xml" />
+    <Content Include="App_Data\JacTravel\Property\1617.xml" />
+    <Content Include="App_Data\JacTravel\Property\1618.xml" />
+    <Content Include="App_Data\JacTravel\Property\1619.xml" />
+    <Content Include="App_Data\JacTravel\Property\1620.xml" />
+    <Content Include="App_Data\JacTravel\Property\1621.xml" />
+    <Content Include="App_Data\JacTravel\Property\1624.xml" />
+    <Content Include="App_Data\JacTravel\Property\1625.xml" />
+    <Content Include="App_Data\JacTravel\Property\1626.xml" />
+    <Content Include="App_Data\JacTravel\Property\1627.xml" />
+    <Content Include="App_Data\JacTravel\Property\1628.xml" />
+    <Content Include="App_Data\JacTravel\Property\1629.xml" />
+    <Content Include="App_Data\JacTravel\Property\1631.xml" />
+    <Content Include="App_Data\JacTravel\Property\1632.xml" />
+    <Content Include="App_Data\JacTravel\Property\1634.xml" />
+    <Content Include="App_Data\JacTravel\Property\1635.xml" />
+    <Content Include="App_Data\JacTravel\Property\1636.xml" />
+    <Content Include="App_Data\JacTravel\Property\1637.xml" />
+    <Content Include="App_Data\JacTravel\Property\1638.xml" />
+    <Content Include="App_Data\JacTravel\Property\1639.xml" />
+    <Content Include="App_Data\JacTravel\Property\1640.xml" />
+    <Content Include="App_Data\JacTravel\Property\1642.xml" />
+    <Content Include="App_Data\JacTravel\Property\1643.xml" />
+    <Content Include="App_Data\JacTravel\Property\1644.xml" />
+    <Content Include="App_Data\JacTravel\Property\1645.xml" />
+    <Content Include="App_Data\JacTravel\Property\1646.xml" />
+    <Content Include="App_Data\JacTravel\Property\1647.xml" />
+    <Content Include="App_Data\JacTravel\Property\1648.xml" />
+    <Content Include="App_Data\JacTravel\Property\1649.xml" />
+    <Content Include="App_Data\JacTravel\Property\165.xml" />
+    <Content Include="App_Data\JacTravel\Property\1651.xml" />
+    <Content Include="App_Data\JacTravel\Property\1652.xml" />
+    <Content Include="App_Data\JacTravel\Property\1653.xml" />
+    <Content Include="App_Data\JacTravel\Property\1654.xml" />
+    <Content Include="App_Data\JacTravel\Property\1656.xml" />
+    <Content Include="App_Data\JacTravel\Property\1657.xml" />
+    <Content Include="App_Data\JacTravel\Property\1659.xml" />
+    <Content Include="App_Data\JacTravel\Property\1660.xml" />
+    <Content Include="App_Data\JacTravel\Property\1661.xml" />
+    <Content Include="App_Data\JacTravel\Property\1662.xml" />
+    <Content Include="App_Data\JacTravel\Property\1663.xml" />
+    <Content Include="App_Data\JacTravel\Property\1664.xml" />
+    <Content Include="App_Data\JacTravel\Property\1665.xml" />
+    <Content Include="App_Data\JacTravel\Property\1667.xml" />
+    <Content Include="App_Data\JacTravel\Property\1668.xml" />
+    <Content Include="App_Data\JacTravel\Property\1669.xml" />
+    <Content Include="App_Data\JacTravel\Property\167.xml" />
+    <Content Include="App_Data\JacTravel\Property\1670.xml" />
+    <Content Include="App_Data\JacTravel\Property\1671.xml" />
+    <Content Include="App_Data\JacTravel\Property\1672.xml" />
+    <Content Include="App_Data\JacTravel\Property\1673.xml" />
+    <Content Include="App_Data\JacTravel\Property\1674.xml" />
+    <Content Include="App_Data\JacTravel\Property\1675.xml" />
+    <Content Include="App_Data\JacTravel\Property\1676.xml" />
+    <Content Include="App_Data\JacTravel\Property\1677.xml" />
+    <Content Include="App_Data\JacTravel\Property\1678.xml" />
+    <Content Include="App_Data\JacTravel\Property\1679.xml" />
+    <Content Include="App_Data\JacTravel\Property\1680.xml" />
+    <Content Include="App_Data\JacTravel\Property\1681.xml" />
+    <Content Include="App_Data\JacTravel\Property\1683.xml" />
+    <Content Include="App_Data\JacTravel\Property\1684.xml" />
+    <Content Include="App_Data\JacTravel\Property\1685.xml" />
+    <Content Include="App_Data\JacTravel\Property\1686.xml" />
+    <Content Include="App_Data\JacTravel\Property\1687.xml" />
+    <Content Include="App_Data\JacTravel\Property\1688.xml" />
+    <Content Include="App_Data\JacTravel\Property\1689.xml" />
+    <Content Include="App_Data\JacTravel\Property\1690.xml" />
+    <Content Include="App_Data\JacTravel\Property\1691.xml" />
+    <Content Include="App_Data\JacTravel\Property\1692.xml" />
+    <Content Include="App_Data\JacTravel\Property\1693.xml" />
+    <Content Include="App_Data\JacTravel\Property\1695.xml" />
+    <Content Include="App_Data\JacTravel\Property\1696.xml" />
+    <Content Include="App_Data\JacTravel\Property\1697.xml" />
+    <Content Include="App_Data\JacTravel\Property\1698.xml" />
+    <Content Include="App_Data\JacTravel\Property\1699.xml" />
+    <Content Include="App_Data\JacTravel\Property\1700.xml" />
+    <Content Include="App_Data\JacTravel\Property\1701.xml" />
+    <Content Include="App_Data\JacTravel\Property\1702.xml" />
+    <Content Include="App_Data\JacTravel\Property\1703.xml" />
+    <Content Include="App_Data\JacTravel\Property\1704.xml" />
+    <Content Include="App_Data\JacTravel\Property\1705.xml" />
+    <Content Include="App_Data\JacTravel\Property\1707.xml" />
+    <Content Include="App_Data\JacTravel\Property\1709.xml" />
+    <Content Include="App_Data\JacTravel\Property\1710.xml" />
+    <Content Include="App_Data\JacTravel\Property\1711.xml" />
+    <Content Include="App_Data\JacTravel\Property\1712.xml" />
+    <Content Include="App_Data\JacTravel\Property\1713.xml" />
+    <Content Include="App_Data\JacTravel\Property\1715.xml" />
+    <Content Include="App_Data\JacTravel\Property\1716.xml" />
+    <Content Include="App_Data\JacTravel\Property\1717.xml" />
+    <Content Include="App_Data\JacTravel\Property\1718.xml" />
+    <Content Include="App_Data\JacTravel\Property\1719.xml" />
+    <Content Include="App_Data\JacTravel\Property\1720.xml" />
+    <Content Include="App_Data\JacTravel\Property\1721.xml" />
+    <Content Include="App_Data\JacTravel\Property\1722.xml" />
+    <Content Include="App_Data\JacTravel\Property\1723.xml" />
+    <Content Include="App_Data\JacTravel\Property\1724.xml" />
+    <Content Include="App_Data\JacTravel\Property\1725.xml" />
+    <Content Include="App_Data\JacTravel\Property\1726.xml" />
+    <Content Include="App_Data\JacTravel\Property\1727.xml" />
+    <Content Include="App_Data\JacTravel\Property\1728.xml" />
+    <Content Include="App_Data\JacTravel\Property\1729.xml" />
+    <Content Include="App_Data\JacTravel\Property\1730.xml" />
+    <Content Include="App_Data\JacTravel\Property\1731.xml" />
+    <Content Include="App_Data\JacTravel\Property\1732.xml" />
+    <Content Include="App_Data\JacTravel\Property\1733.xml" />
+    <Content Include="App_Data\JacTravel\Property\1734.xml" />
+    <Content Include="App_Data\JacTravel\Property\1735.xml" />
+    <Content Include="App_Data\JacTravel\Property\1736.xml" />
+    <Content Include="App_Data\JacTravel\Property\279.xml" />
+    <Content Include="App_Data\Miki\NewMikiCityData.xml" />
+    <Content Include="App_Data\Miki\Reference_Data.xml" />
+    <Content Include="App_Data\RTS_CityMapping\RTSCityMapping.xml" />
+    <Content Include="App_Data\RTS_CityMapping\Travel_Nationality.xml" />
+    <Content Include="App_Data\Tourico\Credential.xml" />
+    <Content Include="App_Data\Tourico\HotelInfo.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\Tourico\HotelList.xml" />
+    <Content Include="App_Data\Travco\HotelStatic.xml" />
+    <Content Include="App_Data\Travco\StarRating.xml" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\TravillioXMLOutService.dll" />
+    <Content Include="bin\TravillioXMLOutService.pdb" />
+    <Content Include="log.txt" />
+    <Content Include="obj\Debug\TravillioXMLOutService.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TravillioXMLOutService.dll" />
+    <Content Include="obj\Debug\TravillioXMLOutService.pdb" />
+    <Content Include="obj\Release\TempPE\Service References.AllocationEnquiryService.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.BookEnquiryService.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.HotelAvailabilityService.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.HotelBookingRequestService.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.HotelCancellationDetails.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.HotelExtranet.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.Tourico.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.TouricoReservation.Reference.cs.dll" />
+    <Content Include="obj\Release\TravillioXMLOutService.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\TravillioXMLOutService.dll" />
+    <Content Include="obj\Release\TravillioXMLOutService.pdb" />
+    <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
+    <Content Include="packages.config" />
+    <Content Include="bin\TravillioXMLOutService.dll.config" />
+    <Content Include="packages\jQuery.1.4.4\jQuery.1.4.4.nupkg" />
+    <Content Include="packages\jQuery.1.4.4\jQuery.1.4.4.nuspec" />
+    <Content Include="packages\jQuery.UI.Core.1.8.9\jQuery.UI.Core.1.8.9.nupkg" />
+    <Content Include="packages\jQuery.UI.Core.1.8.9\jQuery.UI.Core.1.8.9.nuspec" />
+    <Content Include="packages\jQuery.UI.Widgets.Datepicker.1.8.9\jQuery.UI.Widgets.Datepicker.1.8.9.nupkg" />
+    <Content Include="packages\jQuery.UI.Widgets.Datepicker.1.8.9\jQuery.UI.Widgets.Datepicker.1.8.9.nuspec" />
+    <Content Include="packages\repositories.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\TravillioXMLOutService.csprojResolveAssemblyReference.cache" />
+    <Content Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\TransformWebConfig\assist\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\original\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
+    <Content Include="obj\Release\TravillioXMLOutService.csprojResolveAssemblyReference.cache" />
+    <None Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <None Include="Service References\AllocationEnquiryService\AllocationEnquiryV7Request.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AllocationEnquiryService\AllocationEnquiryV7Response.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AllocationEnquiryService\AllocationEnquiryV7Service.wsdl" />
+    <None Include="Service References\AllocationEnquiryService\CommonComplexType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AllocationEnquiryService\CommonSimpleType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\AllocationEnquiryService\TravillioXMLOutService.AllocationEnquiryService.AllocationEnquiryV7Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AllocationEnquiryService\TravillioXMLOutService.AllocationEnquiryService.getAllocationEnquiryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\BookEnquiryService\BookEnquiryV7Request.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookEnquiryService\BookEnquiryV7Response.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookEnquiryService\BookEnquiryV7Service.wsdl" />
+    <None Include="Service References\BookEnquiryService\CommonComplexType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookEnquiryService\CommonSimpleType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\BookEnquiryService\TravillioXMLOutService.BookEnquiryService.BookEnquiryV7Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\BookEnquiryService\TravillioXMLOutService.BookEnquiryService.getBookEnquiryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\HotelAvailabilityService\CommonComplexType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelAvailabilityService\CommonSimpleType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelAvailabilityService\HotelAvailabilityV7Request.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelAvailabilityService\HotelAvailabilityV7Response.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelAvailabilityService\HotelAvailabilityV7Service.wsdl" />
+    <None Include="Service References\AllocationEnquiryService\configuration91.svcinfo" />
+    <None Include="Service References\AllocationEnquiryService\configuration.svcinfo" />
+    <None Include="Service References\AllocationEnquiryService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BookEnquiryService\configuration91.svcinfo" />
+    <None Include="Service References\BookEnquiryService\configuration.svcinfo" />
+    <None Include="Service References\BookEnquiryService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\HotelAvailabilityService\TravillioXMLOutService.HotelAvailabilityService.checkAvailabilityByHotelNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelAvailabilityService\TravillioXMLOutService.HotelAvailabilityService.HotelAvailabilityV7Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\HotelBookingRequestService\CommonComplexType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelBookingRequestService\CommonSimpleType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelBookingRequestService\HotelBookingV7Request.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelBookingRequestService\HotelBookingV7Response.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelBookingRequestService\HotelBookingV7Service.wsdl" />
+    <Content Include="Service References\HotelBookingRequestService\TravillioXMLOutService.HotelBookingRequestService.doHotelBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelBookingRequestService\TravillioXMLOutService.HotelBookingRequestService.HotelBookingV7Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\HotelCancellationDetails\CommonComplexType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelCancellationDetails\CommonSimpleType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelCancellationDetails\HotelCancellationDetailRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelCancellationDetails\HotelCancellationDetailResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelCancellationDetails\HotelCancellationDetailService.wsdl" />
+    <None Include="Service References\HotelBookingRequestService\configuration91.svcinfo" />
+    <None Include="Service References\HotelBookingRequestService\configuration.svcinfo" />
+    <None Include="Service References\HotelBookingRequestService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\HotelCancellationDetails\TravillioXMLOutService.HotelCancellationDetails.getHotelCancellationDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelCancellationDetails\TravillioXMLOutService.HotelCancellationDetails.HotelCancellationDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\HotelExtranet\ExtXmlOutService.wsdl" />
+    <None Include="Service References\HotelExtranet\ExtXmlOutService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelExtranet\ExtXmlOutService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelExtranet\ExtXmlOutService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelExtranet\ExtXmlOutService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TouricoReservation\ReservationsService.wsdl" />
+    <None Include="packages\jQuery.1.4.4\Content\Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="packages\jQuery.1.4.4\Content\Scripts\jquery-1.4.4.js" />
+    <Content Include="packages\jQuery.1.4.4\Content\Scripts\jquery-1.4.4.min.js" />
+    <Content Include="packages\jQuery.UI.Core.1.8.9\Content\Scripts\jquery.ui.core.js" />
+    <Content Include="packages\jQuery.UI.Core.1.8.9\Content\Scripts\jquery.ui.core.min.js" />
+    <Content Include="packages\jQuery.UI.Widgets.Datepicker.1.8.9\Content\Scripts\jquery.ui.datepicker.js" />
+    <Content Include="packages\jQuery.UI.Widgets.Datepicker.1.8.9\Content\Scripts\jquery.ui.datepicker.min.js" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.core.min.js" />
+    <Content Include="Scripts\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\jquery.ui.datepicker.min.js" />
+    <None Include="Service References\HotelExtranet\configuration91.svcinfo" />
+    <None Include="Service References\HotelExtranet\configuration.svcinfo" />
+    <None Include="Service References\HotelExtranet\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\HotelAvailabilityService\configuration91.svcinfo" />
+    <None Include="Service References\HotelAvailabilityService\configuration.svcinfo" />
+    <None Include="Service References\HotelAvailabilityService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\HotelCancellationDetails\configuration91.svcinfo" />
+    <None Include="Service References\HotelCancellationDetails\configuration.svcinfo" />
+    <None Include="Service References\HotelCancellationDetails\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.CancellationFeeInfo1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.CancelReservationResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.GetCancellationFeeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.GetCancellationPoliciesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.GetPreviousRGResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.GetRGInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.HotelPolicyType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.TWS_RGInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.TWS_RGList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\TouricoReservation\TWS_RGInfo.xsd" />
+    <None Include="Service References\TouricoReservation\TWS_RGList.xsd" />
+    <None Include="Service References\Tourico\configuration91.svcinfo" />
+    <None Include="Service References\Tourico\configuration.svcinfo" />
+    <None Include="Service References\Tourico\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\TouricoReservation\ReservationsService.disco" />
+    <None Include="Service References\TouricoReservation\configuration91.svcinfo" />
+    <None Include="Service References\TouricoReservation\configuration.svcinfo" />
+    <None Include="Service References\TouricoReservation\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="TransferService.svc" />
+    <Content Include="TravayooOUTService.svc" />
+    <Content Include="TravillioService.svc" />
+    <Content Include="TravillioXMLOutService_final_local.csproj.user" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\RoomAvailabilityRequest.cs" />
+    <Compile Include="App_Code\TrvHotelBooking.cs" />
+    <Compile Include="App_Code\TrvHotelDetailsWithCancellation.cs" />
+    <Compile Include="App_Code\SearchHotelRequest.cs" />
+    <Compile Include="ITravillioService.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\AccountModel.cs" />
+    <Compile Include="Models\HeaderAuth.cs" />
+    <Compile Include="Models\LogWriter.cs" />
+    <Compile Include="Models\VerifySearchHotelRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Supplier\Darina\dr_Booking.cs" />
+    <Compile Include="Supplier\Darina\dr_Cancel.cs" />
+    <Compile Include="Supplier\Darina\dr_CXLpolicy.cs" />
+    <Compile Include="Supplier\Darina\dr_Hotelsearch.cs" />
+    <Compile Include="Supplier\Darina\dr_prebook.cs" />
+    <Compile Include="Supplier\Darina\dr_Roomavail.cs" />
+    <Compile Include="Supplier\DotW\DotwRepository.cs" />
+    <Compile Include="Supplier\DotW\DotwService.cs" />
+    <Compile Include="Supplier\Extranet\ExtBooking.cs" />
+    <Compile Include="Supplier\Extranet\ExtBookingCancel.cs" />
+    <Compile Include="Supplier\Extranet\ExtCXLPolicy.cs" />
+    <Compile Include="Supplier\Extranet\ExtGetRoomAvail.cs" />
+    <Compile Include="Supplier\Extranet\ExtHotelDetail.cs" />
+    <Compile Include="Supplier\Extranet\ExtHotelSearch.cs" />
+    <Compile Include="Supplier\Extranet\ExtPreBook.cs" />
+    <Compile Include="Supplier\GIATA\GiataMapping_Hotel.cs" />
+    <Compile Include="Supplier\HotelBeds\BookingHotelBeds.cs" />
+    <Compile Include="Supplier\HotelBeds\CancellationPolicyHotelBeds.cs" />
+    <Compile Include="Supplier\HotelBeds\HotelBeds.cs" />
+    <Compile Include="Supplier\HotelBeds\HotelCancellationHotelBeds.cs" />
+    <Compile Include="Supplier\HotelBeds\ImportBookingHotelBeds.cs" />
+    <Compile Include="Supplier\HotelBeds\PreBookHotelBeds.cs" />
+    <Compile Include="Supplier\HotelBeds\RoomAvailabilityHotelBeds.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProBooking.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProCancellation.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProCXLPolicy.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProHotelSearch.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProHtlDetail.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProPreBook.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProRoomAvail.cs" />
+    <Compile Include="Supplier\JacTravel\CreateSearchRequest.cs" />
+    <Compile Include="Supplier\JacTravel\Getresort.cs" />
+    <Compile Include="Supplier\JacTravel\JacTravel_Intial.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_HotelAvail.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_HotelSearch.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_HtlBokng.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_HtlCXlPolicy.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_HtlDetail.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_HtlPreBooking.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_PreCancel.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_RequestClass.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_RoomRequest.cs" />
+    <Compile Include="Supplier\Miki\MikiExternal.cs" />
+    <Compile Include="Supplier\Miki\MikiInternal.cs" />
+    <Compile Include="Supplier\Restel\RestelServerRequest.cs" />
+    <Compile Include="Supplier\Restel\RestelServices.cs" />
+    <Compile Include="Supplier\RTS\RequestClass.cs" />
+    <Compile Include="Supplier\RTS\RTSIntial.cs" />
+    <Compile Include="Supplier\RTS\RTS_BookingCXL.cs" />
+    <Compile Include="Supplier\RTS\RTS_CXlPolicy.cs" />
+    <Compile Include="Supplier\RTS\RTS_HTlBooking.cs" />
+    <Compile Include="Supplier\RTS\RTS_HtlDetail.cs" />
+    <Compile Include="Supplier\RTS\RTS_HtlRMk.cs" />
+    <Compile Include="Supplier\RTS\RTS_HtlSearch.cs" />
+    <Compile Include="Supplier\RTS\RTS_PreBookCXl.cs" />
+    <Compile Include="Supplier\RTS\RTS_PreBooking.cs" />
+    <Compile Include="Supplier\RTS\RTS_PriceChangeChk.cs" />
+    <Compile Include="Supplier\RTS\RTS_RoomAvail.cs" />
+    <Compile Include="Supplier\RTS\RTS_VoucherRequest.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_Book.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_Cancel.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_CXLPolicy.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_GetRoomAvail.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_HotelSearch.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_PreBook.cs" />
+    <Compile Include="Supplier\XMLOUT\HotelSearch_HA.cs" />
+    <Compile Include="Supplier\XMLOUT\HotelSearch_NAHA.cs" />
+    <Compile Include="Supplier\XMLOUT\HotelSearch_XMLOUT.cs" />
+    <Compile Include="TransferService.svc.cs">
+      <DependentUpon>TransferService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\HotelBeds\HB_transferAvail.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_transferCXLPolicy.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_TrnsfrBook.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_TrnsfrBookDetail.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_TrnsfrCancel.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_TrnsfrCancelDetail.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_TrnsfrGetAvailability.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_TrnsfrGetCXLPolicy.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_TrnsfrGetPreBook.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_TrnsfrPreBook.cs" />
+    <Compile Include="TravayooOUTService.svc.cs">
+      <DependentUpon>TravayooOUTService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TravillioService.svc.cs">
+      <DependentUpon>TravillioService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AllocationEnquiryService\" />
+    <WCFMetadataStorage Include="Service References\BookEnquiryService\" />
+    <WCFMetadataStorage Include="Service References\HotelAvailabilityService\" />
+    <WCFMetadataStorage Include="Service References\HotelBookingRequestService\" />
+    <WCFMetadataStorage Include="Service References\HotelCancellationDetails\" />
+    <WCFMetadataStorage Include="Service References\HotelExtranet\" />
+    <WCFMetadataStorage Include="Service References\TouricoReservation\" />
+    <WCFMetadataStorage Include="Service References\Tourico\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\TravillioXMLOutService.pubxml" />
+    <None Include="Service References\Tourico\HotelFlow.wsdl" />
+    <None Include="Service References\Tourico\HotelFlow.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\HotelFlow1.wsdl" />
+    <None Include="Service References\Tourico\HotelFlow1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\HotelFlow2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\HotelFlow3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\HotelFlow4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\HotelFlow5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\HotelFlow6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.AmendResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.BookHotelV3Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.CancellationFeeInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.CancellationFeeInfoWrapper.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.CheckAvailabilityAndPricesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.CostAmendResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.DoAmendResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.GetHotelDetailsV3Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.GetRGInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.GetTermAndConditionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.HotelPolicyType1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.HotelPolicyTypeWrapper.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.RGInfoResults.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.SearchHotelsByDestinationIdsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.SearchHotelsByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.SearchHotelsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.TermAndCondition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.TWS_HotelDetailsV3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\Tourico\TWS_HotelDetailsV3.xsd" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\Dotw\Log\" />
+    <Folder Include="App_Data\Dotw\Rooms\" />
+    <Folder Include="obj\Release\Package\" />
+    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>21111</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:21111/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

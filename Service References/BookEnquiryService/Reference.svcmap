@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4f93a0ac-d590-4af4-aec1-3c61d9d541cb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/BookEnquiryV7Service.wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BookEnquiryV7Request.xsd" MetadataType="Schema" ID="dd96dbd9-4d03-4059-9175-561d79d98df6" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/BookEnquiryV7Request.xsd" />
+    <MetadataFile FileName="CommonComplexType.xsd" MetadataType="Schema" ID="a3c0313a-1bcd-4eb1-af74-9277f8853c72" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/CommonComplexType.xsd" />
+    <MetadataFile FileName="CommonSimpleType.xsd" MetadataType="Schema" ID="9f458b2c-7ec0-4c3a-beb6-a6daf0f985f6" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/CommonSimpleType.xsd" />
+    <MetadataFile FileName="BookEnquiryV7Service.wsdl" MetadataType="Wsdl" ID="0f84ae7c-e0c1-48a8-a95b-2932f3c8bbc3" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/BookEnquiryV7Service.wsdl" />
+    <MetadataFile FileName="BookEnquiryV7Response.xsd" MetadataType="Schema" ID="aff316da-1bf3-4517-895f-9de3c6b827a2" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/BookEnquiryV7Response.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

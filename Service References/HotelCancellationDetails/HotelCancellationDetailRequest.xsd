@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:smp="http://www.travco.co.uk/trlink/xsd/simpletype" xmlns:cmp="http://www.travco.co.uk/trlink/xsd/complextype" xmlns:tns="http://www.travco.co.uk/trlink/xsd/hotelcancellationdetail/request" targetNamespace="http://www.travco.co.uk/trlink/xsd/hotelcancellationdetail/request" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="CommonSimpleType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/simpletype" />
+  <xs:import schemaLocation="CommonComplexType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/complextype" />
+  <xs:element name="getHotelCancellationDetailsNotCrossSeason">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element minOccurs="0" ref="tns:HotelCode" />
+        <xs:element minOccurs="0" ref="tns:CheckInDate" />
+        <xs:element minOccurs="0" ref="tns:Duration" />
+        <xs:element minOccurs="0" ref="tns:CancellationChargeCode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getHotelCancellationDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element minOccurs="0" ref="tns:HotelCode" />
+        <xs:element minOccurs="0" ref="tns:CheckInDate" />
+        <xs:element minOccurs="0" ref="tns:Duration" />
+        <xs:element minOccurs="0" ref="tns:CancellationChargeCode" />
+        <xs:element minOccurs="0" ref="tns:CancellationChargeCodeForCrossSeason" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HotelCode" type="smp:String4Type" />
+  <xs:element name="CheckInDate" type="xs:dateTime" />
+  <xs:element name="Duration" type="smp:Int2PositiveType" />
+  <xs:element name="CancellationChargeCode" type="smp:String6Type" />
+  <xs:element name="CancellationChargeCodeForCrossSeason" type="smp:String6Type" />
+  <xs:element name="RequestBase" type="cmp:RequestBaseType" />
+</xs:schema>

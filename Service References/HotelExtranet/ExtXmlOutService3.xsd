@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ExtranetXMLOut.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ExtranetXMLOut.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.1.130:8097/ExtXmlOutService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfRoomSelfSearch">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RoomSelfSearch" nillable="true" type="tns:RoomSelfSearch" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRoomSelfSearch" nillable="true" type="tns:ArrayOfRoomSelfSearch" />
+  <xs:complexType name="RoomSelfSearch">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdulCount" type="xs:int" />
+      <xs:element minOccurs="0" name="Fill" type="xs:boolean" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="child_ages" nillable="true" type="q1:ArrayOfint" />
+      <xs:element minOccurs="0" name="rno" type="xs:int" />
+      <xs:element minOccurs="0" name="verify" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RoomSelfSearch" nillable="true" type="tns:RoomSelfSearch" />
+</xs:schema>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ExtXmlOutService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.1.130:8097/ExtXmlOutService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.1.130:8097/ExtXmlOutService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.1.130:8097/ExtXmlOutService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ExtranetXMLOut.Entity" />
+      <xsd:import schemaLocation="http://192.168.1.130:8097/ExtXmlOutService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IExtXmlOutService_GetPropertyIdsByCityAndMainAgent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPropertyIdsByCityAndMainAgent" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetPropertyIdsByCityAndMainAgent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPropertyIdsByCityAndMainAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_HotelDetailResponse_InputMessage">
+    <wsdl:part name="parameters" element="tns:HotelDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_HotelDetailResponse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HotelDetailResponseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_CheckOnRequestStatusByXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckOnRequestStatusByXML" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_CheckOnRequestStatusByXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckOnRequestStatusByXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_MakeCancelBookingRequestByXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:MakeCancelBookingRequestByXML" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_MakeCancelBookingRequestByXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MakeCancelBookingRequestByXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_MakeBookRequestByXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:MakeBookRequestByXML" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_MakeBookRequestByXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MakeBookRequestByXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetQueryFromEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQueryFromEntity" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetQueryFromEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQueryFromEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetSearchCityRequestByXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSearchCityRequestByXML" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetSearchCityRequestByXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSearchCityRequestByXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetPreBookRequestByXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreBookRequestByXML" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetPreBookRequestByXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreBookRequestByXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetCancelPolicyByXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCancelPolicyByXML" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetCancelPolicyByXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCancelPolicyByXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetSearchCityRequestByParameters_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSearchCityRequestByParameters" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetSearchCityRequestByParameters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSearchCityRequestByParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetPreBookRequestByParameters_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreBookRequestByParameters" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetPreBookRequestByParameters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreBookRequestByParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_CheckOnlyAvailabilityInCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckOnlyAvailabilityInCity" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_CheckOnlyAvailabilityInCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckOnlyAvailabilityInCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetSearchCityRequestByXML_New_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSearchCityRequestByXML_New" />
+  </wsdl:message>
+  <wsdl:message name="IExtXmlOutService_GetSearchCityRequestByXML_New_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSearchCityRequestByXML_NewResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IExtXmlOutService">
+    <wsdl:operation name="GetPropertyIdsByCityAndMainAgent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/GetPropertyIdsByCityAndMainAgent" message="tns:IExtXmlOutService_GetPropertyIdsByCityAndMainAgent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/GetPropertyIdsByCityAndMainAgentResponse" message="tns:IExtXmlOutService_GetPropertyIdsByCityAndMainAgent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HotelDetailResponse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/HotelDetailResponse" message="tns:IExtXmlOutService_HotelDetailResponse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/HotelDetailResponseResponse" message="tns:IExtXmlOutService_HotelDetailResponse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckOnRequestStatusByXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/CheckOnRequestStatusByXML" message="tns:IExtXmlOutService_CheckOnRequestStatusByXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/CheckOnRequestStatusByXMLResponse" message="tns:IExtXmlOutService_CheckOnRequestStatusByXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MakeCancelBookingRequestByXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/MakeCancelBookingRequestByXML" message="tns:IExtXmlOutService_MakeCancelBookingRequestByXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/MakeCancelBookingRequestByXMLResponse" message="tns:IExtXmlOutService_MakeCancelBookingRequestByXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MakeBookRequestByXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/MakeBookRequestByXML" message="tns:IExtXmlOutService_MakeBookRequestByXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/MakeBookRequestByXMLResponse" message="tns:IExtXmlOutService_MakeBookRequestByXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/GetData" message="tns:IExtXmlOutService_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/GetDataResponse" message="tns:IExtXmlOutService_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryFromEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/GetQueryFromEntity" message="tns:IExtXmlOutService_GetQueryFromEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/GetQueryFromEntityResponse" message="tns:IExtXmlOutService_GetQueryFromEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchCityRequestByXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/GetSearchCityRequestByXML" message="tns:IExtXmlOutService_GetSearchCityRequestByXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/GetSearchCityRequestByXMLResponse" message="tns:IExtXmlOutService_GetSearchCityRequestByXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreBookRequestByXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/GetPreBookRequestByXML" message="tns:IExtXmlOutService_GetPreBookRequestByXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/GetPreBookRequestByXMLResponse" message="tns:IExtXmlOutService_GetPreBookRequestByXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCancelPolicyByXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/GetCancelPolicyByXML" message="tns:IExtXmlOutService_GetCancelPolicyByXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/GetCancelPolicyByXMLResponse" message="tns:IExtXmlOutService_GetCancelPolicyByXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchCityRequestByParameters">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/GetSearchCityRequestByParameters" message="tns:IExtXmlOutService_GetSearchCityRequestByParameters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/GetSearchCityRequestByParametersResponse" message="tns:IExtXmlOutService_GetSearchCityRequestByParameters_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreBookRequestByParameters">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/GetPreBookRequestByParameters" message="tns:IExtXmlOutService_GetPreBookRequestByParameters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/GetPreBookRequestByParametersResponse" message="tns:IExtXmlOutService_GetPreBookRequestByParameters_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckOnlyAvailabilityInCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/CheckOnlyAvailabilityInCity" message="tns:IExtXmlOutService_CheckOnlyAvailabilityInCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/CheckOnlyAvailabilityInCityResponse" message="tns:IExtXmlOutService_CheckOnlyAvailabilityInCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchCityRequestByXML_New">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExtXmlOutService/GetSearchCityRequestByXML_New" message="tns:IExtXmlOutService_GetSearchCityRequestByXML_New_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExtXmlOutService/GetSearchCityRequestByXML_NewResponse" message="tns:IExtXmlOutService_GetSearchCityRequestByXML_New_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IExtXmlOutService" type="tns:IExtXmlOutService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPropertyIdsByCityAndMainAgent">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/GetPropertyIdsByCityAndMainAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HotelDetailResponse">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/HotelDetailResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckOnRequestStatusByXML">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/CheckOnRequestStatusByXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MakeCancelBookingRequestByXML">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/MakeCancelBookingRequestByXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MakeBookRequestByXML">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/MakeBookRequestByXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryFromEntity">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/GetQueryFromEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchCityRequestByXML">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/GetSearchCityRequestByXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreBookRequestByXML">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/GetPreBookRequestByXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCancelPolicyByXML">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/GetCancelPolicyByXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchCityRequestByParameters">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/GetSearchCityRequestByParameters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreBookRequestByParameters">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/GetPreBookRequestByParameters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckOnlyAvailabilityInCity">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/CheckOnlyAvailabilityInCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchCityRequestByXML_New">
+      <soap:operation soapAction="http://tempuri.org/IExtXmlOutService/GetSearchCityRequestByXML_New" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ExtXmlOutService">
+    <wsdl:port name="BasicHttpBinding_IExtXmlOutService" binding="tns:BasicHttpBinding_IExtXmlOutService">
+      <soap:address location="http://192.168.1.130:8097/ExtXmlOutService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

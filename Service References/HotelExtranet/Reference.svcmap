@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5d16f336-280a-40bf-afe9-bff925af8340" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.130:8097/ExtXmlOutService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ExtXmlOutService.wsdl" MetadataType="Wsdl" ID="3472cb9f-e341-45dd-83e5-b007eada1498" SourceId="1" SourceUrl="http://192.168.1.130:8097/ExtXmlOutService.svc?wsdl" />
+    <MetadataFile FileName="ExtXmlOutService.xsd" MetadataType="Schema" ID="a999eaed-3564-4978-8440-6b29b02bdea4" SourceId="1" SourceUrl="http://192.168.1.130:8097/ExtXmlOutService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ExtXmlOutService1.xsd" MetadataType="Schema" ID="462b6b1d-ca7b-4d6d-a6f3-b068b878c9dd" SourceId="1" SourceUrl="http://192.168.1.130:8097/ExtXmlOutService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ExtXmlOutService2.xsd" MetadataType="Schema" ID="da4e47a4-d19d-4fd7-9bab-bac7a2a00b91" SourceId="1" SourceUrl="http://192.168.1.130:8097/ExtXmlOutService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ExtXmlOutService3.xsd" MetadataType="Schema" ID="0d79c5a6-0e56-4227-b964-18b967331d19" SourceId="1" SourceUrl="http://192.168.1.130:8097/ExtXmlOutService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

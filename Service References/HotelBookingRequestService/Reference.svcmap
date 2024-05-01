@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="86d534b2-3be0-4c43-84a9-e540067b8b72" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/HotelBookingV7Service.wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HotelBookingV7Request.xsd" MetadataType="Schema" ID="1d2faf6f-d749-414f-a57a-2dfd7cfe4a8d" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/HotelBookingV7Request.xsd" />
+    <MetadataFile FileName="CommonComplexType.xsd" MetadataType="Schema" ID="366ef30b-8eff-4561-afd1-b3b0703e2a41" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/CommonComplexType.xsd" />
+    <MetadataFile FileName="HotelBookingV7Service.wsdl" MetadataType="Wsdl" ID="45bb3936-77f1-4bc7-8c3c-b912ef6ac3fb" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/HotelBookingV7Service.wsdl" />
+    <MetadataFile FileName="CommonSimpleType.xsd" MetadataType="Schema" ID="fd538921-d44f-4070-90dd-be62cc8db03b" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/CommonSimpleType.xsd" />
+    <MetadataFile FileName="HotelBookingV7Response.xsd" MetadataType="Schema" ID="a208b5f9-2062-4949-8039-75e0b500bda0" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/HotelBookingV7Response.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:smp="http://www.travco.co.uk/trlink/xsd/simpletype" xmlns:cmp="http://www.travco.co.uk/trlink/xsd/complextype" xmlns:tns="http://www.travco.co.uk/trlink/xsd/hotelcancellationdetail/response" targetNamespace="http://www.travco.co.uk/trlink/xsd/hotelcancellationdetail/response" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="CommonSimpleType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/simpletype" />
+  <xs:import schemaLocation="CommonComplexType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/complextype" />
+  <xs:element name="HotelCancellationDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:Response" />
+      </xs:sequence>
+      <xs:attribute default="en-GB" name="LangType" type="smp:LangType" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Information" type="cmp:InfoType" />
+        <xs:element minOccurs="0" name="FullCancellationDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" ref="tns:Detail" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" ref="tns:CancellationCharge" />
+      </xs:sequence>
+      <xs:attribute name="HotelCode" type="smp:String4Type" />
+      <xs:attribute name="CheckInDate" type="xs:dateTime" />
+      <xs:attribute name="Duration" type="smp:String2Type" />
+      <xs:attribute name="CancellationChargeCode" type="smp:String6Type" />
+      <xs:attribute name="CancellationChargeCodeForCrossSeason" type="smp:String6Type" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Detail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="tns:FullCancellationPolicy" />
+        <xs:element minOccurs="0" ref="tns:Message" />
+      </xs:sequence>
+      <xs:attribute name="EffectiveFrom" type="xs:dateTime" />
+      <xs:attribute name="NoOfDaysBeforeArrival" type="smp:Int3PositiveType" />
+      <xs:attribute name="TimeAfter" type="smp:String5Type" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FullCancellationPolicy" type="smp:String60Type" />
+  <xs:element name="Message">
+    <xs:complexType>
+      <xs:attribute name="LastDateByWhichToCancel" type="xs:string" />
+      <xs:attribute name="TimeBefore" type="smp:String5Type" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancellationCharge">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="tns:FirstCancellationCharge" />
+        <xs:element minOccurs="0" ref="tns:NextCancellationCharges" />
+      </xs:sequence>
+      <xs:attribute name="LastDateToCancelWithoutCharge" type="xs:string" />
+      <xs:attribute name="Before" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FirstCancellationCharge">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="tns:FullCancellationNarrative" />
+      </xs:sequence>
+      <xs:attribute name="FirstCancellationChargeDate" type="xs:string" />
+      <xs:attribute name="After" type="xs:string" />
+      <xs:attribute name="NoOfNts" type="xs:string" />
+      <xs:attribute name="AtPercentage" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NextCancellationCharges">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="tns:NextCancellationCharge" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NextCancellationCharge">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="tns:FullCancellationNarrative" />
+      </xs:sequence>
+      <xs:attribute name="NextCancellationChargeDate" type="xs:string" />
+      <xs:attribute name="After" type="xs:string" />
+      <xs:attribute name="NoOfNts" type="xs:string" />
+      <xs:attribute name="AtPercentage" type="xs:string" />
+      <xs:attribute name="PlusNoOfNts" type="xs:string" />
+      <xs:attribute name="PlusPercentage" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FullCancellationNarrative" type="xs:string" />
+</xs:schema>

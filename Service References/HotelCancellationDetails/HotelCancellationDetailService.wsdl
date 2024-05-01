@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:request="http://www.travco.co.uk/trlink/xsd/hotelcancellationdetail/request" xmlns:cmp="http://www.travco.co.uk/trlink/xsd/complextype" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsoap="http://www.w3.org/ns/wsdl/soap" xmlns:ns="http://www.travco.co.uk/" xmlns:response="http://www.travco.co.uk/trlink/xsd/hotelcancellationdetail/response" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:whttp="http://www.w3.org/ns/wsdl/http" targetNamespace="http://www.travco.co.uk/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>HotelCancellationDetailService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema>
+      <xs:import schemaLocation="HotelCancellationDetailResponse.xsd" namespace="http://www.travco.co.uk/trlink/xsd/hotelcancellationdetail/response" />
+      <xs:import schemaLocation="HotelCancellationDetailRequest.xsd" namespace="http://www.travco.co.uk/trlink/xsd/hotelcancellationdetail/request" />
+      <xs:import schemaLocation="CommonComplexType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/complextype" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="GetHotelCancellationDetails">
+    <wsdl:part name="parameters1" element="request:getHotelCancellationDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetHotelCancellationDetailsNotCrossSeason">
+    <wsdl:part name="parameters2" element="request:getHotelCancellationDetailsNotCrossSeason" />
+  </wsdl:message>
+  <wsdl:message name="HotelCancellationDetailResponse">
+    <wsdl:part name="parameters" element="response:HotelCancellationDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ResponseDataFaultMessage">
+    <wsdl:part name="fault1" element="cmp:ResponseDataFault" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveParserFaultMessage">
+    <wsdl:part name="fault2" element="cmp:ReceiveParserFault" />
+  </wsdl:message>
+  <wsdl:message name="SendParserFaultMessage">
+    <wsdl:part name="fault3" element="cmp:SendParserFault" />
+  </wsdl:message>
+  <wsdl:message name="UserFaultMessage">
+    <wsdl:part name="fault4" element="cmp:UserFault" />
+  </wsdl:message>
+  <wsdl:message name="CommunicationFaultMessage">
+    <wsdl:part name="fault5" element="cmp:CommunicationFault" />
+  </wsdl:message>
+  <wsdl:message name="ServerFaultMessage">
+    <wsdl:part name="fault6" element="cmp:ServerFault" />
+  </wsdl:message>
+  <wsdl:portType name="HotelCancellationDetailServicePortType">
+    <wsdl:operation name="getHotelCancellationDetails">
+      <wsdl:input wsaw:Action="urn:getHotelCancellationDetails" message="ns:GetHotelCancellationDetails" />
+      <wsdl:output wsaw:Action="urn:getHotelCancellationDetailsResponse" message="ns:HotelCancellationDetailResponse" />
+      <wsdl:fault name="ResponseDataException" message="ns:ResponseDataFaultMessage" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getHotelCancellationDetailsNotCrossSeason">
+      <wsdl:input wsaw:Action="urn:getHotelCancellationDetailsNotCrossSeason" message="ns:GetHotelCancellationDetailsNotCrossSeason" />
+      <wsdl:output wsaw:Action="urn:getHotelCancellationDetailsNotCrossSeasonResponse" message="ns:HotelCancellationDetailResponse" />
+      <wsdl:fault name="ResponseDataException" message="ns:ResponseDataFaultMessage" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HotelCancellationDetailServiceSoap11Binding" type="ns:HotelCancellationDetailServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getHotelCancellationDetails">
+      <soap:operation soapAction="urn:getHotelCancellationDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ResponseDataException">
+        <soap:fault use="literal" name="ResponseDataException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getHotelCancellationDetailsNotCrossSeason">
+      <soap:operation soapAction="urn:getHotelCancellationDetailsNotCrossSeason" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ResponseDataException">
+        <soap:fault use="literal" name="ResponseDataException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HotelCancellationDetailService">
+    <wsdl:port name="HotelCancellationDetailHttpSoap11Endpoint" binding="ns:HotelCancellationDetailServiceSoap11Binding">
+      <soap:address location="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/HotelCancellationDetailService.HotelCancellationDetailHttpSoap11Endpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

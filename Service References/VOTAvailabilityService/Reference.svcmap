@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="64f04645-650b-41e0-b41f-e18b2dcffcec" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://votbookings.com/XMLServices/AvailabilityServices.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AvailabilityServices.xsd" MetadataType="Schema" ID="1d9db2bb-6205-45a0-ae9f-3664be1c283d" SourceId="1" SourceUrl="http://votbookings.com/XMLServices/AvailabilityServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="AvailabilityServices1.xsd" MetadataType="Schema" ID="7d6916f0-1a08-4e21-853b-8d7e985711b8" SourceId="1" SourceUrl="http://votbookings.com/XMLServices/AvailabilityServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="AvailabilityServices.wsdl" MetadataType="Wsdl" ID="ce0de205-5b9a-4264-95f1-9347d64fb8ce" SourceId="1" SourceUrl="http://votbookings.com/XMLServices/AvailabilityServices.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

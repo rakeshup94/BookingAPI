@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:smp="http://www.travco.co.uk/trlink/xsd/simpletype" xmlns:cmp="http://www.travco.co.uk/trlink/xsd/complextype" xmlns:tns="http://www.travco.co.uk/trlink/xsd/hotelavailabilityv7/request" targetNamespace="http://www.travco.co.uk/trlink/xsd/hotelavailabilityv7/request" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="CommonSimpleType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/simpletype" />
+  <xs:import schemaLocation="CommonComplexType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/complextype" />
+  <xs:element name="checkAvailabilityByHotelCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element ref="tns:HotelCode" />
+        <xs:element ref="tns:CheckInDate" />
+        <xs:element ref="tns:CheckOutDate" />
+        <xs:element ref="tns:RoomData" />
+        <xs:element minOccurs="0" ref="tns:AdditionalData" />
+        <xs:element minOccurs="0" ref="tns:RequestCriteria" />
+        <xs:element minOccurs="0" ref="tns:MultiStarsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkAvailabilityByHotelName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element ref="tns:HotelName" />
+        <xs:element ref="tns:CheckInDate" />
+        <xs:element ref="tns:CheckOutDate" />
+        <xs:element ref="tns:RoomData" />
+        <xs:element minOccurs="0" ref="tns:AdditionalData" />
+        <xs:element minOccurs="0" ref="tns:RequestCriteria" />
+        <xs:element minOccurs="0" ref="tns:MultiStarsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkAvailabilityByCountryRegion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element ref="tns:CountryCode" />
+        <xs:element ref="tns:CountryRegionCode" />
+        <xs:element ref="tns:CheckInDate" />
+        <xs:element ref="tns:CheckOutDate" />
+        <xs:element ref="tns:RoomData" />
+        <xs:element minOccurs="0" ref="tns:AdditionalData" />
+        <xs:element minOccurs="0" ref="tns:RequestCriteria" />
+        <xs:element minOccurs="0" ref="tns:MultiStarsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkAvailabilityByCityArea">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element ref="tns:CountryCode" />
+        <xs:element ref="tns:CityCode" />
+        <xs:element ref="tns:CityAreaCode" />
+        <xs:element ref="tns:CheckInDate" />
+        <xs:element ref="tns:CheckOutDate" />
+        <xs:element ref="tns:RoomData" />
+        <xs:element minOccurs="0" ref="tns:AdditionalData" />
+        <xs:element minOccurs="0" ref="tns:RequestCriteria" />
+        <xs:element minOccurs="0" ref="tns:MultiStarsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkAvailabilityByLocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element ref="tns:CountryCode" />
+        <xs:element ref="tns:CityCode" />
+        <xs:element ref="tns:Location" />
+        <xs:element ref="tns:CheckInDate" />
+        <xs:element ref="tns:CheckOutDate" />
+        <xs:element ref="tns:RoomData" />
+        <xs:element minOccurs="0" ref="tns:AdditionalData" />
+        <xs:element minOccurs="0" ref="tns:RequestCriteria" />
+        <xs:element minOccurs="0" ref="tns:MultiStarsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkAvailabilityByCity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element ref="tns:CountryCode" />
+        <xs:element ref="tns:CityCode" />
+        <xs:element ref="tns:CheckInDate" />
+        <xs:element ref="tns:CheckOutDate" />
+        <xs:element ref="tns:RoomData" />
+        <xs:element minOccurs="0" ref="tns:AdditionalData" />
+        <xs:element minOccurs="0" ref="tns:RequestCriteria" />
+        <xs:element minOccurs="0" ref="tns:MultiStarsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkAvailabilityByMultipleHotelCodes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element ref="tns:MultipleHotelCodes" />
+        <xs:element ref="tns:CheckInDate" />
+        <xs:element ref="tns:CheckOutDate" />
+        <xs:element ref="tns:RoomData" />
+        <xs:element minOccurs="0" ref="tns:AdditionalData" />
+        <xs:element minOccurs="0" ref="tns:RequestCriteria" />
+        <xs:element minOccurs="0" ref="tns:MultiStarsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestBase" type="cmp:RequestBaseType" />
+  <xs:element name="HotelName" type="xs:string" />
+  <xs:element name="CountryCode" type="smp:String3Type" />
+  <xs:element name="CityCode" type="smp:String3Type" />
+  <xs:element name="HotelCode" type="smp:String4Type" />
+  <xs:element name="CountryRegionCode" type="smp:String3Type" />
+  <xs:element name="CityAreaCode" type="smp:String3Type" />
+  <xs:element name="CheckInDate" type="xs:dateTime" />
+  <xs:element name="CheckOutDate" type="xs:dateTime" />
+  <xs:element name="Location" type="smp:String3Type" />
+  <xs:element name="MultipleHotelCodes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="HotelCode" type="smp:String4Type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MultiStarsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="MultiStarRequest" type="smp:String3Type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RoomData">
+    <xs:complexType>
+      <xs:attribute name="SingleRoom" type="smp:Int2PositiveType" />
+      <xs:attribute name="DoubleRoom" type="smp:Int2PositiveType" />
+      <xs:attribute name="TripleRoom" type="smp:Int2PositiveType" />
+      <xs:attribute name="QuadRoom" type="smp:Int2PositiveType" />
+      <xs:attribute name="ChildRoom" type="smp:Int2PositiveType" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestCriteria">
+    <xs:complexType>
+      <xs:attribute name="StarRating" type="smp:String11Type" />
+      <xs:attribute name="Budget" type="xs:float" />
+      <xs:attribute name="StartingNo" type="smp:Int3PositiveType" />
+      <xs:attribute name="EndingNo" type="smp:Int3PositiveType" />
+      <xs:attribute default="low" name="SortingOrder">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="low" />
+            <xs:enumeration value="high" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute default="yes" name="ReturnRequestedAllRoomTypes" type="smp:YesNoType" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AdditionalData">
+    <xs:complexType>
+      <xs:attribute default="no" name="NeedTotalNoOfHotels" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedAvailableHotelsOnly" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedReductionAmount" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedHotelMessages" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedFreeNightDetail" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedHotelAddress" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedTelephoneNo" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedFaxNo" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedBedPicture" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedMapPicture" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedEmail" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedPicture" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedAmenity" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedHotelDescription" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedHotelCity" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedArrivalPointMain" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedArrivalPointOther" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedGeoCodes" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedHotelProperties" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedLocation" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedCityArea" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedEnglishText" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedCancellationDetails" type="smp:YesNoType" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

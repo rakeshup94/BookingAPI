@@ -1,0 +1,971 @@
+﻿XML OUT (B2B) for caa394b9-c725-4a71-9b55-e1ab5fad5939 at: 16/01/2019 06:31:18 PM
+16/01/2019 06:31:18 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for caa394b9-c725-4a71-9b55-e1ab5fad5939 at: 16/01/2019 06:31:58 PM
+XML OUT end for caa394b9-c725-4a71-9b55-e1ab5fad5939 at: 16/01/2019 06:31:58 PM
+Process Start giata for caa394b9-c725-4a71-9b55-e1ab5fad5939 at: 16/01/2019 06:31:58 PM
+DataBase Record Fetch start from  giata for caa394b9-c725-4a71-9b55-e1ab5fad5939 at: 16/01/2019 06:31:58 PM
+DataBase Record Fetch end from  giata for caa394b9-c725-4a71-9b55-e1ab5fad5939 at: 16/01/2019 06:31:58 PM
+Response start from  giata for caa394b9-c725-4a71-9b55-e1ab5fad5939 at: 16/01/2019 06:31:58 PM
+Response End from  giata for caa394b9-c725-4a71-9b55-e1ab5fad5939 at: 16/01/2019 06:31:58 PM
+XML OUT (B2B) for 763894b2-21e5-41bb-b46b-c87c90812be1-s1 at: 31/01/2019 12:56:49 PM
+31/01/2019 12:56:49 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 763894b2-21e5-41bb-b46b-c87c90812be1-s1 at: 31/01/2019 12:56:59 PM
+XML OUT end for 763894b2-21e5-41bb-b46b-c87c90812be1-s1 at: 31/01/2019 12:56:59 PM
+Process Start giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s1 at: 31/01/2019 01:02:51 PM
+DataBase Record Fetch start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s1 at: 31/01/2019 01:02:56 PM
+DataBase Record Fetch end from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s1 at: 31/01/2019 01:03:05 PM
+XML OUT (B2B) for 763894b2-21e5-41bb-b46b-c87c90812be1-s2 at: 31/01/2019 01:05:56 PM
+31/01/2019 01:05:56 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 763894b2-21e5-41bb-b46b-c87c90812be1-s2 at: 31/01/2019 01:06:01 PM
+XML OUT end for 763894b2-21e5-41bb-b46b-c87c90812be1-s2 at: 31/01/2019 01:06:01 PM
+Process Start giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s2 at: 31/01/2019 01:08:37 PM
+DataBase Record Fetch start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s2 at: 31/01/2019 01:08:51 PM
+DataBase Record Fetch end from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s2 at: 31/01/2019 01:09:12 PM
+Response start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s2 at: 31/01/2019 01:14:48 PM
+Response End from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s2 at: 31/01/2019 01:21:45 PM
+XML OUT (B2B) for 763894b2-21e5-41bb-b46b-c87c90812be1-s3 at: 31/01/2019 01:27:02 PM
+31/01/2019 01:27:02 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 763894b2-21e5-41bb-b46b-c87c90812be1-s3 at: 31/01/2019 01:27:10 PM
+XML OUT end for 763894b2-21e5-41bb-b46b-c87c90812be1-s3 at: 31/01/2019 01:27:10 PM
+Process Start giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s3 at: 31/01/2019 01:27:16 PM
+DataBase Record Fetch start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s3 at: 31/01/2019 01:27:17 PM
+DataBase Record Fetch end from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s3 at: 31/01/2019 01:27:19 PM
+Response start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s3 at: 31/01/2019 01:28:35 PM
+XML OUT (B2B) for 763894b2-21e5-41bb-b46b-c87c90812be1-s4 at: 31/01/2019 01:34:05 PM
+31/01/2019 01:34:05 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 763894b2-21e5-41bb-b46b-c87c90812be1-s4 at: 31/01/2019 01:34:13 PM
+XML OUT end for 763894b2-21e5-41bb-b46b-c87c90812be1-s4 at: 31/01/2019 01:34:13 PM
+Process Start giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s4 at: 31/01/2019 01:34:16 PM
+DataBase Record Fetch start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s4 at: 31/01/2019 01:34:16 PM
+DataBase Record Fetch end from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s4 at: 31/01/2019 01:34:18 PM
+Response start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s4 at: 31/01/2019 01:34:24 PM
+XML OUT (B2B) for 763894b2-21e5-41bb-b46b-c87c90812be1-s5 at: 31/01/2019 01:59:20 PM
+31/01/2019 01:59:20 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 763894b2-21e5-41bb-b46b-c87c90812be1-s5 at: 31/01/2019 01:59:29 PM
+XML OUT end for 763894b2-21e5-41bb-b46b-c87c90812be1-s5 at: 31/01/2019 01:59:29 PM
+Process Start giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s5 at: 31/01/2019 01:59:49 PM
+DataBase Record Fetch start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s5 at: 31/01/2019 01:59:52 PM
+DataBase Record Fetch end from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s5 at: 31/01/2019 01:59:59 PM
+Response start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s5 at: 31/01/2019 02:01:09 PM
+XML OUT (B2B) for 763894b2-21e5-41bb-b46b-c87c90812be1-s6 at: 31/01/2019 02:48:48 PM
+31/01/2019 02:48:48 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 763894b2-21e5-41bb-b46b-c87c90812be1-s6 at: 31/01/2019 02:49:01 PM
+XML OUT end for 763894b2-21e5-41bb-b46b-c87c90812be1-s6 at: 31/01/2019 02:49:01 PM
+Process Start giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s6 at: 31/01/2019 02:49:30 PM
+DataBase Record Fetch start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s6 at: 31/01/2019 02:49:41 PM
+DataBase Record Fetch end from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s6 at: 31/01/2019 02:49:49 PM
+Response start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s6 at: 31/01/2019 02:50:00 PM
+XML OUT (B2B) for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:14:11 PM
+31/01/2019 03:14:11 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:14:29 PM
+XML OUT end for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:14:29 PM
+Process Start giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:14:30 PM
+DataBase Record Fetch start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:14:30 PM
+DataBase Record Fetch end from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:14:38 PM
+Response start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:14:40 PM
+XML OUT (B2B) for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:17:09 PM
+31/01/2019 03:17:09 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:17:17 PM
+XML OUT end for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:17:17 PM
+Process Start giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:17:27 PM
+DataBase Record Fetch start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:17:27 PM
+DataBase Record Fetch end from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:17:31 PM
+Response start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:17:32 PM
+XML OUT (B2B) for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:20:49 PM
+31/01/2019 03:20:49 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:20:55 PM
+XML OUT end for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:20:55 PM
+Process Start giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:20:58 PM
+DataBase Record Fetch start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:20:58 PM
+DataBase Record Fetch end from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:21:03 PM
+Response start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:21:05 PM
+XML OUT (B2B) for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:23:12 PM
+31/01/2019 03:23:12 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:23:18 PM
+XML OUT end for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:23:18 PM
+Process Start giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:23:19 PM
+DataBase Record Fetch start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:23:19 PM
+DataBase Record Fetch end from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:23:26 PM
+Response start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s7 at: 31/01/2019 03:23:30 PM
+XML OUT (B2B) for 763894b2-21e5-41bb-b46b-c87c90812be1-s8 at: 31/01/2019 03:27:23 PM
+31/01/2019 03:27:23 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 763894b2-21e5-41bb-b46b-c87c90812be1-s8 at: 31/01/2019 03:27:28 PM
+XML OUT end for 763894b2-21e5-41bb-b46b-c87c90812be1-s8 at: 31/01/2019 03:27:28 PM
+Process Start giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s8 at: 31/01/2019 03:27:32 PM
+DataBase Record Fetch start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s8 at: 31/01/2019 03:27:32 PM
+DataBase Record Fetch end from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s8 at: 31/01/2019 03:27:37 PM
+Response start from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s8 at: 31/01/2019 03:27:46 PM
+Response End from  giata for 763894b2-21e5-41bb-b46b-c87c90812be1-s8 at: 31/01/2019 03:28:01 PM
+XML OUT (B2B) for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s1 at: 01/02/2019 04:33:50 PM
+01/02/2019 04:33:50 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s1 at: 01/02/2019 04:34:28 PM
+XML OUT end for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s1 at: 01/02/2019 04:34:28 PM
+Process Start giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s1 at: 01/02/2019 04:34:30 PM
+DataBase Record Fetch start from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s1 at: 01/02/2019 04:34:30 PM
+DataBase Record Fetch end from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s1 at: 01/02/2019 04:34:31 PM
+Response start from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s1 at: 01/02/2019 04:34:34 PM
+Response End from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s1 at: 01/02/2019 04:34:40 PM
+XML OUT (B2B) for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s2 at: 01/02/2019 04:34:52 PM
+01/02/2019 04:34:52 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s2 at: 01/02/2019 04:35:04 PM
+XML OUT end for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s2 at: 01/02/2019 04:35:04 PM
+Process Start giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s2 at: 01/02/2019 04:35:05 PM
+DataBase Record Fetch start from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s2 at: 01/02/2019 04:35:05 PM
+DataBase Record Fetch end from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s2 at: 01/02/2019 04:35:05 PM
+Response start from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s2 at: 01/02/2019 04:35:06 PM
+Response End from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s2 at: 01/02/2019 04:35:06 PM
+XML OUT (B2B) for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s3 at: 01/02/2019 04:35:30 PM
+01/02/2019 04:35:30 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s3 at: 01/02/2019 04:35:43 PM
+XML OUT end for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s3 at: 01/02/2019 04:35:43 PM
+Process Start giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s3 at: 01/02/2019 04:35:47 PM
+DataBase Record Fetch start from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s3 at: 01/02/2019 04:35:47 PM
+DataBase Record Fetch end from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s3 at: 01/02/2019 04:35:48 PM
+Response start from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s3 at: 01/02/2019 04:35:49 PM
+Response End from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s3 at: 01/02/2019 04:35:49 PM
+XML OUT (B2B) for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s4 at: 01/02/2019 04:36:08 PM
+01/02/2019 04:36:08 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s4 at: 01/02/2019 04:36:19 PM
+XML OUT end for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s4 at: 01/02/2019 04:36:19 PM
+Process Start giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s4 at: 01/02/2019 04:36:22 PM
+DataBase Record Fetch start from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s4 at: 01/02/2019 04:36:22 PM
+DataBase Record Fetch end from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s4 at: 01/02/2019 04:36:22 PM
+Response start from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s4 at: 01/02/2019 04:36:22 PM
+Response End from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s4 at: 01/02/2019 04:36:22 PM
+XML OUT (B2B) for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s5 at: 01/02/2019 04:36:36 PM
+01/02/2019 04:36:36 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s5 at: 01/02/2019 04:36:45 PM
+XML OUT end for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s5 at: 01/02/2019 04:36:45 PM
+Process Start giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s5 at: 01/02/2019 04:36:45 PM
+DataBase Record Fetch start from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s5 at: 01/02/2019 04:36:45 PM
+DataBase Record Fetch end from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s5 at: 01/02/2019 04:36:45 PM
+Response start from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s5 at: 01/02/2019 04:36:45 PM
+Response End from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s5 at: 01/02/2019 04:36:45 PM
+XML OUT (B2B) for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s6 at: 01/02/2019 04:38:18 PM
+01/02/2019 04:38:18 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s6 at: 01/02/2019 04:38:29 PM
+XML OUT end for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s6 at: 01/02/2019 04:38:29 PM
+Process Start giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s6 at: 01/02/2019 04:38:29 PM
+DataBase Record Fetch start from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s6 at: 01/02/2019 04:38:29 PM
+DataBase Record Fetch end from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s6 at: 01/02/2019 04:38:30 PM
+Response start from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s6 at: 01/02/2019 04:38:30 PM
+Response End from  giata for 423685ba-70ca-43a2-8b34-e1ebab8147ef-s6 at: 01/02/2019 04:38:30 PM
+XML OUT (B2B) for 817eee95-4935-4845-b515-850b0202ae3c-s1 at: 01/02/2019 04:41:52 PM
+01/02/2019 04:41:52 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 817eee95-4935-4845-b515-850b0202ae3c-s1 at: 01/02/2019 04:42:04 PM
+XML OUT end for 817eee95-4935-4845-b515-850b0202ae3c-s1 at: 01/02/2019 04:42:04 PM
+Process Start giata for 817eee95-4935-4845-b515-850b0202ae3c-s1 at: 01/02/2019 04:42:04 PM
+DataBase Record Fetch start from  giata for 817eee95-4935-4845-b515-850b0202ae3c-s1 at: 01/02/2019 04:42:04 PM
+DataBase Record Fetch end from  giata for 817eee95-4935-4845-b515-850b0202ae3c-s1 at: 01/02/2019 04:42:04 PM
+Response start from  giata for 817eee95-4935-4845-b515-850b0202ae3c-s1 at: 01/02/2019 04:42:04 PM
+Response End from  giata for 817eee95-4935-4845-b515-850b0202ae3c-s1 at: 01/02/2019 04:42:04 PM
+XML OUT (B2B) for 6864a362-6e3c-4d16-81df-02bbef55c408-s1 at: 05/02/2019 01:57:13 PM
+05/02/2019 01:57:13 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 6864a362-6e3c-4d16-81df-02bbef55c408-s1 at: 05/02/2019 01:57:44 PM
+XML OUT end for 6864a362-6e3c-4d16-81df-02bbef55c408-s1 at: 05/02/2019 01:57:44 PM
+Process Start giata for 6864a362-6e3c-4d16-81df-02bbef55c408-s1 at: 05/02/2019 01:57:44 PM
+DataBase Record Fetch start from  giata for 6864a362-6e3c-4d16-81df-02bbef55c408-s1 at: 05/02/2019 01:57:44 PM
+DataBase Record Fetch end from  giata for 6864a362-6e3c-4d16-81df-02bbef55c408-s1 at: 05/02/2019 01:57:44 PM
+Response start from  giata for 6864a362-6e3c-4d16-81df-02bbef55c408-s1 at: 05/02/2019 01:57:44 PM
+Response End from  giata for 6864a362-6e3c-4d16-81df-02bbef55c408-s1 at: 05/02/2019 01:57:44 PM
+XML OUT (B2B) for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s1 at: 19/02/2019 05:56:56 PM
+19/02/2019 05:56:56 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT (B2B) for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s2 at: 19/02/2019 05:59:59 PM
+19/02/2019 05:59:59 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s2 at: 19/02/2019 06:00:39 PM
+XML OUT end for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s2 at: 19/02/2019 06:00:39 PM
+Process Start giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s2 at: 19/02/2019 06:00:39 PM
+DataBase Record Fetch start from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s2 at: 19/02/2019 06:00:39 PM
+DataBase Record Fetch end from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s2 at: 19/02/2019 06:00:40 PM
+Response start from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s2 at: 19/02/2019 06:00:40 PM
+Response End from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s2 at: 19/02/2019 06:00:40 PM
+XML OUT (B2B) for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s3 at: 19/02/2019 06:03:21 PM
+19/02/2019 06:03:21 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s3 at: 19/02/2019 06:04:14 PM
+XML OUT end for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s3 at: 19/02/2019 06:04:14 PM
+Process Start giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s3 at: 19/02/2019 06:04:14 PM
+DataBase Record Fetch start from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s3 at: 19/02/2019 06:04:14 PM
+DataBase Record Fetch end from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s3 at: 19/02/2019 06:04:14 PM
+Response start from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s3 at: 19/02/2019 06:04:14 PM
+Response End from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s3 at: 19/02/2019 06:04:14 PM
+XML OUT (B2B) for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s4 at: 19/02/2019 06:07:06 PM
+19/02/2019 06:07:06 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s4 at: 19/02/2019 06:08:19 PM
+XML OUT end for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s4 at: 19/02/2019 06:08:19 PM
+Process Start giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s4 at: 19/02/2019 06:08:19 PM
+DataBase Record Fetch start from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s4 at: 19/02/2019 06:08:19 PM
+DataBase Record Fetch end from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s4 at: 19/02/2019 06:08:20 PM
+Response start from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s4 at: 19/02/2019 06:08:20 PM
+Response End from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s4 at: 19/02/2019 06:08:20 PM
+XML OUT (B2B) for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s5 at: 19/02/2019 06:15:27 PM
+19/02/2019 06:15:27 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s5 at: 19/02/2019 06:16:23 PM
+XML OUT end for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s5 at: 19/02/2019 06:16:23 PM
+Process Start giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s5 at: 19/02/2019 06:16:23 PM
+DataBase Record Fetch start from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s5 at: 19/02/2019 06:16:23 PM
+DataBase Record Fetch end from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s5 at: 19/02/2019 06:16:24 PM
+Response start from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s5 at: 19/02/2019 06:16:24 PM
+Response End from  giata for 3785b3bb-0e54-4c62-aacd-5edb8cddda3b-s5 at: 19/02/2019 06:16:24 PM
+XML OUT start for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s1 at: 22/02/2019 10:19:46 AM
+XML OUT end for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s1 at: 22/02/2019 10:19:47 AM
+Process Start giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s1 at: 22/02/2019 10:19:53 AM
+DataBase Record Fetch start from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s1 at: 22/02/2019 10:19:54 AM
+DataBase Record Fetch end from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s1 at: 22/02/2019 10:19:54 AM
+Response start from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s1 at: 22/02/2019 10:19:55 AM
+Response End from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s1 at: 22/02/2019 10:19:55 AM
+XML OUT start for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s2 at: 22/02/2019 10:23:07 AM
+XML OUT end for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s2 at: 22/02/2019 10:23:07 AM
+Process Start giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s2 at: 22/02/2019 10:23:07 AM
+DataBase Record Fetch start from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s2 at: 22/02/2019 10:23:07 AM
+DataBase Record Fetch end from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s2 at: 22/02/2019 10:23:22 AM
+Response start from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s2 at: 22/02/2019 10:23:22 AM
+Response End from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s2 at: 22/02/2019 10:23:22 AM
+XML OUT start for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s3 at: 22/02/2019 10:25:59 AM
+XML OUT end for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s3 at: 22/02/2019 10:25:59 AM
+Process Start giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s3 at: 22/02/2019 10:26:00 AM
+DataBase Record Fetch start from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s3 at: 22/02/2019 10:26:00 AM
+DataBase Record Fetch end from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s3 at: 22/02/2019 10:26:00 AM
+Response start from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s3 at: 22/02/2019 10:26:01 AM
+Response End from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s3 at: 22/02/2019 10:26:01 AM
+XML OUT start for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s4 at: 22/02/2019 10:28:37 AM
+XML OUT end for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s4 at: 22/02/2019 10:28:37 AM
+Process Start giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s4 at: 22/02/2019 10:28:37 AM
+DataBase Record Fetch start from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s4 at: 22/02/2019 10:28:37 AM
+DataBase Record Fetch end from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s4 at: 22/02/2019 10:28:37 AM
+Response start from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s4 at: 22/02/2019 10:28:37 AM
+Response End from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s4 at: 22/02/2019 10:28:37 AM
+XML OUT start for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s5 at: 22/02/2019 10:57:29 AM
+XML OUT end for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s5 at: 22/02/2019 10:57:29 AM
+Process Start giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s5 at: 22/02/2019 10:57:43 AM
+DataBase Record Fetch start from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s5 at: 22/02/2019 10:57:43 AM
+DataBase Record Fetch end from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s5 at: 22/02/2019 10:57:46 AM
+Response start from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s5 at: 22/02/2019 10:57:48 AM
+Response End from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s5 at: 22/02/2019 10:57:48 AM
+XML OUT start for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s6 at: 22/02/2019 11:14:45 AM
+XML OUT end for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s6 at: 22/02/2019 11:14:45 AM
+Process Start giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s6 at: 22/02/2019 11:14:45 AM
+DataBase Record Fetch start from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s6 at: 22/02/2019 11:14:45 AM
+DataBase Record Fetch end from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s6 at: 22/02/2019 11:14:45 AM
+Response start from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s6 at: 22/02/2019 11:14:45 AM
+Response End from  giata for 7144c2bf-8f3d-4175-b2a2-1c878c4c8cf9-s6 at: 22/02/2019 11:14:45 AM
+Booking for 43df2d23-f3cf-44f0-a893-43a007e6ea70 at: 06/03/2019 04:31:32 PM
+06/03/2019 04:31:32 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 43df2d23-f3cf-44f0-a893-43a007e6ea70 at: 06/03/2019 04:40:39 PM
+06/03/2019 04:40:39 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 90906140-0bd8-45c6-8e77-08e2a5040dd4 at: 06/03/2019 06:50:27 PM
+06/03/2019 06:50:27 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 90906140-0bd8-45c6-8e77-08e2a5040dd4 at: 06/03/2019 06:50:58 PM
+06/03/2019 06:50:58 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 90906140-0bd8-45c6-8e77-08e2a5040dd4 at: 06/03/2019 06:53:27 PM
+06/03/2019 06:53:27 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s1 at: 19/03/2019 02:19:22 PM
+XML OUT end for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s1 at: 19/03/2019 02:19:22 PM
+Process Start giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s1 at: 19/03/2019 02:19:22 PM
+DataBase Record Fetch start from  giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s1 at: 19/03/2019 02:19:22 PM
+DataBase Record Fetch end from  giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s1 at: 19/03/2019 02:19:23 PM
+Response start from  giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s1 at: 19/03/2019 02:19:23 PM
+Response End from  giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s1 at: 19/03/2019 02:19:23 PM
+XML OUT start for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s2 at: 19/03/2019 02:20:57 PM
+XML OUT end for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s2 at: 19/03/2019 02:20:57 PM
+Process Start giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s2 at: 19/03/2019 02:20:57 PM
+DataBase Record Fetch start from  giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s2 at: 19/03/2019 02:20:57 PM
+DataBase Record Fetch end from  giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s2 at: 19/03/2019 02:20:57 PM
+Response start from  giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s2 at: 19/03/2019 02:20:57 PM
+Response End from  giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s2 at: 19/03/2019 02:20:57 PM
+XML OUT start for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s3 at: 19/03/2019 02:22:38 PM
+XML OUT end for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s3 at: 19/03/2019 02:22:38 PM
+Process Start giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s3 at: 19/03/2019 02:22:38 PM
+DataBase Record Fetch start from  giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s3 at: 19/03/2019 02:22:38 PM
+DataBase Record Fetch end from  giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s3 at: 19/03/2019 02:22:39 PM
+Response start from  giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s3 at: 19/03/2019 02:22:39 PM
+Response End from  giata for 1d316b16-1cf2-4f29-9c78-c1f5e6afc2ef-s3 at: 19/03/2019 02:22:39 PM
+XML OUT start for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s5 at: 22/03/2019 12:48:58 PM
+XML OUT end for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s5 at: 22/03/2019 12:48:58 PM
+Process Start giata for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s5 at: 22/03/2019 12:48:58 PM
+Response start from  giata for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s5 at: 22/03/2019 12:48:58 PM
+Response End from  giata for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s5 at: 22/03/2019 12:48:58 PM
+XML OUT start for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s6 at: 22/03/2019 12:50:08 PM
+XML OUT end for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s6 at: 22/03/2019 12:50:08 PM
+Process Start giata for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s6 at: 22/03/2019 12:50:08 PM
+Response start from  giata for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s6 at: 22/03/2019 12:50:08 PM
+Response End from  giata for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s6 at: 22/03/2019 12:50:08 PM
+XML OUT start for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s7 at: 22/03/2019 12:51:34 PM
+XML OUT end for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s7 at: 22/03/2019 12:51:34 PM
+Process Start giata for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s7 at: 22/03/2019 12:51:34 PM
+Response start from  giata for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s7 at: 22/03/2019 12:51:35 PM
+Response End from  giata for f281ed7c-7b37-4b14-a110-2f1b153afbcf-s7 at: 22/03/2019 12:51:35 PM
+Booking for 76af81d9-8cd6-4123-8997-e6153ce6991b at: 29/03/2019 01:40:24 PM
+29/03/2019 01:40:24 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 76af81d9-8cd6-4123-8997-e6153ce6991b at: 29/03/2019 01:42:15 PM
+29/03/2019 01:42:15 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for fb528aee-1e64-4e72-bfd9-f31edc0d3182 at: 02/04/2019 01:59:12 PM
+02/04/2019 01:59:12 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 2ce726fc-8ac4-4a83-a25a-5c5eae8b28bf-s1 at: 16/04/2019 12:23:09 PM
+XML OUT end for 2ce726fc-8ac4-4a83-a25a-5c5eae8b28bf-s1 at: 16/04/2019 12:23:09 PM
+Process Start giata for 2ce726fc-8ac4-4a83-a25a-5c5eae8b28bf-s1 at: 16/04/2019 12:23:09 PM
+DataBase Record Fetch start from  giata for 2ce726fc-8ac4-4a83-a25a-5c5eae8b28bf-s1 at: 16/04/2019 12:23:09 PM
+DataBase Record Fetch end from  giata for 2ce726fc-8ac4-4a83-a25a-5c5eae8b28bf-s1 at: 16/04/2019 12:23:10 PM
+Response start from  giata for 2ce726fc-8ac4-4a83-a25a-5c5eae8b28bf-s1 at: 16/04/2019 12:23:10 PM
+Response End from  giata for 2ce726fc-8ac4-4a83-a25a-5c5eae8b28bf-s1 at: 16/04/2019 12:23:11 PM
+XML OUT start for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:55:27 PM
+XML OUT end for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:55:27 PM
+Process Start giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:55:27 PM
+DataBase Record Fetch start from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:55:27 PM
+DataBase Record Fetch end from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:55:27 PM
+Response start from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:55:27 PM
+Response End from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:55:28 PM
+XML OUT start for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:57:17 PM
+XML OUT end for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:57:19 PM
+Process Start giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:57:19 PM
+DataBase Record Fetch start from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:57:19 PM
+DataBase Record Fetch end from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:57:30 PM
+Response start from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:57:43 PM
+Response End from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s1 at: 30/05/2019 05:57:45 PM
+XML OUT start for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s2 at: 30/05/2019 05:59:03 PM
+XML OUT end for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s2 at: 30/05/2019 05:59:03 PM
+Process Start giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s2 at: 30/05/2019 05:59:03 PM
+DataBase Record Fetch start from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s2 at: 30/05/2019 05:59:03 PM
+DataBase Record Fetch end from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s2 at: 30/05/2019 05:59:03 PM
+Response start from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s2 at: 30/05/2019 05:59:03 PM
+Response End from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s2 at: 30/05/2019 05:59:03 PM
+XML OUT start for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 05:59:44 PM
+XML OUT end for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 05:59:44 PM
+Process Start giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 05:59:44 PM
+DataBase Record Fetch start from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 05:59:44 PM
+DataBase Record Fetch end from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 05:59:44 PM
+Response start from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 05:59:44 PM
+Response End from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 05:59:44 PM
+XML OUT start for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 06:01:48 PM
+XML OUT end for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 06:01:48 PM
+Process Start giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 06:01:48 PM
+DataBase Record Fetch start from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 06:01:48 PM
+DataBase Record Fetch end from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 06:01:48 PM
+Response start from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 06:01:48 PM
+Response End from  giata for 99f232db-8e3b-4716-b95e-40a6e9639ed4-s3 at: 30/05/2019 06:01:48 PM
+XML OUT start for f5eb8089-1440-490e-90ff-d231ad01bd90-s1 at: 10/06/2019 04:29:53 PM
+XML OUT end for f5eb8089-1440-490e-90ff-d231ad01bd90-s1 at: 10/06/2019 04:29:54 PM
+Process Start giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s1 at: 10/06/2019 04:29:56 PM
+DataBase Record Fetch start from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s1 at: 10/06/2019 04:30:01 PM
+DataBase Record Fetch end from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s1 at: 10/06/2019 04:30:01 PM
+Response start from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s1 at: 10/06/2019 04:30:01 PM
+Response End from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s1 at: 10/06/2019 04:30:01 PM
+XML OUT start for f5eb8089-1440-490e-90ff-d231ad01bd90-s2 at: 10/06/2019 04:30:39 PM
+XML OUT end for f5eb8089-1440-490e-90ff-d231ad01bd90-s2 at: 10/06/2019 04:30:39 PM
+Process Start giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s2 at: 10/06/2019 04:30:39 PM
+DataBase Record Fetch start from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s2 at: 10/06/2019 04:30:39 PM
+DataBase Record Fetch end from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s2 at: 10/06/2019 04:30:39 PM
+Response start from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s2 at: 10/06/2019 04:30:39 PM
+Response End from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s2 at: 10/06/2019 04:30:39 PM
+XML OUT start for f5eb8089-1440-490e-90ff-d231ad01bd90-s3 at: 10/06/2019 04:31:07 PM
+XML OUT end for f5eb8089-1440-490e-90ff-d231ad01bd90-s3 at: 10/06/2019 04:31:07 PM
+Process Start giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s3 at: 10/06/2019 04:31:07 PM
+DataBase Record Fetch start from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s3 at: 10/06/2019 04:31:07 PM
+DataBase Record Fetch end from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s3 at: 10/06/2019 04:31:08 PM
+Response start from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s3 at: 10/06/2019 04:31:08 PM
+Response End from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s3 at: 10/06/2019 04:31:08 PM
+XML OUT start for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:31:32 PM
+XML OUT end for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:31:32 PM
+Process Start giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:31:32 PM
+DataBase Record Fetch start from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:31:32 PM
+DataBase Record Fetch end from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:31:32 PM
+Response start from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:31:32 PM
+Response End from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:31:32 PM
+XML OUT start for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:32:23 PM
+XML OUT end for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:32:23 PM
+Process Start giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:32:23 PM
+DataBase Record Fetch start from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:32:23 PM
+DataBase Record Fetch end from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:32:23 PM
+Response start from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:32:23 PM
+Response End from  giata for f5eb8089-1440-490e-90ff-d231ad01bd90-s4 at: 10/06/2019 04:32:23 PM
+XML OUT start for ebcc7989-4dc8-4ec7-97ee-45c8b1b17d08-s1 at: 10/06/2019 06:00:07 PM
+XML OUT end for ebcc7989-4dc8-4ec7-97ee-45c8b1b17d08-s1 at: 10/06/2019 06:00:07 PM
+Process Start giata for ebcc7989-4dc8-4ec7-97ee-45c8b1b17d08-s1 at: 10/06/2019 06:00:07 PM
+DataBase Record Fetch start from  giata for ebcc7989-4dc8-4ec7-97ee-45c8b1b17d08-s1 at: 10/06/2019 06:00:07 PM
+DataBase Record Fetch end from  giata for ebcc7989-4dc8-4ec7-97ee-45c8b1b17d08-s1 at: 10/06/2019 06:00:07 PM
+Response start from  giata for ebcc7989-4dc8-4ec7-97ee-45c8b1b17d08-s1 at: 10/06/2019 06:00:07 PM
+Response End from  giata for ebcc7989-4dc8-4ec7-97ee-45c8b1b17d08-s1 at: 10/06/2019 06:00:07 PM
+XML OUT start for 9716c46e-67b1-46e3-9766-6263997bf5f0-s1 at: 08/07/2019 12:16:08 PM
+XML OUT end for 9716c46e-67b1-46e3-9766-6263997bf5f0-s1 at: 08/07/2019 12:16:16 PM
+Process Start giata for 9716c46e-67b1-46e3-9766-6263997bf5f0-s1 at: 08/07/2019 12:16:17 PM
+DataBase Record Fetch start from  giata for 9716c46e-67b1-46e3-9766-6263997bf5f0-s1 at: 08/07/2019 12:16:17 PM
+XML OUT start for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s1 at: 10/07/2019 04:06:00 PM
+XML OUT end for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s1 at: 10/07/2019 04:06:00 PM
+Process Start giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s1 at: 10/07/2019 04:06:14 PM
+DataBase Record Fetch start from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s1 at: 10/07/2019 04:06:18 PM
+DataBase Record Fetch end from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s1 at: 10/07/2019 04:06:35 PM
+Response start from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s1 at: 10/07/2019 04:06:45 PM
+XML OUT start for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s2 at: 10/07/2019 04:14:25 PM
+XML OUT end for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s2 at: 10/07/2019 04:14:25 PM
+Process Start giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s2 at: 10/07/2019 04:14:36 PM
+DataBase Record Fetch start from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s2 at: 10/07/2019 04:14:36 PM
+DataBase Record Fetch end from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s2 at: 10/07/2019 04:14:45 PM
+Response start from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s2 at: 10/07/2019 04:14:45 PM
+XML OUT start for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s3 at: 10/07/2019 04:17:29 PM
+XML OUT end for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s3 at: 10/07/2019 04:17:29 PM
+Process Start giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s3 at: 10/07/2019 04:17:35 PM
+DataBase Record Fetch start from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s3 at: 10/07/2019 04:17:35 PM
+DataBase Record Fetch end from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s3 at: 10/07/2019 04:17:57 PM
+Response start from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s3 at: 10/07/2019 04:17:57 PM
+Response End from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s3 at: 10/07/2019 04:17:57 PM
+XML OUT start for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s4 at: 10/07/2019 05:56:09 PM
+XML OUT end for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s4 at: 10/07/2019 05:56:09 PM
+Process Start giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s4 at: 10/07/2019 05:56:12 PM
+DataBase Record Fetch start from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s4 at: 10/07/2019 05:56:12 PM
+DataBase Record Fetch end from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s4 at: 10/07/2019 05:56:18 PM
+Response start from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s4 at: 10/07/2019 05:56:18 PM
+Response End from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s4 at: 10/07/2019 05:56:18 PM
+XML OUT start for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s5 at: 10/07/2019 05:58:02 PM
+XML OUT end for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s5 at: 10/07/2019 05:58:02 PM
+Process Start giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s5 at: 10/07/2019 05:58:22 PM
+DataBase Record Fetch start from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s5 at: 10/07/2019 05:58:22 PM
+DataBase Record Fetch end from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s5 at: 10/07/2019 05:58:34 PM
+Response start from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s5 at: 10/07/2019 05:58:34 PM
+Response End from  giata for f3a2c3c3-4a5a-4a50-a1fb-9fd8c177dd3c-s5 at: 10/07/2019 05:58:34 PM
+XML OUT start for b5633d52-ad53-443a-a1d8-593406d3149c-s1 at: 10/07/2019 06:04:55 PM
+XML OUT end for b5633d52-ad53-443a-a1d8-593406d3149c-s1 at: 10/07/2019 06:04:55 PM
+Process Start giata for b5633d52-ad53-443a-a1d8-593406d3149c-s1 at: 10/07/2019 06:04:56 PM
+DataBase Record Fetch start from  giata for b5633d52-ad53-443a-a1d8-593406d3149c-s1 at: 10/07/2019 06:04:56 PM
+DataBase Record Fetch end from  giata for b5633d52-ad53-443a-a1d8-593406d3149c-s1 at: 10/07/2019 06:05:04 PM
+Response start from  giata for b5633d52-ad53-443a-a1d8-593406d3149c-s1 at: 10/07/2019 06:05:04 PM
+Response End from  giata for b5633d52-ad53-443a-a1d8-593406d3149c-s1 at: 10/07/2019 06:05:04 PM
+XML OUT start for b5633d52-ad53-443a-a1d8-593406d3149c-s2 at: 10/07/2019 06:05:48 PM
+XML OUT end for b5633d52-ad53-443a-a1d8-593406d3149c-s2 at: 10/07/2019 06:05:48 PM
+Process Start giata for b5633d52-ad53-443a-a1d8-593406d3149c-s2 at: 10/07/2019 06:05:49 PM
+DataBase Record Fetch start from  giata for b5633d52-ad53-443a-a1d8-593406d3149c-s2 at: 10/07/2019 06:05:49 PM
+DataBase Record Fetch end from  giata for b5633d52-ad53-443a-a1d8-593406d3149c-s2 at: 10/07/2019 06:05:57 PM
+Response start from  giata for b5633d52-ad53-443a-a1d8-593406d3149c-s2 at: 10/07/2019 06:05:57 PM
+Response End from  giata for b5633d52-ad53-443a-a1d8-593406d3149c-s2 at: 10/07/2019 06:05:57 PM
+XML OUT start for e9887d09-160f-47dd-925a-df9452e2930f-s3 at: 15/07/2019 11:18:16 AM
+XML OUT end for e9887d09-160f-47dd-925a-df9452e2930f-s3 at: 15/07/2019 11:18:16 AM
+Process Start giata for e9887d09-160f-47dd-925a-df9452e2930f-s3 at: 15/07/2019 11:18:18 AM
+DataBase Record Fetch start from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s3 at: 15/07/2019 11:18:18 AM
+DataBase Record Fetch end from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s3 at: 15/07/2019 11:18:18 AM
+Response start from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s3 at: 15/07/2019 11:18:18 AM
+Response End from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s3 at: 15/07/2019 11:18:18 AM
+XML OUT start for e9887d09-160f-47dd-925a-df9452e2930f-s4 at: 15/07/2019 11:20:36 AM
+XML OUT end for e9887d09-160f-47dd-925a-df9452e2930f-s4 at: 15/07/2019 11:20:36 AM
+Process Start giata for e9887d09-160f-47dd-925a-df9452e2930f-s4 at: 15/07/2019 11:20:37 AM
+DataBase Record Fetch start from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s4 at: 15/07/2019 11:20:37 AM
+DataBase Record Fetch end from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s4 at: 15/07/2019 11:20:37 AM
+Response start from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s4 at: 15/07/2019 11:20:37 AM
+Response End from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s4 at: 15/07/2019 11:20:38 AM
+XML OUT start for e9887d09-160f-47dd-925a-df9452e2930f-s5 at: 15/07/2019 11:23:39 AM
+XML OUT end for e9887d09-160f-47dd-925a-df9452e2930f-s5 at: 15/07/2019 11:23:39 AM
+Process Start giata for e9887d09-160f-47dd-925a-df9452e2930f-s5 at: 15/07/2019 11:23:39 AM
+DataBase Record Fetch start from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s5 at: 15/07/2019 11:23:39 AM
+DataBase Record Fetch end from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s5 at: 15/07/2019 11:23:39 AM
+Response start from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s5 at: 15/07/2019 11:23:39 AM
+Response End from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s5 at: 15/07/2019 11:23:39 AM
+XML OUT start for e9887d09-160f-47dd-925a-df9452e2930f-s6 at: 15/07/2019 11:25:03 AM
+XML OUT end for e9887d09-160f-47dd-925a-df9452e2930f-s6 at: 15/07/2019 11:25:03 AM
+Process Start giata for e9887d09-160f-47dd-925a-df9452e2930f-s6 at: 15/07/2019 11:25:03 AM
+DataBase Record Fetch start from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s6 at: 15/07/2019 11:25:03 AM
+DataBase Record Fetch end from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s6 at: 15/07/2019 11:25:03 AM
+Response start from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s6 at: 15/07/2019 11:25:03 AM
+Response End from  giata for e9887d09-160f-47dd-925a-df9452e2930f-s6 at: 15/07/2019 11:25:03 AM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s1 at: 15/07/2019 11:31:11 AM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s1 at: 15/07/2019 11:31:11 AM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s1 at: 15/07/2019 11:31:11 AM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s1 at: 15/07/2019 11:31:11 AM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s1 at: 15/07/2019 11:31:11 AM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s1 at: 15/07/2019 11:31:11 AM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s1 at: 15/07/2019 11:31:11 AM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s2 at: 15/07/2019 11:33:27 AM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s2 at: 15/07/2019 11:33:27 AM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s2 at: 15/07/2019 11:33:27 AM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s2 at: 15/07/2019 11:33:27 AM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s2 at: 15/07/2019 11:33:28 AM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s2 at: 15/07/2019 11:33:28 AM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s2 at: 15/07/2019 11:33:28 AM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s3 at: 15/07/2019 11:37:35 AM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s3 at: 15/07/2019 11:37:35 AM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s3 at: 15/07/2019 11:37:35 AM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s3 at: 15/07/2019 11:37:35 AM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s3 at: 15/07/2019 11:37:35 AM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s3 at: 15/07/2019 11:37:35 AM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s3 at: 15/07/2019 11:37:35 AM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s4 at: 15/07/2019 11:40:38 AM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s4 at: 15/07/2019 11:40:38 AM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s4 at: 15/07/2019 11:40:38 AM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s4 at: 15/07/2019 11:40:38 AM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s4 at: 15/07/2019 11:40:38 AM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s4 at: 15/07/2019 11:40:38 AM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s4 at: 15/07/2019 11:40:38 AM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s5 at: 15/07/2019 11:45:28 AM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s5 at: 15/07/2019 11:45:28 AM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s5 at: 15/07/2019 11:45:28 AM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s5 at: 15/07/2019 11:45:28 AM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s5 at: 15/07/2019 11:45:28 AM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s5 at: 15/07/2019 11:45:28 AM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s5 at: 15/07/2019 11:45:28 AM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s6 at: 15/07/2019 12:31:46 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s6 at: 15/07/2019 12:31:53 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s6 at: 15/07/2019 12:31:53 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s6 at: 15/07/2019 12:31:53 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s6 at: 15/07/2019 12:31:54 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s6 at: 15/07/2019 12:31:54 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s6 at: 15/07/2019 12:31:54 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s7 at: 15/07/2019 12:33:21 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s7 at: 15/07/2019 12:33:22 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s7 at: 15/07/2019 12:33:34 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s7 at: 15/07/2019 12:33:34 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s7 at: 15/07/2019 12:33:34 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s7 at: 15/07/2019 12:33:34 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s7 at: 15/07/2019 12:33:34 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s8 at: 15/07/2019 12:39:52 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s8 at: 15/07/2019 12:39:52 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s8 at: 15/07/2019 12:39:52 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s8 at: 15/07/2019 12:39:52 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s8 at: 15/07/2019 12:39:52 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s8 at: 15/07/2019 12:39:52 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s8 at: 15/07/2019 12:39:52 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s9 at: 15/07/2019 12:42:12 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s9 at: 15/07/2019 12:42:12 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s9 at: 15/07/2019 12:42:12 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s9 at: 15/07/2019 12:42:12 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s9 at: 15/07/2019 12:42:12 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s9 at: 15/07/2019 12:42:13 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s9 at: 15/07/2019 12:42:13 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s10 at: 15/07/2019 12:44:25 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s10 at: 15/07/2019 12:44:25 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s10 at: 15/07/2019 12:44:25 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s10 at: 15/07/2019 12:44:25 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s10 at: 15/07/2019 12:44:25 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s10 at: 15/07/2019 12:44:48 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s10 at: 15/07/2019 12:44:48 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s11 at: 15/07/2019 12:53:49 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s11 at: 15/07/2019 12:53:49 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s11 at: 15/07/2019 12:53:49 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s11 at: 15/07/2019 12:53:49 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s11 at: 15/07/2019 12:53:49 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s11 at: 15/07/2019 12:53:49 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s11 at: 15/07/2019 12:53:49 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s12 at: 15/07/2019 12:54:51 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s12 at: 15/07/2019 12:54:51 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s12 at: 15/07/2019 12:54:51 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s12 at: 15/07/2019 12:54:51 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s12 at: 15/07/2019 12:54:51 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s12 at: 15/07/2019 12:54:51 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s12 at: 15/07/2019 12:54:51 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s13 at: 15/07/2019 12:59:17 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s13 at: 15/07/2019 12:59:17 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s13 at: 15/07/2019 12:59:17 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s13 at: 15/07/2019 12:59:17 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s13 at: 15/07/2019 12:59:17 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s13 at: 15/07/2019 12:59:17 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s13 at: 15/07/2019 12:59:17 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s14 at: 15/07/2019 01:00:18 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s14 at: 15/07/2019 01:00:18 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s14 at: 15/07/2019 01:00:18 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s14 at: 15/07/2019 01:00:18 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s14 at: 15/07/2019 01:00:18 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s14 at: 15/07/2019 01:00:19 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s14 at: 15/07/2019 01:00:19 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s15 at: 15/07/2019 01:02:01 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s15 at: 15/07/2019 01:02:01 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s15 at: 15/07/2019 01:02:01 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s15 at: 15/07/2019 01:02:01 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s15 at: 15/07/2019 01:02:01 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s15 at: 15/07/2019 01:02:01 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s15 at: 15/07/2019 01:02:01 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s16 at: 15/07/2019 01:11:13 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s16 at: 15/07/2019 01:13:50 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s16 at: 15/07/2019 01:13:59 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s16 at: 15/07/2019 01:14:11 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s16 at: 15/07/2019 01:14:26 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s16 at: 15/07/2019 01:14:26 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s16 at: 15/07/2019 01:14:26 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s17 at: 15/07/2019 01:16:16 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s17 at: 15/07/2019 01:16:16 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s17 at: 15/07/2019 01:16:16 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s17 at: 15/07/2019 01:16:16 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s17 at: 15/07/2019 01:16:16 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s17 at: 15/07/2019 01:16:16 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s17 at: 15/07/2019 01:16:16 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s18 at: 15/07/2019 01:19:16 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s18 at: 15/07/2019 01:19:23 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s18 at: 15/07/2019 01:19:23 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s18 at: 15/07/2019 01:19:23 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s18 at: 15/07/2019 01:19:23 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s18 at: 15/07/2019 01:19:23 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s18 at: 15/07/2019 01:19:23 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s19 at: 15/07/2019 01:21:05 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s19 at: 15/07/2019 01:21:05 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s19 at: 15/07/2019 01:21:05 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s19 at: 15/07/2019 01:21:05 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s19 at: 15/07/2019 01:21:06 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s19 at: 15/07/2019 01:21:06 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s19 at: 15/07/2019 01:21:06 PM
+XML OUT start for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s20 at: 15/07/2019 01:25:41 PM
+XML OUT end for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s20 at: 15/07/2019 01:25:41 PM
+Process Start giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s20 at: 15/07/2019 01:25:41 PM
+DataBase Record Fetch start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s20 at: 15/07/2019 01:25:41 PM
+DataBase Record Fetch end from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s20 at: 15/07/2019 01:25:41 PM
+Response start from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s20 at: 15/07/2019 01:25:41 PM
+Response End from  giata for 1372a7b1-22fe-4122-83c8-2452f4fbb4d4-s20 at: 15/07/2019 01:25:41 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s1 at: 16/07/2019 01:36:15 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s1 at: 16/07/2019 01:36:15 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s1 at: 16/07/2019 01:36:15 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s1 at: 16/07/2019 01:36:15 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s1 at: 16/07/2019 01:36:16 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s1 at: 16/07/2019 01:36:16 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s1 at: 16/07/2019 01:36:16 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s2 at: 16/07/2019 01:38:56 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s2 at: 16/07/2019 01:38:56 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s2 at: 16/07/2019 01:38:56 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s2 at: 16/07/2019 01:38:56 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s2 at: 16/07/2019 01:38:57 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s2 at: 16/07/2019 01:38:57 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s2 at: 16/07/2019 01:38:57 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s3 at: 16/07/2019 01:40:28 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s3 at: 16/07/2019 01:40:28 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s3 at: 16/07/2019 01:40:28 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s3 at: 16/07/2019 01:40:28 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s3 at: 16/07/2019 01:40:28 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s3 at: 16/07/2019 01:40:28 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s3 at: 16/07/2019 01:40:28 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s4 at: 16/07/2019 01:45:57 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s4 at: 16/07/2019 01:45:57 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s4 at: 16/07/2019 01:45:57 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s4 at: 16/07/2019 01:45:57 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s4 at: 16/07/2019 01:45:57 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s4 at: 16/07/2019 01:45:57 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s4 at: 16/07/2019 01:45:57 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s5 at: 16/07/2019 02:50:58 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s5 at: 16/07/2019 02:50:58 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s5 at: 16/07/2019 02:50:58 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s5 at: 16/07/2019 02:50:58 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s5 at: 16/07/2019 02:50:59 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s5 at: 16/07/2019 02:50:59 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s5 at: 16/07/2019 02:50:59 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s6 at: 16/07/2019 02:53:16 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s6 at: 16/07/2019 02:53:16 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s6 at: 16/07/2019 02:53:16 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s6 at: 16/07/2019 02:53:16 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s6 at: 16/07/2019 02:53:17 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s6 at: 16/07/2019 02:53:17 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s6 at: 16/07/2019 02:53:17 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s7 at: 16/07/2019 02:57:03 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s7 at: 16/07/2019 02:57:03 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s7 at: 16/07/2019 02:57:03 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s7 at: 16/07/2019 02:57:03 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s7 at: 16/07/2019 02:57:03 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s7 at: 16/07/2019 02:57:03 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s7 at: 16/07/2019 02:57:03 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s8 at: 16/07/2019 03:19:22 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s8 at: 16/07/2019 03:19:22 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s8 at: 16/07/2019 03:19:22 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s8 at: 16/07/2019 03:19:22 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s8 at: 16/07/2019 03:19:23 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s8 at: 16/07/2019 03:19:23 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s8 at: 16/07/2019 03:19:23 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s10 at: 16/07/2019 04:35:59 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s10 at: 16/07/2019 04:35:59 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s10 at: 16/07/2019 04:35:59 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s10 at: 16/07/2019 04:35:59 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s10 at: 16/07/2019 04:36:00 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s10 at: 16/07/2019 04:36:00 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s10 at: 16/07/2019 04:36:00 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s11 at: 16/07/2019 04:41:48 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s11 at: 16/07/2019 04:41:48 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s11 at: 16/07/2019 04:41:48 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s11 at: 16/07/2019 04:41:48 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s11 at: 16/07/2019 04:41:49 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s11 at: 16/07/2019 04:41:49 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s11 at: 16/07/2019 04:41:49 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s12 at: 16/07/2019 04:47:16 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s12 at: 16/07/2019 04:47:16 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s12 at: 16/07/2019 04:47:16 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s12 at: 16/07/2019 04:47:16 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s12 at: 16/07/2019 04:47:17 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s12 at: 16/07/2019 04:47:17 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s12 at: 16/07/2019 04:47:17 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s13 at: 16/07/2019 04:50:17 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s13 at: 16/07/2019 04:50:17 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s13 at: 16/07/2019 04:50:17 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s13 at: 16/07/2019 04:50:17 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s13 at: 16/07/2019 04:50:17 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s13 at: 16/07/2019 04:50:17 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s13 at: 16/07/2019 04:50:17 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s14 at: 16/07/2019 04:54:04 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s14 at: 16/07/2019 04:54:04 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s14 at: 16/07/2019 04:54:04 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s14 at: 16/07/2019 04:54:04 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s14 at: 16/07/2019 04:54:05 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s14 at: 16/07/2019 04:54:05 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s14 at: 16/07/2019 04:54:05 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s15 at: 16/07/2019 04:56:46 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s15 at: 16/07/2019 04:56:46 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s15 at: 16/07/2019 04:56:46 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s15 at: 16/07/2019 04:56:46 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s15 at: 16/07/2019 04:56:47 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s15 at: 16/07/2019 04:56:47 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s15 at: 16/07/2019 04:56:47 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s16 at: 17/07/2019 12:42:38 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s16 at: 17/07/2019 12:42:38 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s16 at: 17/07/2019 12:42:38 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s16 at: 17/07/2019 12:42:38 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s16 at: 17/07/2019 12:42:39 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s16 at: 17/07/2019 12:42:39 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s16 at: 17/07/2019 12:42:39 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s17 at: 17/07/2019 12:44:21 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s17 at: 17/07/2019 12:44:21 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s17 at: 17/07/2019 12:44:21 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s17 at: 17/07/2019 12:44:21 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s17 at: 17/07/2019 12:44:23 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s17 at: 17/07/2019 12:44:23 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s17 at: 17/07/2019 12:44:23 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s18 at: 17/07/2019 12:50:30 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s18 at: 17/07/2019 12:50:30 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s18 at: 17/07/2019 12:50:30 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s18 at: 17/07/2019 12:50:30 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s18 at: 17/07/2019 12:50:31 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s18 at: 17/07/2019 12:50:31 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s18 at: 17/07/2019 12:50:31 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s19 at: 17/07/2019 12:53:04 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s19 at: 17/07/2019 12:53:45 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s19 at: 17/07/2019 12:53:45 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s19 at: 17/07/2019 12:53:45 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s19 at: 17/07/2019 12:53:46 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s19 at: 17/07/2019 12:53:47 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s19 at: 17/07/2019 12:53:56 PM
+XML OUT start for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s20 at: 17/07/2019 12:55:39 PM
+XML OUT end for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s20 at: 17/07/2019 12:55:39 PM
+Process Start giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s20 at: 17/07/2019 12:55:39 PM
+DataBase Record Fetch start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s20 at: 17/07/2019 12:55:39 PM
+DataBase Record Fetch end from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s20 at: 17/07/2019 12:55:40 PM
+Response start from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s20 at: 17/07/2019 12:55:40 PM
+Response End from  giata for 70afd4e4-c028-4b16-a0ab-65ef828434f8-s20 at: 17/07/2019 12:55:40 PM
+XML OUT start for 46019c08-a9db-400c-bba5-2923259d33ac-s1 at: 26/07/2019 10:06:05 AM
+XML OUT end for 46019c08-a9db-400c-bba5-2923259d33ac-s1 at: 26/07/2019 10:06:05 AM
+Process Start giata for 46019c08-a9db-400c-bba5-2923259d33ac-s1 at: 26/07/2019 10:06:05 AM
+DataBase Record Fetch start from  giata for 46019c08-a9db-400c-bba5-2923259d33ac-s1 at: 26/07/2019 10:06:05 AM
+DataBase Record Fetch end from  giata for 46019c08-a9db-400c-bba5-2923259d33ac-s1 at: 26/07/2019 10:06:05 AM
+Response start from  giata for 46019c08-a9db-400c-bba5-2923259d33ac-s1 at: 26/07/2019 10:06:05 AM
+Response End from  giata for 46019c08-a9db-400c-bba5-2923259d33ac-s1 at: 26/07/2019 10:06:05 AM
+XML OUT start for 46019c08-a9db-400c-bba5-2923259d33ac-s2 at: 26/07/2019 10:08:03 AM
+XML OUT end for 46019c08-a9db-400c-bba5-2923259d33ac-s2 at: 26/07/2019 10:08:03 AM
+Process Start giata for 46019c08-a9db-400c-bba5-2923259d33ac-s2 at: 26/07/2019 10:08:03 AM
+DataBase Record Fetch start from  giata for 46019c08-a9db-400c-bba5-2923259d33ac-s2 at: 26/07/2019 10:08:03 AM
+DataBase Record Fetch end from  giata for 46019c08-a9db-400c-bba5-2923259d33ac-s2 at: 26/07/2019 10:08:04 AM
+Response start from  giata for 46019c08-a9db-400c-bba5-2923259d33ac-s2 at: 26/07/2019 10:08:04 AM
+Response End from  giata for 46019c08-a9db-400c-bba5-2923259d33ac-s2 at: 26/07/2019 10:08:04 AM
+XML OUT start for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:06:38 AM
+XML OUT end for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:06:38 AM
+Process Start giata for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:06:38 AM
+DataBase Record Fetch start from  giata for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:06:38 AM
+DataBase Record Fetch end from  giata for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:06:40 AM
+Response start from  giata for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:06:40 AM
+Response End from  giata for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:06:41 AM
+XML OUT start for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:09:23 AM
+XML OUT end for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:09:23 AM
+Process Start giata for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:09:23 AM
+DataBase Record Fetch start from  giata for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:09:23 AM
+DataBase Record Fetch end from  giata for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:09:27 AM
+Response start from  giata for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:09:27 AM
+Response End from  giata for 222be291-8f82-499f-9686-d9c27950652b-s1 at: 30/07/2019 11:09:27 AM
+XML OUT start for 222be291-8f82-499f-9686-d9c27950652b-s2 at: 30/07/2019 11:12:37 AM
+XML OUT end for 222be291-8f82-499f-9686-d9c27950652b-s2 at: 30/07/2019 11:12:37 AM
+Process Start giata for 222be291-8f82-499f-9686-d9c27950652b-s2 at: 30/07/2019 11:12:37 AM
+DataBase Record Fetch start from  giata for 222be291-8f82-499f-9686-d9c27950652b-s2 at: 30/07/2019 11:12:37 AM
+DataBase Record Fetch end from  giata for 222be291-8f82-499f-9686-d9c27950652b-s2 at: 30/07/2019 11:12:40 AM
+Response start from  giata for 222be291-8f82-499f-9686-d9c27950652b-s2 at: 30/07/2019 11:12:40 AM
+Response End from  giata for 222be291-8f82-499f-9686-d9c27950652b-s2 at: 30/07/2019 11:12:40 AM
+Booking for 397c1164-aad6-4260-bd86-1b8c8ca79e2d at: 02/08/2019 04:25:36 PM
+02/08/2019 04:25:36 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 397c1164-aad6-4260-bd86-1b8c8ca79e2d at: 02/08/2019 04:25:52 PM
+02/08/2019 04:25:52 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 397c1164-aad6-4260-bd86-1b8c8ca79e2d at: 02/08/2019 04:34:20 PM
+02/08/2019 04:34:20 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 397c1164-aad6-4260-bd86-1b8c8ca79e2d at: 02/08/2019 04:37:04 PM
+02/08/2019 04:37:04 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 397c1164-aad6-4260-bd86-1b8c8ca79e2d at: 02/08/2019 04:38:49 PM
+02/08/2019 04:38:49 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 397c1164-aad6-4260-bd86-1b8c8ca79e2d at: 02/08/2019 04:40:36 PM
+02/08/2019 04:40:36 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 397c1164-aad6-4260-bd86-1b8c8ca79e2d at: 02/08/2019 04:41:17 PM
+02/08/2019 04:41:17 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 397c1164-aad6-4260-bd86-1b8c8ca79e2d at: 02/08/2019 04:43:16 PM
+02/08/2019 04:43:16 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 397c1164-aad6-4260-bd86-1b8c8ca79e2d at: 02/08/2019 04:47:55 PM
+02/08/2019 04:47:55 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 397c1164-aad6-4260-bd86-1b8c8ca79e2d at: 02/08/2019 05:07:08 PM
+02/08/2019 05:07:08 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 397c1164-aad6-4260-bd86-1b8c8ca79e2d at: 02/08/2019 05:10:47 PM
+02/08/2019 05:10:47 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 950aed7d-8c71-4b4a-97d0-f68cc72033cf at: 07/08/2019 02:58:58 PM
+07/08/2019 02:58:58 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 950aed7d-8c71-4b4a-97d0-f68cc72033cf at: 07/08/2019 02:59:06 PM
+07/08/2019 02:59:06 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 1cdcfa18-9b92-46b3-8cb3-8e88f79861bb at: 07/08/2019 03:25:18 PM
+07/08/2019 03:25:18 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 3b96d752-1181-49ff-88cb-731cdb3bb12e at: 08/08/2019 10:48:57 AM
+08/08/2019 10:48:57 AM
+---------------------------Hotel Logs-----------------------------------------
+Booking for d69d4a13-d853-42ad-9af9-b7e24b71e4e5 at: 08/08/2019 12:43:22 PM
+08/08/2019 12:43:22 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for d69d4a13-d853-42ad-9af9-b7e24b71e4e5 at: 08/08/2019 12:53:56 PM
+08/08/2019 12:53:56 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for d69d4a13-d853-42ad-9af9-b7e24b71e4e5 at: 08/08/2019 03:06:58 PM
+08/08/2019 03:06:58 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for d69d4a13-d853-42ad-9af9-b7e24b71e4e5 at: 08/08/2019 03:07:20 PM
+08/08/2019 03:07:20 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 3105555c-dd3d-4ae4-bbcd-e708e2d6699f at: 08/08/2019 03:08:02 PM
+08/08/2019 03:08:02 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 6641c817-9f44-4b5b-a52b-f0dfbd7175da at: 08/08/2019 04:24:19 PM
+08/08/2019 04:24:19 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 6641c817-9f44-4b5b-a52b-f0dfbd7175da at: 08/08/2019 04:34:03 PM
+08/08/2019 04:34:03 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 6641c817-9f44-4b5b-a52b-f0dfbd7175da at: 08/08/2019 04:36:18 PM
+08/08/2019 04:36:18 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 6641c817-9f44-4b5b-a52b-f0dfbd7175da at: 08/08/2019 04:39:58 PM
+08/08/2019 04:39:58 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 408954ad-6a57-474c-8ac2-a49733adf531 at: 08/08/2019 05:51:58 PM
+08/08/2019 05:51:58 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 408954ad-6a57-474c-8ac2-a49733adf531 at: 08/08/2019 06:08:52 PM
+08/08/2019 06:08:52 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for ab252c89-10bb-4138-bd1d-c313727b389d at: 09/08/2019 11:00:20 AM
+09/08/2019 11:00:20 AM
+---------------------------Hotel Logs-----------------------------------------
+Booking for ab252c89-10bb-4138-bd1d-c313727b389d at: 09/08/2019 11:02:13 AM
+09/08/2019 11:02:13 AM
+---------------------------Hotel Logs-----------------------------------------
+Booking for ab252c89-10bb-4138-bd1d-c313727b389d at: 09/08/2019 11:03:06 AM
+09/08/2019 11:03:06 AM
+---------------------------Hotel Logs-----------------------------------------
+Booking for ab252c89-10bb-4138-bd1d-c313727b389d at: 09/08/2019 11:04:01 AM
+09/08/2019 11:04:01 AM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 4cd806be-bf67-47a9-9c3c-614ec6d62272 at: 09/08/2019 11:40:02 AM
+09/08/2019 11:40:02 AM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 4cd806be-bf67-47a9-9c3c-614ec6d62272 at: 09/08/2019 11:43:27 AM
+09/08/2019 11:43:27 AM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 1229f2bc-b9b5-4e1a-a0e9-db1efb044930 at: 09/08/2019 11:56:06 AM
+09/08/2019 11:56:06 AM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 9d09ee95-308c-41e1-b868-241435bf1f88 at: 09/08/2019 04:56:49 PM
+09/08/2019 04:56:49 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for 747eb829-0885-4409-b365-c009715c5998 at: 12/08/2019 12:55:06 PM
+XML OUT end for 747eb829-0885-4409-b365-c009715c5998 at: 12/08/2019 12:55:06 PM
+Process Start giata for 747eb829-0885-4409-b365-c009715c5998 at: 12/08/2019 12:55:06 PM
+DataBase Record Fetch start from  giata for 747eb829-0885-4409-b365-c009715c5998 at: 12/08/2019 12:55:06 PM
+XML OUT start for 747eb829-0885-4409-b365-c009715c5998-s1 at: 12/08/2019 12:56:57 PM
+XML OUT end for 747eb829-0885-4409-b365-c009715c5998-s1 at: 12/08/2019 12:56:57 PM
+Process Start giata for 747eb829-0885-4409-b365-c009715c5998-s1 at: 12/08/2019 12:56:57 PM
+DataBase Record Fetch start from  giata for 747eb829-0885-4409-b365-c009715c5998-s1 at: 12/08/2019 12:56:57 PM
+XML OUT start for 747eb829-0885-4409-b365-c009715c5998-s2 at: 12/08/2019 12:58:32 PM
+XML OUT end for 747eb829-0885-4409-b365-c009715c5998-s2 at: 12/08/2019 12:58:32 PM
+Process Start giata for 747eb829-0885-4409-b365-c009715c5998-s2 at: 12/08/2019 12:58:32 PM
+DataBase Record Fetch start from  giata for 747eb829-0885-4409-b365-c009715c5998-s2 at: 12/08/2019 12:58:32 PM
+XML OUT start for 747eb829-0885-4409-b365-c009715c5998-s3 at: 12/08/2019 01:00:53 PM
+XML OUT end for 747eb829-0885-4409-b365-c009715c5998-s3 at: 12/08/2019 01:00:53 PM
+Process Start giata for 747eb829-0885-4409-b365-c009715c5998-s3 at: 12/08/2019 01:00:53 PM
+DataBase Record Fetch start from  giata for 747eb829-0885-4409-b365-c009715c5998-s3 at: 12/08/2019 01:00:53 PM
+DataBase Record Fetch end from  giata for 747eb829-0885-4409-b365-c009715c5998-s3 at: 12/08/2019 01:01:19 PM
+Response start from  giata for 747eb829-0885-4409-b365-c009715c5998-s3 at: 12/08/2019 01:01:20 PM
+Response End from  giata for 747eb829-0885-4409-b365-c009715c5998-s3 at: 12/08/2019 01:01:20 PM
+XML OUT start for 83bb8f9e-0c44-4918-853c-aeb61e4ac6f2-s1 at: 12/08/2019 01:48:45 PM
+XML OUT end for 83bb8f9e-0c44-4918-853c-aeb61e4ac6f2-s1 at: 12/08/2019 01:48:45 PM
+Process Start giata for 83bb8f9e-0c44-4918-853c-aeb61e4ac6f2-s1 at: 12/08/2019 01:48:45 PM
+DataBase Record Fetch start from  giata for 83bb8f9e-0c44-4918-853c-aeb61e4ac6f2-s1 at: 12/08/2019 01:48:45 PM
+XML OUT start for 83bb8f9e-0c44-4918-853c-aeb61e4ac6f2-s2 at: 12/08/2019 02:11:24 PM
+XML OUT end for 83bb8f9e-0c44-4918-853c-aeb61e4ac6f2-s2 at: 12/08/2019 02:11:24 PM
+Process Start giata for 83bb8f9e-0c44-4918-853c-aeb61e4ac6f2-s2 at: 12/08/2019 02:11:24 PM
+DataBase Record Fetch start from  giata for 83bb8f9e-0c44-4918-853c-aeb61e4ac6f2-s2 at: 12/08/2019 02:11:24 PM
+XML OUT start for 83bb8f9e-0c44-4918-853c-aeb61e4ac6f2-s3 at: 12/08/2019 02:19:14 PM
+XML OUT end for 83bb8f9e-0c44-4918-853c-aeb61e4ac6f2-s3 at: 12/08/2019 02:19:14 PM
+Process Start giata for 83bb8f9e-0c44-4918-853c-aeb61e4ac6f2-s3 at: 12/08/2019 02:19:14 PM
+DataBase Record Fetch start from  giata for 83bb8f9e-0c44-4918-853c-aeb61e4ac6f2-s3 at: 12/08/2019 02:19:14 PM
+Booking for 9c8f3175-ed1e-41b5-ac5d-e102a27e8b20 at: 13/08/2019 02:00:45 PM
+13/08/2019 02:00:45 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 9c8f3175-ed1e-41b5-ac5d-e102a27e8b20 at: 13/08/2019 02:05:39 PM
+13/08/2019 02:05:39 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 18557417-e463-4cc0-81ff-9c3b3862df63 at: 13/08/2019 02:10:08 PM
+13/08/2019 02:10:08 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 18557417-e463-4cc0-81ff-9c3b3862df63 at: 13/08/2019 02:13:15 PM
+13/08/2019 02:13:15 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for 18557417-e463-4cc0-81ff-9c3b3862df63 at: 13/08/2019 02:14:57 PM
+13/08/2019 02:14:57 PM
+---------------------------Hotel Logs-----------------------------------------
+XML OUT start for b40a84e8-81db-4ad5-afbf-a6fa2010d060-s1 at: 19/08/2019 12:05:29 PM
+XML OUT end for b40a84e8-81db-4ad5-afbf-a6fa2010d060-s1 at: 19/08/2019 12:05:29 PM
+Process Start giata for b40a84e8-81db-4ad5-afbf-a6fa2010d060-s1 at: 19/08/2019 12:05:29 PM
+Response start from  giata for b40a84e8-81db-4ad5-afbf-a6fa2010d060-s1 at: 19/08/2019 12:05:29 PM
+Response End from  giata for b40a84e8-81db-4ad5-afbf-a6fa2010d060-s1 at: 19/08/2019 12:05:29 PM
+Booking for bcf5d097-5d4c-426d-a06d-b91c54aee63e at: 19/08/2019 01:15:02 PM
+19/08/2019 01:15:02 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for bcf5d097-5d4c-426d-a06d-b91c54aee63e at: 19/08/2019 01:16:34 PM
+19/08/2019 01:16:34 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for bcf5d097-5d4c-426d-a06d-b91c54aee63e at: 19/08/2019 01:16:51 PM
+19/08/2019 01:16:51 PM
+---------------------------Hotel Logs-----------------------------------------
+Booking for bcf5d097-5d4c-426d-a06d-b91c54aee63e at: 19/08/2019 01:19:06 PM
+19/08/2019 01:19:06 PM
+---------------------------Hotel Logs-----------------------------------------

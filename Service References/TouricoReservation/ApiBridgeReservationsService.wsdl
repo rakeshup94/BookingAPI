@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tourico.com/webservices/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s1="http://tourico.com/travelservices/" xmlns:s2="http://tourico.com/webservices/TWS_ClxPolicies.xsd" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tourico.com/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tourico.com/webservices/">
+      <s:import namespace="http://tourico.com/webservices/TWS_RGList.xsd" />
+      <s:import namespace="http://tourico.com/travelservices/" />
+      <s:import namespace="http://tourico.com/webservices/TWS_RGInfo.xsd" />
+      <s:import namespace="http://tourico.com/webservices/TWS_ClxPolicies.xsd" />
+      <s:import schemaLocation="http://demo-wsnew.touricoholidays.com/ApiBridgeReservationsService.asmx?schema=TWS_RGList" namespace="http://tourico.com/webservices/TWS_RGList.xsd" />
+      <s:import schemaLocation="http://demo-wsnew.touricoholidays.com/ApiBridgeReservationsService.asmx?schema=TWS_RGInfo" namespace="http://tourico.com/webservices/TWS_RGInfo.xsd" />
+      <s:element name="GetPreviousRG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nRGID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sFirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sLastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAgentRefNum" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bFutureOnly" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPreviousRGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPreviousRGResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tourico.com/webservices/TWS_RGList.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginHeader" type="s1:LoginHeader" />
+      <s:element name="GetRGInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nRGID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRGInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRGInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tourico.com/webservices/TWS_RGInfo.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCancellationFee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nResID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="clxDate" type="s:date" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCancellationFeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCancellationFeeResult" type="tns:CancellationFeeInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CancellationFeeInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CancellationFeeValue" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Currency" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CancelReservation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nResID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelReservationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CancelReservationResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCancellationPolicies">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nResID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="hotelId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="hotelRoomTypeId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="productId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dtCheckIn" type="s:date" />
+            <s:element minOccurs="1" maxOccurs="1" name="dtCheckOut" type="s:date" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCancellationPoliciesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s2:HotelPolicy" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tourico.com/travelservices/">
+      <s:complexType name="LoginHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="culture" type="s1:Culture" />
+          <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:simpleType name="Culture">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="en_US" />
+          <s:enumeration value="zh_CN" />
+          <s:enumeration value="it_IT" />
+          <s:enumeration value="ja_JP" />
+          <s:enumeration value="de_DE" />
+          <s:enumeration value="fr_FR" />
+          <s:enumeration value="ru_RU" />
+          <s:enumeration value="pt_PT" />
+          <s:enumeration value="es_AR" />
+          <s:enumeration value="he_IL" />
+          <s:enumeration value="ko_KR" />
+          <s:enumeration value="pl_PL" />
+          <s:enumeration value="zh_TW" />
+          <s:enumeration value="nl_NL" />
+          <s:enumeration value="da_DK" />
+          <s:enumeration value="en_GB" />
+          <s:enumeration value="es_ES" />
+          <s:enumeration value="sv_SE" />
+          <s:enumeration value="pt_BR" />
+          <s:enumeration value="ar_SA" />
+          <s:enumeration value="el_GR" />
+          <s:enumeration value="cs_CZ" />
+          <s:enumeration value="bg_BG" />
+          <s:enumeration value="ro_RO" />
+          <s:enumeration value="tr_TR" />
+          <s:enumeration value="fi_FI" />
+          <s:enumeration value="nb_NO" />
+          <s:enumeration value="th_TH" />
+          <s:enumeration value="ms_MY" />
+          <s:enumeration value="id_ID" />
+          <s:enumeration value="ar_EG" />
+          <s:enumeration value="ca_ES" />
+          <s:enumeration value="es_MX" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tourico.com/webservices/TWS_ClxPolicies.xsd">
+      <s:element name="HotelPolicy" type="s2:HotelPolicyType" />
+      <s:complexType name="HotelPolicyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RoomTypePolicy" type="s2:RoomTypePolicyType" />
+        </s:sequence>
+        <s:attribute name="hotelId" type="s:int" />
+      </s:complexType>
+      <s:complexType name="RoomTypePolicyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CancelPolicy" type="s2:ArrayOfCancelPenaltyType" />
+        </s:sequence>
+        <s:attribute name="hotelRoomTypeId" type="s:int" />
+        <s:attribute name="CheckIn" type="s:string" />
+        <s:attribute name="CheckOut" type="s:string" />
+      </s:complexType>
+      <s:complexType name="ArrayOfCancelPenaltyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CancelPenalty" type="s2:CancelPenaltyType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CancelPenaltyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Deadline" type="s2:DeadlineType" />
+          <s:element minOccurs="0" maxOccurs="1" name="AmountPercent" type="s2:AmountPercentType" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PenaltyDescription" type="s2:ParagraphType" />
+        </s:sequence>
+        <s:attribute name="ConfirmClassCode" type="s:string" />
+        <s:attribute name="PolicyCode" type="s:string" />
+        <s:attribute name="NonRefundable" type="s:boolean" />
+      </s:complexType>
+      <s:complexType name="DeadlineType">
+        <s:attribute name="AbsoluteDeadline" type="s:dateTime" />
+        <s:attribute name="OffsetTimeUnit" type="s2:TimeUnitType" />
+        <s:attribute name="OffsetUnitMultiplier" type="s:int" />
+        <s:attribute name="OffsetDropTime" type="s2:DeadlineTypeOffsetDropTime" />
+      </s:complexType>
+      <s:simpleType name="TimeUnitType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Year" />
+          <s:enumeration value="Month" />
+          <s:enumeration value="Week" />
+          <s:enumeration value="Day" />
+          <s:enumeration value="Hour" />
+          <s:enumeration value="Second" />
+          <s:enumeration value="FullDuration" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="DeadlineTypeOffsetDropTime">
+        <s:restriction base="s:string">
+          <s:enumeration value="BeforeArrival" />
+          <s:enumeration value="AfterBooking" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="AmountPercentType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CurrencyCode" type="s:string" />
+        </s:sequence>
+        <s:attribute name="NmbrOfNights" type="s:nonNegativeInteger" />
+        <s:attribute name="BasisType" type="s2:AmountPercentTypeBasisType" />
+        <s:attribute name="Percent" type="s:double" />
+        <s:attribute name="Amount" type="s:decimal" />
+        <s:attribute name="DecimalPlaces" type="s:int" />
+      </s:complexType>
+      <s:simpleType name="AmountPercentTypeBasisType">
+        <s:restriction base="s:string">
+          <s:enumeration value="FullStay" />
+          <s:enumeration value="Nights" />
+          <s:enumeration value="FirstLast" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ParagraphType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Text" type="s2:FormattedTextTextType" />
+        </s:sequence>
+        <s:attribute name="ParagraphNumber" type="s:int" />
+      </s:complexType>
+      <s:complexType name="FormattedTextTextType">
+        <s:simpleContent>
+          <s:extension base="s:string">
+            <s:attribute name="Formatted" type="s:boolean" />
+            <s:attribute name="Language" type="s:language" />
+          </s:extension>
+        </s:simpleContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetPreviousRGSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPreviousRG" />
+  </wsdl:message>
+  <wsdl:message name="GetPreviousRGSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPreviousRGResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPreviousRGLoginHeader">
+    <wsdl:part name="LoginHeader" element="tns:LoginHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetRGInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRGInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetRGInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRGInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRGInfoLoginHeader">
+    <wsdl:part name="LoginHeader" element="tns:LoginHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetCancellationFeeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCancellationFee" />
+  </wsdl:message>
+  <wsdl:message name="GetCancellationFeeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCancellationFeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCancellationFeeLoginHeader">
+    <wsdl:part name="LoginHeader" element="tns:LoginHeader" />
+  </wsdl:message>
+  <wsdl:message name="CancelReservationSoapIn">
+    <wsdl:part name="parameters" element="tns:CancelReservation" />
+  </wsdl:message>
+  <wsdl:message name="CancelReservationSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelReservationResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelReservationLoginHeader">
+    <wsdl:part name="LoginHeader" element="tns:LoginHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetCancellationPoliciesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCancellationPolicies" />
+  </wsdl:message>
+  <wsdl:message name="GetCancellationPoliciesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCancellationPoliciesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCancellationPoliciesLoginHeader">
+    <wsdl:part name="LoginHeader" element="tns:LoginHeader" />
+  </wsdl:message>
+  <wsdl:portType name="ReservationsServiceSoap">
+    <wsdl:operation name="GetPreviousRG">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns previous reservation groups</wsdl:documentation>
+      <wsdl:input message="tns:GetPreviousRGSoapIn" />
+      <wsdl:output message="tns:GetPreviousRGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRGInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get reservation group detail information</wsdl:documentation>
+      <wsdl:input message="tns:GetRGInfoSoapIn" />
+      <wsdl:output message="tns:GetRGInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCancellationFee">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets Cancellation Fee for specific reservation canceled on specific date</wsdl:documentation>
+      <wsdl:input message="tns:GetCancellationFeeSoapIn" />
+      <wsdl:output message="tns:GetCancellationFeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelReservation">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cancels specific reservation</wsdl:documentation>
+      <wsdl:input message="tns:CancelReservationSoapIn" />
+      <wsdl:output message="tns:CancelReservationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCancellationPolicies">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets Cancellation Policies for specific hotel or reservation</wsdl:documentation>
+      <wsdl:input message="tns:GetCancellationPoliciesSoapIn" />
+      <wsdl:output message="tns:GetCancellationPoliciesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ReservationsServiceSoap" type="tns:ReservationsServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPreviousRG">
+      <soap:operation soapAction="http://tourico.com/webservices/GetPreviousRG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPreviousRGLoginHeader" part="LoginHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRGInfo">
+      <soap:operation soapAction="http://tourico.com/webservices/GetRGInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetRGInfoLoginHeader" part="LoginHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCancellationFee">
+      <soap:operation soapAction="http://tourico.com/webservices/GetCancellationFee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCancellationFeeLoginHeader" part="LoginHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelReservation">
+      <soap:operation soapAction="http://tourico.com/webservices/CancelReservation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CancelReservationLoginHeader" part="LoginHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCancellationPolicies">
+      <soap:operation soapAction="http://tourico.com/webservices/GetCancellationPolicies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCancellationPoliciesLoginHeader" part="LoginHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ReservationsServiceSoap12" type="tns:ReservationsServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPreviousRG">
+      <soap12:operation soapAction="http://tourico.com/webservices/GetPreviousRG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPreviousRGLoginHeader" part="LoginHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRGInfo">
+      <soap12:operation soapAction="http://tourico.com/webservices/GetRGInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetRGInfoLoginHeader" part="LoginHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCancellationFee">
+      <soap12:operation soapAction="http://tourico.com/webservices/GetCancellationFee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCancellationFeeLoginHeader" part="LoginHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelReservation">
+      <soap12:operation soapAction="http://tourico.com/webservices/CancelReservation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CancelReservationLoginHeader" part="LoginHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCancellationPolicies">
+      <soap12:operation soapAction="http://tourico.com/webservices/GetCancellationPolicies" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCancellationPoliciesLoginHeader" part="LoginHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ReservationsService">
+    <wsdl:port name="ReservationsServiceSoap" binding="tns:ReservationsServiceSoap">
+      <soap:address location="http://demo-wsnew.touricoholidays.com/ApiBridgeReservationsService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ReservationsServiceSoap12" binding="tns:ReservationsServiceSoap12">
+      <soap12:address location="http://demo-wsnew.touricoholidays.com/ApiBridgeReservationsService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

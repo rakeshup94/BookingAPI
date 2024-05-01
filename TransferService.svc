@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="TravillioXMLOutService.TransferService" CodeBehind="TransferService.svc.cs" %>

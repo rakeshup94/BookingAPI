@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AvailabilityServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://votbookings.com/XMLServices/AvailabilityServices.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://votbookings.com/XMLServices/AvailabilityServices.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAvailabilityServices_GetHotelRoomAvailability_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHotelRoomAvailability" />
+  </wsdl:message>
+  <wsdl:message name="IAvailabilityServices_GetHotelRoomAvailability_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHotelRoomAvailabilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAvailabilityServices_ConfirmHotelRoomAvailability_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmHotelRoomAvailability" />
+  </wsdl:message>
+  <wsdl:message name="IAvailabilityServices_ConfirmHotelRoomAvailability_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmHotelRoomAvailabilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAvailabilityServices_MakeBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:MakeBooking" />
+  </wsdl:message>
+  <wsdl:message name="IAvailabilityServices_MakeBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MakeBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAvailabilityServices_CancelBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelBooking" />
+  </wsdl:message>
+  <wsdl:message name="IAvailabilityServices_CancelBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAvailabilityServices_CheckBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckBooking" />
+  </wsdl:message>
+  <wsdl:message name="IAvailabilityServices_CheckBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckBookingResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAvailabilityServices">
+    <wsdl:operation name="GetHotelRoomAvailability">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAvailabilityServices/GetHotelRoomAvailability" message="tns:IAvailabilityServices_GetHotelRoomAvailability_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAvailabilityServices/GetHotelRoomAvailabilityResponse" message="tns:IAvailabilityServices_GetHotelRoomAvailability_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmHotelRoomAvailability">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAvailabilityServices/ConfirmHotelRoomAvailability" message="tns:IAvailabilityServices_ConfirmHotelRoomAvailability_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAvailabilityServices/ConfirmHotelRoomAvailabilityResponse" message="tns:IAvailabilityServices_ConfirmHotelRoomAvailability_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MakeBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAvailabilityServices/MakeBooking" message="tns:IAvailabilityServices_MakeBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAvailabilityServices/MakeBookingResponse" message="tns:IAvailabilityServices_MakeBooking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAvailabilityServices/CancelBooking" message="tns:IAvailabilityServices_CancelBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAvailabilityServices/CancelBookingResponse" message="tns:IAvailabilityServices_CancelBooking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAvailabilityServices/CheckBooking" message="tns:IAvailabilityServices_CheckBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAvailabilityServices/CheckBookingResponse" message="tns:IAvailabilityServices_CheckBooking_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAvailabilityServices" type="tns:IAvailabilityServices">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetHotelRoomAvailability">
+      <soap:operation soapAction="http://tempuri.org/IAvailabilityServices/GetHotelRoomAvailability" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmHotelRoomAvailability">
+      <soap:operation soapAction="http://tempuri.org/IAvailabilityServices/ConfirmHotelRoomAvailability" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MakeBooking">
+      <soap:operation soapAction="http://tempuri.org/IAvailabilityServices/MakeBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelBooking">
+      <soap:operation soapAction="http://tempuri.org/IAvailabilityServices/CancelBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBooking">
+      <soap:operation soapAction="http://tempuri.org/IAvailabilityServices/CheckBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AvailabilityServices">
+    <wsdl:port name="BasicHttpBinding_IAvailabilityServices" binding="tns:BasicHttpBinding_IAvailabilityServices">
+      <soap:address location="http://votbookings.com/XMLServices/AvailabilityServices.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

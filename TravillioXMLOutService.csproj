@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC0EC4A1-1A22-40A3-B827-4CFC23A2956F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TravillioXMLOutService</RootNamespace>
+    <AssemblyName>TravillioXMLOutService</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\INGM.Web\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AirService.svc" />
+    <Compile Include="AirService.svc.cs">
+      <DependentUpon>AirService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Air\Common\TrvAirBook.cs" />
+    <Compile Include="Air\Common\TrvAirCancel.cs" />
+    <Compile Include="Air\Common\TrvAirFareRule.cs" />
+    <Compile Include="Air\Common\TrvAirPreBook.cs" />
+    <Compile Include="Air\Common\TrvAirSearch.cs" />
+    <Compile Include="Air\Common\TrvAirTicket.cs" />
+    <Compile Include="Air\Conversion\curncymrkup.cs" />
+    <Compile Include="Air\Galileo\gal_book.cs" />
+    <Compile Include="Air\Galileo\gal_cancelreservation.cs" />
+    <Compile Include="Air\Galileo\gal_farerule.cs" />
+    <Compile Include="Air\Galileo\gal_getavail.cs" />
+    <Compile Include="Air\Galileo\gal_pricecheck.cs" />
+    <Compile Include="Air\Galileo\gal_supresponse.cs" />
+    <Compile Include="Air\Galileo\gal_ticket.cs" />
+    <Compile Include="Air\Models\Common\airsupplier_Cred.cs" />
+    <Compile Include="Air\Models\Common\air_staticData.cs" />
+    <Compile Include="Air\Models\Common\check_tktorder.cs" />
+    <Compile Include="Air\Models\Common\getcurrencymrkup.cs" />
+    <Compile Include="Air\Models\Common\manage_session.cs" />
+    <Compile Include="Air\Models\Galileo\prcheck_res.cs" />
+    <Compile Include="Air\Models\TBO\tboairSearchRequest.cs" />
+    <Compile Include="Air\Models\TBO\tbobookrequest.cs" />
+    <Compile Include="Air\Models\TBO\tbocommonreq.cs" />
+    <Compile Include="Air\Mystifly\MystiAir_Book.cs" />
+    <Compile Include="Air\Mystifly\MystiAir_cancelticket.cs" />
+    <Compile Include="Air\Mystifly\MystiAir_FareRule.cs" />
+    <Compile Include="Air\Mystifly\MystiAir_GetAvail.cs" />
+    <Compile Include="Air\Mystifly\MystiAir_PriceCheck.cs" />
+    <Compile Include="Air\Mystifly\MystiAir_ticket.cs" />
+    <Compile Include="Air\Mystifly\Mysti_SupplierResponse.cs" />
+    <Compile Include="Air\TBO\tbo_book.cs" />
+    <Compile Include="Air\TBO\tbo_farerule.cs" />
+    <Compile Include="Air\TBO\tbo_getavail.cs" />
+    <Compile Include="Air\TBO\tbo_pricecheck.cs" />
+    <Compile Include="Air\TBO\tbo_supresponse.cs" />
+    <Compile Include="App_Code\SerializeXMLOut.cs" />
+    <Content Include="App_Code\Soap_280417 - Copy.cs" />
+    <Compile Include="App_Code\TouricoModel.cs" />
+    <Compile Include="App_Code\TouricoRoomAvail.cs" />
+    <Compile Include="App_Code\Travco.cs" />
+    <Compile Include="App_Code\TrvRoomAvailabilityNew.cs" />
+    <Compile Include="App_Code\TrvHotelCancellation.cs" />
+    <Compile Include="App_Code\TrvHotelCancellationFee.cs" />
+    <Compile Include="App_Code\TrvHotelDetails.cs" />
+    <Compile Include="App_Code\TrvHotelImportBooking.cs" />
+    <Compile Include="App_Code\TrvHotelPreBooking.cs" />
+    <Compile Include="Common\DotW\CommonHelper.cs" />
+    <Compile Include="Common\DotW\GlobalVars.cs" />
+    <Compile Include="Common\DotW\TestHelper.cs" />
+    <Compile Include="Common\JacTravel\JacHelper.cs" />
+    <Compile Include="Common\Miki\Utility.cs" />
+    <Compile Include="Common\TravayooHelper.cs" />
+    <Compile Include="Common\Travco\TravcoHelper.cs" />
+    <Compile Include="Helpers\Transfer\CommonHelper.cs" />
+    <Compile Include="IAirService.cs" />
+    <Compile Include="ITransferService.cs" />
+    <Compile Include="ITravayooOUTService.cs" />
+    <Compile Include="Models\Air\AirSearchRequest.cs" />
+    <Compile Include="Models\APILog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\APILogDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Common\common_citymap.cs" />
+    <Compile Include="Models\Common\ExceptionModel.cs" />
+    <Compile Include="Models\Common\RequestModel.cs" />
+    <Compile Include="Models\Common\SqlModel.cs" />
+    <Compile Include="Models\CustomException.cs" />
+    <Compile Include="Models\Darina\DarinaCredentials.cs" />
+    <Compile Include="Models\Darina\darina_Getrooms.cs" />
+    <Compile Include="Models\Darina\Darina_Htdetail.cs" />
+    <Compile Include="Models\Darina\Darina_HtlDetailStatic.cs" />
+    <Compile Include="Models\Darina\dr_staticdata.cs" />
+    <Compile Include="Models\DotW\Client.cs" />
+    <Compile Include="Models\DotW\DotWCredentials.cs" />
+    <Compile Include="Models\DotW\LogModel.cs" />
+    <Compile Include="Models\DotW\RoomItem.cs" />
+    <Compile Include="Models\EBookingCenter\EBookingStatic.cs" />
+    <Compile Include="Models\EBookingCenter\LogModel.cs" />
+    <Compile Include="Models\Godou\GadouLogs.cs" />
+    <Compile Include="Models\Godou\Gadou_Currency.cs" />
+    <Compile Include="Models\Godou\GodouDataAccess.cs" />
+    <Compile Include="Models\helper.cs" />
+    <Compile Include="Models\HotelBeds\HB_CXLPolicyDetail.cs" />
+    <Compile Include="Models\HotelBeds\HB_TransferCred.cs" />
+    <Compile Include="Models\HotelBeds\HotelBedsCredential.cs" />
+    <Compile Include="Models\HotelBeds_Detail.cs" />
+    <Compile Include="Models\HotelBeds_HtStatic.cs" />
+    <Compile Include="Models\HotelsPro\HotelsProCredentials.cs" />
+    <Compile Include="Models\HotelsPro\htlpro_facility.cs" />
+    <Compile Include="Models\HotelsPro_Detail.cs" />
+    <Compile Include="Models\HotelsPro_Hotelstatic.cs" />
+    <Compile Include="Models\JacTravel\jac_staticdata.cs" />
+    <Compile Include="Models\JacTravel\jac_staticregion.cs" />
+    <Compile Include="Models\Juniper\junipercitymap.cs" />
+    <Compile Include="Models\Juniper\JuniperData.cs" />
+    <Compile Include="Models\Juniper\LoginDetail.cs" />
+    <Compile Include="Models\LogModel.cs" />
+    <Compile Include="Models\Miki\Credentials.cs" />
+    <Compile Include="Models\Miki\MikiLogSave.cs" />
+    <Compile Include="Models\Miki\MikiStaticData.cs" />
+    <Compile Include="Models\Restel\RestelCredentials.cs" />
+    <Compile Include="Models\Restel\RestelLogAccess.cs" />
+    <Compile Include="Models\Restel\restel_citymapping.cs" />
+    <Compile Include="Models\RTS\HTlStaticData.cs" />
+    <Compile Include="Models\RTS\RTS_citydetail.cs" />
+    <Compile Include="Models\RTS\RTS_citymap.cs" />
+    <Compile Include="Models\RTS\RTS_getcity.cs" />
+    <Compile Include="Models\SalTours\salCityMapping.cs" />
+    <Compile Include="Models\SalTours\SalDataAccess.cs" />
+    <Compile Include="Models\SalTours\SalTours_Logs.cs" />
+    <Compile Include="Models\SalTours\Sal_Currency.cs" />
+    <Compile Include="Models\SaveAPILog.cs" />
+    <Compile Include="Models\SunHotels\SunHotelData.cs" />
+    <Compile Include="Models\supplier_Cred.cs" />
+    <Compile Include="Models\Supplier_Cred\Supplier_Cred.cs" />
+    <Compile Include="Models\TBO\Log_Model.cs" />
+    <Compile Include="Models\TBO\TBO_Data.cs" />
+    <Compile Include="Models\Tourico\trc_statichtl.cs" />
+    <Compile Include="Models\Tourico_HtDetail.cs" />
+    <Compile Include="Models\Tourico_HtlDetailStatic.cs" />
+    <Compile Include="Models\transfersupplier_Cred.cs" />
+    <Compile Include="Models\Transfer\HB\SearchResponseModel.cs" />
+    <Compile Include="Models\Transfer\HB\SearchModel.cs" />
+    <Compile Include="Models\Travco\TravcoHotelStatic.cs" />
+    <Compile Include="Models\Travco\travco_static.cs" />
+    <Compile Include="Models\TravelGate\LogModel.cs" />
+    <Compile Include="Models\TravelGate\TGDataAccess.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Repository\Transfer\HotelBedRepository.cs" />
+    <Compile Include="Service References\AllocationEnquiryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BookEnquiryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HotelAvailabilityService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HotelBookingRequestService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HotelCancellationDetails\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HotelExtranet\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TouricoReservation\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Tourico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\VOTAvailabilityService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceLog\ServiceLog.txt" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\TravillioXMLOutService.dll" />
+    <Content Include="bin\TravillioXMLOutService.pdb" />
+    <Content Include="log.txt" />
+    <Content Include="obj\Debug\TempPE\Service References.AllocationEnquiryService.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Service References.BookEnquiryService.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Service References.HotelAvailabilityService.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Service References.HotelBookingRequestService.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Service References.HotelCancellationDetails.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Service References.HotelExtranet.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Service References.Tourico.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Service References.TouricoReservation.Reference.cs.dll" />
+    <Content Include="obj\Debug\TravillioXMLOutService.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TravillioXMLOutService.dll" />
+    <Content Include="obj\Debug\TravillioXMLOutService.pdb" />
+    <Content Include="obj\Release\TempPE\Service References.AllocationEnquiryService.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.BookEnquiryService.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.HotelAvailabilityService.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.HotelBookingRequestService.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.HotelCancellationDetails.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.HotelExtranet.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.Tourico.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Service References.TouricoReservation.Reference.cs.dll" />
+    <Content Include="obj\Release\TravillioXMLOutService.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\TravillioXMLOutService.dll" />
+    <Content Include="obj\Release\TravillioXMLOutService.pdb" />
+    <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
+    <Content Include="packages.config" />
+    <Content Include="bin\TravillioXMLOutService.dll.config" />
+    <Content Include="packages\jQuery.1.4.4\jQuery.1.4.4.nupkg" />
+    <Content Include="packages\jQuery.1.4.4\jQuery.1.4.4.nuspec" />
+    <Content Include="packages\jQuery.UI.Core.1.8.9\jQuery.UI.Core.1.8.9.nupkg" />
+    <Content Include="packages\jQuery.UI.Core.1.8.9\jQuery.UI.Core.1.8.9.nuspec" />
+    <Content Include="packages\jQuery.UI.Widgets.Datepicker.1.8.9\jQuery.UI.Widgets.Datepicker.1.8.9.nupkg" />
+    <Content Include="packages\jQuery.UI.Widgets.Datepicker.1.8.9\jQuery.UI.Widgets.Datepicker.1.8.9.nuspec" />
+    <Content Include="packages\repositories.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\TransformWebConfig\assist\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\original\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
+    <Content Include="obj\Release\TravillioXMLOutService.csprojResolveAssemblyReference.cache" />
+    <None Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <None Include="Service References\AllocationEnquiryService\AllocationEnquiryV7Request.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AllocationEnquiryService\AllocationEnquiryV7Response.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AllocationEnquiryService\AllocationEnquiryV7Service.wsdl" />
+    <None Include="Service References\AllocationEnquiryService\CommonComplexType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AllocationEnquiryService\CommonSimpleType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\AllocationEnquiryService\TravillioXMLOutService.AllocationEnquiryService.AllocationEnquiryV7Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\AllocationEnquiryService\TravillioXMLOutService.AllocationEnquiryService.getAllocationEnquiryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\BookEnquiryService\BookEnquiryV7Request.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookEnquiryService\BookEnquiryV7Response.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookEnquiryService\BookEnquiryV7Service.wsdl" />
+    <None Include="Service References\BookEnquiryService\CommonComplexType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookEnquiryService\CommonSimpleType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\BookEnquiryService\TravillioXMLOutService.BookEnquiryService.BookEnquiryV7Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\BookEnquiryService\TravillioXMLOutService.BookEnquiryService.getBookEnquiryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\HotelAvailabilityService\CommonComplexType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelAvailabilityService\CommonSimpleType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelAvailabilityService\HotelAvailabilityV7Request.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelAvailabilityService\HotelAvailabilityV7Response.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelAvailabilityService\HotelAvailabilityV7Service.wsdl" />
+    <None Include="Service References\AllocationEnquiryService\configuration91.svcinfo" />
+    <None Include="Service References\AllocationEnquiryService\configuration.svcinfo" />
+    <None Include="Service References\AllocationEnquiryService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BookEnquiryService\configuration91.svcinfo" />
+    <None Include="Service References\BookEnquiryService\configuration.svcinfo" />
+    <None Include="Service References\BookEnquiryService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\HotelAvailabilityService\TravillioXMLOutService.HotelAvailabilityService.checkAvailabilityByHotelNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelAvailabilityService\TravillioXMLOutService.HotelAvailabilityService.HotelAvailabilityV7Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\HotelBookingRequestService\CommonComplexType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelBookingRequestService\CommonSimpleType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelBookingRequestService\HotelBookingV7Request.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelBookingRequestService\HotelBookingV7Response.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelBookingRequestService\HotelBookingV7Service.wsdl" />
+    <Content Include="Service References\HotelBookingRequestService\TravillioXMLOutService.HotelBookingRequestService.doHotelBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelBookingRequestService\TravillioXMLOutService.HotelBookingRequestService.HotelBookingV7Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\HotelCancellationDetails\CommonComplexType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelCancellationDetails\CommonSimpleType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelCancellationDetails\HotelCancellationDetailRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelCancellationDetails\HotelCancellationDetailResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelCancellationDetails\HotelCancellationDetailService.wsdl" />
+    <None Include="Service References\HotelBookingRequestService\configuration91.svcinfo" />
+    <None Include="Service References\HotelBookingRequestService\configuration.svcinfo" />
+    <None Include="Service References\HotelBookingRequestService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\HotelCancellationDetails\TravillioXMLOutService.HotelCancellationDetails.getHotelCancellationDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HotelCancellationDetails\TravillioXMLOutService.HotelCancellationDetails.HotelCancellationDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\HotelExtranet\ExtXmlOutService.wsdl" />
+    <None Include="Service References\HotelExtranet\ExtXmlOutService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelExtranet\ExtXmlOutService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelExtranet\ExtXmlOutService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HotelExtranet\ExtXmlOutService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages\jQuery.1.4.4\Content\Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="packages\jQuery.1.4.4\Content\Scripts\jquery-1.4.4.js" />
+    <Content Include="packages\jQuery.1.4.4\Content\Scripts\jquery-1.4.4.min.js" />
+    <Content Include="packages\jQuery.UI.Core.1.8.9\Content\Scripts\jquery.ui.core.js" />
+    <Content Include="packages\jQuery.UI.Core.1.8.9\Content\Scripts\jquery.ui.core.min.js" />
+    <Content Include="packages\jQuery.UI.Widgets.Datepicker.1.8.9\Content\Scripts\jquery.ui.datepicker.js" />
+    <Content Include="packages\jQuery.UI.Widgets.Datepicker.1.8.9\Content\Scripts\jquery.ui.datepicker.min.js" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.core.min.js" />
+    <Content Include="Scripts\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\jquery.ui.datepicker.min.js" />
+    <None Include="Service References\HotelExtranet\configuration91.svcinfo" />
+    <None Include="Service References\HotelExtranet\configuration.svcinfo" />
+    <None Include="Service References\HotelExtranet\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\HotelAvailabilityService\configuration91.svcinfo" />
+    <None Include="Service References\HotelAvailabilityService\configuration.svcinfo" />
+    <None Include="Service References\HotelAvailabilityService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\HotelCancellationDetails\configuration91.svcinfo" />
+    <None Include="Service References\HotelCancellationDetails\configuration.svcinfo" />
+    <None Include="Service References\HotelCancellationDetails\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\TouricoReservation\ApiBridgeReservationsService.wsdl" />
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.CancellationFeeInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.CancelReservationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.GetCancellationFeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.GetCancellationPoliciesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.GetPreviousRGResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.GetRGInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.HotelPolicyType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.TWS_RGInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\TouricoReservation\TravillioXMLOutService.TouricoReservation.TWS_RGList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\TouricoReservation\TWS_RGInfo.xsd" />
+    <None Include="Service References\TouricoReservation\TWS_RGList.xsd" />
+    <None Include="Service References\Tourico\ABHotelFlow.disco" />
+    <None Include="Service References\Tourico\configuration91.svcinfo" />
+    <None Include="Service References\Tourico\configuration.svcinfo" />
+    <None Include="Service References\Tourico\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\TouricoReservation\configuration91.svcinfo" />
+    <None Include="Service References\TouricoReservation\configuration.svcinfo" />
+    <None Include="Service References\TouricoReservation\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\VOTAvailabilityService\configuration91.svcinfo" />
+    <None Include="Service References\VOTAvailabilityService\configuration.svcinfo" />
+    <None Include="Service References\VOTAvailabilityService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="TransferService.svc" />
+    <Content Include="TravayooOUTService.svc" />
+    <Content Include="TravillioXMLOutService %282%29.csproj" />
+    <Content Include="TravillioXMLOutService.csproj %282%29.user" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\RoomAvailabilityRequest.cs" />
+    <Compile Include="App_Code\TrvHotelBooking.cs" />
+    <Compile Include="App_Code\TrvHotelDetailsWithCancellation.cs" />
+    <Compile Include="App_Code\SearchHotelRequest.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\AccountModel.cs" />
+    <Compile Include="Models\HeaderAuth.cs" />
+    <Compile Include="Models\LogWriter.cs" />
+    <Compile Include="Models\VerifySearchHotelRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Interfaces\IHBService.cs" />
+    <Compile Include="Services\Transfer\HBService.cs" />
+    <Compile Include="Supplier\Darina\dr_Booking.cs" />
+    <Compile Include="Supplier\Darina\dr_Cancel.cs" />
+    <Compile Include="Supplier\Darina\dr_CXLpolicy.cs" />
+    <Compile Include="Supplier\Darina\dr_Hotelsearch.cs" />
+    <Compile Include="Supplier\Darina\dr_prebook.cs" />
+    <Compile Include="Supplier\Darina\dr_Roomavail.cs" />
+    <Compile Include="Supplier\DotW\DotwDataAcess.cs" />
+    <Compile Include="Supplier\DotW\DotwRepository.cs" />
+    <Compile Include="Supplier\DotW\DotwService.cs" />
+    <Compile Include="Supplier\EBookingCenter\EBookingHelper.cs" />
+    <Compile Include="Supplier\EBookingCenter\EBookingRequest.cs" />
+    <Compile Include="Supplier\EBookingCenter\EBookingService.cs" />
+    <Compile Include="Supplier\EBookingCenter\EBooking_StaticData.cs" />
+    <Compile Include="Supplier\Extranet\ExtBooking.cs" />
+    <Compile Include="Supplier\Extranet\ExtBookingCancel.cs" />
+    <Compile Include="Supplier\Extranet\ExtCXLPolicy.cs" />
+    <Compile Include="Supplier\Extranet\ExtGetRoomAvail.cs" />
+    <Compile Include="Supplier\Extranet\ExtgetroomDesc.cs" />
+    <Compile Include="Supplier\Extranet\ExtHotelDetail.cs" />
+    <Compile Include="Supplier\Extranet\ExtHotelSearch.cs" />
+    <Compile Include="Supplier\Extranet\ExtPreBook.cs" />
+    <Compile Include="Supplier\Extranet\ExtranetService.cs" />
+    <Compile Include="Supplier\GIATA\GiataMapping_Hotel.cs" />
+    <Compile Include="Supplier\Godou\GodouRequest.cs" />
+    <Compile Include="Supplier\Godou\GodouServices.cs" />
+    <Compile Include="Supplier\Hoojoozat\HoojHelper.cs" />
+    <Compile Include="Supplier\Hoojoozat\HoojService.cs" />
+    <Compile Include="Supplier\Hoojoozat\HoojStatic.cs" />
+    <Compile Include="Supplier\HotelBeds\BookingHotelBeds.cs" />
+    <Compile Include="Supplier\HotelBeds\CancellationPolicyHotelBeds.cs" />
+    <Compile Include="Supplier\HotelBeds\HotelBeds.cs" />
+    <Compile Include="Supplier\HotelBeds\HotelCancellationHotelBeds.cs" />
+    <Compile Include="Supplier\HotelBeds\ImportBookingHotelBeds.cs" />
+    <Compile Include="Supplier\HotelBeds\PreBookHotelBeds.cs" />
+    <Compile Include="Supplier\HotelBeds\RoomAvailabilityHotelBeds.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProBooking.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProCancellation.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProCXLPolicy.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProHotelSearch.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProHtlDetail.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProImport.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProPreBook.cs" />
+    <Compile Include="Supplier\HotelsPro\HotelsProRoomAvail.cs" />
+    <Compile Include="Supplier\JacTravel\CreateSearchRequest.cs" />
+    <Compile Include="Supplier\JacTravel\Getresort.cs" />
+    <Compile Include="Supplier\JacTravel\JacService.cs" />
+    <Compile Include="Supplier\JacTravel\JacTravel_Intial.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_HotelAvail.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_HotelSearch.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_HtlBokng.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_HtlCXlPolicy.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_HtlDetail.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_HtlPreBooking.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_PreCancel.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_RequestClass.cs" />
+    <Compile Include="Supplier\JacTravel\Jac_RoomRequest.cs" />
+    <Compile Include="Supplier\Juniper\Helper.cs" />
+    <Compile Include="Supplier\Juniper\JuniperOutward.cs" />
+    <Compile Include="Supplier\Juniper\JuniperReponses.cs" />
+    <Compile Include="Supplier\Miki\MikiExternal.cs" />
+    <Compile Include="Supplier\Miki\MikiInternal.cs" />
+    <Compile Include="Supplier\Miki\MikiService.cs" />
+    <Compile Include="Supplier\Restel\RestelServerRequest.cs" />
+    <Compile Include="Supplier\Restel\RestelServices.cs" />
+    <Compile Include="Supplier\RTS\RequestClass.cs" />
+    <Compile Include="Supplier\RTS\RTSIntial.cs" />
+    <Compile Include="Supplier\RTS\RTS_BookingCXL.cs" />
+    <Compile Include="Supplier\RTS\RTS_CXlPolicy.cs" />
+    <Compile Include="Supplier\RTS\RTS_HTlBooking.cs" />
+    <Compile Include="Supplier\RTS\RTS_HtlDetail.cs" />
+    <Compile Include="Supplier\RTS\RTS_HtlRMk.cs" />
+    <Compile Include="Supplier\RTS\RTS_HtlSearch.cs" />
+    <Compile Include="Supplier\RTS\RTS_PreBookCXl.cs" />
+    <Compile Include="Supplier\RTS\RTS_PreBooking.cs" />
+    <Compile Include="Supplier\RTS\RTS_PriceChangeChk.cs" />
+    <Compile Include="Supplier\RTS\RTS_RoomAvail.cs" />
+    <Compile Include="Supplier\RTS\RTS_VoucherRequest.cs" />
+    <Compile Include="Supplier\SalTours\SalServerRequest.cs" />
+    <Compile Include="Supplier\SalTours\SalServices.cs" />
+    <Compile Include="Supplier\SunHotels\SunHotelOuter.cs" />
+    <Compile Include="Supplier\SunHotels\SunHotelService.cs" />
+    <Compile Include="Supplier\SunHotels\SunHotelsResponse.cs" />
+    <Compile Include="Supplier\TBOHolidays\PolicyHelper.cs" />
+    <Compile Include="Supplier\TBOHolidays\TBORequest.cs" />
+    <Compile Include="Supplier\TBOHolidays\TBOServices.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_Book.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_Cancel.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_CXLPolicy.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_GetRoomAvail.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_HotelSearch.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_importbkng.cs" />
+    <Compile Include="Supplier\TouricoHolidays\Tr_PreBook.cs" />
+    <Compile Include="Supplier\TravelGate\JsonHelper.cs" />
+    <Compile Include="Supplier\TravelGate\TGRequest.cs" />
+    <Compile Include="Supplier\TravelGate\TGServices.cs" />
+    <Compile Include="Supplier\VOT\VOTService.cs" />
+    <Compile Include="Supplier\VOT\VOTStatic.cs" />
+    <Compile Include="Supplier\XMLOUTAPI\Book\Common\xmloutBook.cs" />
+    <Compile Include="Supplier\XMLOUTAPI\Cancel\xmloutCancel.cs" />
+    <Compile Include="Supplier\XMLOUTAPI\CXLPolicy\xmloutCXLPolicy.cs" />
+    <Compile Include="Supplier\XMLOUTAPI\GetRoom\Common\xmlGetroom.cs" />
+    <Compile Include="Supplier\XMLOUTAPI\GetRoom\Extranetout\getRoomExtout.cs" />
+    <Compile Include="Supplier\XMLOUTAPI\PreBook\Common\xmlprebook.cs" />
+    <Compile Include="Supplier\XMLOUTAPI\PreBook\Extranetout\prebookExtout.cs" />
+    <Compile Include="Supplier\XMLOUTAPI\xmlHotelSearch.cs" />
+    <Compile Include="Supplier\XMLOUTAPI\xmlResponseRequest.cs" />
+    <Compile Include="Supplier\XMLOUT\HotelSearch_HA.cs" />
+    <Compile Include="Supplier\XMLOUT\HotelSearch_NAHA.cs" />
+    <Compile Include="Supplier\XMLOUT\HotelSearch_XMLOUT.cs" />
+    <Compile Include="Supplier\XMLOUT\RoomDesc.cs" />
+    <Compile Include="TransferService.svc.cs">
+      <DependentUpon>TransferService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\Helper\CommonHelper.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_transferAvail.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_TrnsfrBook.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_TrnsfrCancel.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_TrnsfrGetCXLPolicy.cs" />
+    <Compile Include="Transfer\HotelBeds\HB_TrnsfrGetPreBook.cs" />
+    <Compile Include="Transfer\Model\HBCredentials.cs" />
+    <Compile Include="Transfer\Model\RequestModel.cs" />
+    <Compile Include="Transfer\Repository\HotelBedRepository.cs" />
+    <Compile Include="Transfer\Service\HotelBedService.cs" />
+    <Compile Include="TravayooOUTService.svc.cs">
+      <DependentUpon>TravayooOUTService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AllocationEnquiryService\" />
+    <WCFMetadataStorage Include="Service References\BookEnquiryService\" />
+    <WCFMetadataStorage Include="Service References\HotelAvailabilityService\" />
+    <WCFMetadataStorage Include="Service References\HotelBookingRequestService\" />
+    <WCFMetadataStorage Include="Service References\HotelCancellationDetails\" />
+    <WCFMetadataStorage Include="Service References\HotelExtranet\" />
+    <WCFMetadataStorage Include="Service References\TouricoReservation\" />
+    <WCFMetadataStorage Include="Service References\Tourico\" />
+    <WCFMetadataStorage Include="Service References\VOTAvailabilityService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\TravillioXMLOutService.pubxml" />
+    <None Include="Service References\Tourico\ABHotelFlow.wsdl" />
+    <None Include="Service References\Tourico\ABHotelFlow.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\ABHotelFlow1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\ABHotelFlow2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\ABHotelFlow3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\ABHotelFlow4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\ABHotelFlow5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\ABHotelFlow6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Tourico\HotelFlow.wsdl" />
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.AmendResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.BookHotelV3Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.CancellationFeeInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.CancellationFeeInfoWrapper.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.CheckAvailabilityAndPricesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.CostAmendResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.DoAmendResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.GetHotelDetailsV3Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.GetRGInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.GetTermAndConditionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.HotelPolicyType1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.HotelPolicyTypeWrapper.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.RGInfoResults.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.SearchHotelsByDestinationIdsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.SearchHotelsByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.SearchHotelsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.TermAndCondition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Tourico\TravillioXMLOutService.Tourico.TWS_HotelDetailsV3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\Tourico\TWS_HotelDetailsV3.xsd" />
+    <None Include="Service References\VOTAvailabilityService\AvailabilityServices.wsdl" />
+    <None Include="Service References\VOTAvailabilityService\AvailabilityServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VOTAvailabilityService\AvailabilityServices1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\Juniper\" />
+    <Folder Include="obj\Release\Package\" />
+    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\obj\Release\TransformWebConfig\assist\" />
+    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\obj\Release\TransformWebConfig\original\" />
+    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\obj\Release\TransformWebConfig\transformed\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>21111</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:21111/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

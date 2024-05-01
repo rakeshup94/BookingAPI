@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetHotelRoomAvailability">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AgentUsername" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AgentPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CountryCode" type="xs:int" />
+        <xs:element minOccurs="0" name="DestinationCode" type="xs:int" />
+        <xs:element minOccurs="0" name="FromDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ToDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Occupancy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="HotelCode" type="xs:int" />
+        <xs:element minOccurs="0" name="CategoryCode" type="xs:int" />
+        <xs:element minOccurs="0" name="PassengerNationality" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SortBy" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHotelRoomAvailabilityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetHotelRoomAvailabilityResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmHotelRoomAvailability">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AgentUsername" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AgentPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SessionNB" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ReferenceNB" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RoomPurchaseToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmHotelRoomAvailabilityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmHotelRoomAvailabilityResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MakeBooking">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AgentUsername" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AgentPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SessionNB" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ReferenceNB" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RoomPurchaseToken" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Passengers" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClientFirstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClientLastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClientEmail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClientComments" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClientBooingReferenceNB" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MakeBookingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MakeBookingResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelBooking">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AgentUsername" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AgentPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BookingLocator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelBookingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CancelBookingResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckBooking">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AgentUsername" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AgentPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BookingLocator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FromDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ToDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DateType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClientBookingReferenceNB" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckBookingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckBookingResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

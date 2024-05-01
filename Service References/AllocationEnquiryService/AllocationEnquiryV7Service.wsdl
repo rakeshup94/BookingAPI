@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:request="http://www.travco.co.uk/trlink/xsd/allocationenquiryv7/request" xmlns:cmp="http://www.travco.co.uk/trlink/xsd/complextype" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsoap="http://www.w3.org/ns/wsdl/soap" xmlns:ns="http://www.travco.co.uk/" xmlns:response="http://www.travco.co.uk/trlink/xsd/allocationenquiryv7/response" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:whttp="http://www.w3.org/ns/wsdl/http" targetNamespace="http://www.travco.co.uk/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>AllocationEnquiryV7Service</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema>
+      <xs:import schemaLocation="AllocationEnquiryV7Response.xsd" namespace="http://www.travco.co.uk/trlink/xsd/allocationenquiryv7/response" />
+      <xs:import schemaLocation="AllocationEnquiryV7Request.xsd" namespace="http://www.travco.co.uk/trlink/xsd/allocationenquiryv7/request" />
+      <xs:import schemaLocation="CommonComplexType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/complextype" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllocationEnquiry">
+    <wsdl:part name="parameters1" element="request:getAllocationEnquiry" />
+  </wsdl:message>
+  <wsdl:message name="GetAllocationEnquiryForEnquiry">
+    <wsdl:part name="parameters2" element="request:getAllocationEnquiryForEnquiry" />
+  </wsdl:message>
+  <wsdl:message name="GetAllocationEnquiryForEnquiries">
+    <wsdl:part name="parameters3" element="request:getAllocationEnquiryForEnquiries" />
+  </wsdl:message>
+  <wsdl:message name="AllocationEnquiryV7Response">
+    <wsdl:part name="parameters4" element="response:AllocationEnquiryV7Response" />
+  </wsdl:message>
+  <wsdl:message name="ResponseDataFaultMessage">
+    <wsdl:part name="fault1" element="cmp:ResponseDataFault" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveParserFaultMessage">
+    <wsdl:part name="fault2" element="cmp:ReceiveParserFault" />
+  </wsdl:message>
+  <wsdl:message name="SendParserFaultMessage">
+    <wsdl:part name="fault3" element="cmp:SendParserFault" />
+  </wsdl:message>
+  <wsdl:message name="UserFaultMessage">
+    <wsdl:part name="fault4" element="cmp:UserFault" />
+  </wsdl:message>
+  <wsdl:message name="CommunicationFaultMessage">
+    <wsdl:part name="fault5" element="cmp:CommunicationFault" />
+  </wsdl:message>
+  <wsdl:message name="ServerFaultMessage">
+    <wsdl:part name="fault6" element="cmp:ServerFault" />
+  </wsdl:message>
+  <wsdl:portType name="AllocationEnquiryV7ServicePortType">
+    <wsdl:operation name="getAllocationEnquiry">
+      <wsdl:input wsaw:Action="urn:getAllocationEnquiry" message="ns:GetAllocationEnquiry" />
+      <wsdl:output wsaw:Action="urn:getAllocationEnquiryResponse" message="ns:AllocationEnquiryV7Response" />
+      <wsdl:fault name="ResponseDataException" message="ns:ResponseDataFaultMessage" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllocationEnquiryForEnquiry">
+      <wsdl:input wsaw:Action="urn:getAllocationEnquiryForEnquiry" message="ns:GetAllocationEnquiryForEnquiry" />
+      <wsdl:output wsaw:Action="urn:getAllocationEnquiryForEnquiryResponse" message="ns:AllocationEnquiryV7Response" />
+      <wsdl:fault name="ResponseDataException" message="ns:ResponseDataFaultMessage" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllocationEnquiryForEnquiries">
+      <wsdl:input wsaw:Action="urn:getAllocationEnquiryForEnquiries" message="ns:GetAllocationEnquiryForEnquiries" />
+      <wsdl:output wsaw:Action="urn:getAllocationEnquiryForEnquiriesResponse" message="ns:AllocationEnquiryV7Response" />
+      <wsdl:fault name="ResponseDataException" message="ns:ResponseDataFaultMessage" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AllocationEnquiryV7ServiceSoap11Binding" type="ns:AllocationEnquiryV7ServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getAllocationEnquiry">
+      <soap:operation soapAction="urn:getAllocationEnquiry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ResponseDataException">
+        <soap:fault use="literal" name="ResponseDataException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllocationEnquiryForEnquiry">
+      <soap:operation soapAction="urn:getAllocationEnquiryForEnquiry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ResponseDataException">
+        <soap:fault use="literal" name="ResponseDataException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllocationEnquiryForEnquiries">
+      <soap:operation soapAction="urn:getAllocationEnquiryForEnquiries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ResponseDataException">
+        <soap:fault use="literal" name="ResponseDataException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AllocationEnquiryV7Service">
+    <wsdl:port name="AllocationEnquiryV7HttpSoap11Endpoint" binding="ns:AllocationEnquiryV7ServiceSoap11Binding">
+      <soap:address location="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/AllocationEnquiryV7Service.AllocationEnquiryV7HttpSoap11Endpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

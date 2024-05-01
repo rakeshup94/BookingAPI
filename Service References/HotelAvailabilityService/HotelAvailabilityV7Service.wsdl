@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:request="http://www.travco.co.uk/trlink/xsd/hotelavailabilityv7/request" xmlns:cmp="http://www.travco.co.uk/trlink/xsd/complextype" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsoap="http://www.w3.org/ns/wsdl/soap" xmlns:ns="http://www.travco.co.uk/" xmlns:response="http://www.travco.co.uk/trlink/xsd/hotelavailabilityv7/response" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:whttp="http://www.w3.org/ns/wsdl/http" targetNamespace="http://www.travco.co.uk/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>HotelAvailabilityV7Service</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema>
+      <xs:import schemaLocation="HotelAvailabilityV7Response.xsd" namespace="http://www.travco.co.uk/trlink/xsd/hotelavailabilityv7/response" />
+      <xs:import schemaLocation="HotelAvailabilityV7Request.xsd" namespace="http://www.travco.co.uk/trlink/xsd/hotelavailabilityv7/request" />
+      <xs:import schemaLocation="CommonComplexType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/complextype" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="HotelAvailabilityV7Response">
+    <wsdl:part name="return" element="response:HotelAvailabilityV7Response" />
+  </wsdl:message>
+  <wsdl:message name="CheckAvailabilityByHotelCode">
+    <wsdl:part name="parameters1" element="request:checkAvailabilityByHotelCode" />
+  </wsdl:message>
+  <wsdl:message name="CheckAvailabilityByHotelName">
+    <wsdl:part name="parameters2" element="request:checkAvailabilityByHotelName" />
+  </wsdl:message>
+  <wsdl:message name="CheckAvailabilityByCountryRegion">
+    <wsdl:part name="parameters3" element="request:checkAvailabilityByCountryRegion" />
+  </wsdl:message>
+  <wsdl:message name="CheckAvailabilityByCity">
+    <wsdl:part name="parameters4" element="request:checkAvailabilityByCity" />
+  </wsdl:message>
+  <wsdl:message name="CheckAvailabilityByCityArea">
+    <wsdl:part name="parameters5" element="request:checkAvailabilityByCityArea" />
+  </wsdl:message>
+  <wsdl:message name="CheckAvailabilityByMultipleHotelCodes">
+    <wsdl:part name="parameters6" element="request:checkAvailabilityByMultipleHotelCodes" />
+  </wsdl:message>
+  <wsdl:message name="ResponseDataFaultMessage">
+    <wsdl:part name="fault1" element="cmp:ResponseDataFault" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveParserFaultMessage">
+    <wsdl:part name="fault2" element="cmp:ReceiveParserFault" />
+  </wsdl:message>
+  <wsdl:message name="SendParserFaultMessage">
+    <wsdl:part name="fault3" element="cmp:SendParserFault" />
+  </wsdl:message>
+  <wsdl:message name="UserFaultMessage">
+    <wsdl:part name="fault4" element="cmp:UserFault" />
+  </wsdl:message>
+  <wsdl:message name="CommunicationFaultMessage">
+    <wsdl:part name="fault5" element="cmp:CommunicationFault" />
+  </wsdl:message>
+  <wsdl:message name="ServerFaultMessage">
+    <wsdl:part name="fault6" element="cmp:ServerFault" />
+  </wsdl:message>
+  <wsdl:portType name="HotelAvailabilityV7ServicePortType">
+    <wsdl:operation name="checkAvailabilityByHotelName">
+      <wsdl:input wsaw:Action="urn:checkAvailabilityByHotelName" message="ns:CheckAvailabilityByHotelName" />
+      <wsdl:output wsaw:Action="urn:checkAvailabilityByHotelNameResponse" message="ns:HotelAvailabilityV7Response" />
+      <wsdl:fault name="ResponseDataException" message="ns:ResponseDataFaultMessage" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailabilityByHotelCode">
+      <wsdl:input wsaw:Action="urn:checkAvailabilityByHotelCode" message="ns:CheckAvailabilityByHotelCode" />
+      <wsdl:output wsaw:Action="urn:checkAvailabilityByHotelCodeResponse" message="ns:HotelAvailabilityV7Response" />
+      <wsdl:fault name="ResponseDataException" message="ns:ResponseDataFaultMessage" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailabilityByCountryRegion">
+      <wsdl:input wsaw:Action="urn:checkAvailabilityByCountryRegion" message="ns:CheckAvailabilityByCountryRegion" />
+      <wsdl:output wsaw:Action="urn:checkAvailabilityByCountryRegionResponse" message="ns:HotelAvailabilityV7Response" />
+      <wsdl:fault name="ResponseDataException" message="ns:ResponseDataFaultMessage" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailabilityByCity">
+      <wsdl:input wsaw:Action="urn:checkAvailabilityByCity" message="ns:CheckAvailabilityByCity" />
+      <wsdl:output wsaw:Action="urn:checkAvailabilityByCityResponse" message="ns:HotelAvailabilityV7Response" />
+      <wsdl:fault name="ResponseDataException" message="ns:ResponseDataFaultMessage" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailabilityByCityArea">
+      <wsdl:input wsaw:Action="urn:checkAvailabilityByCityArea" message="ns:CheckAvailabilityByCityArea" />
+      <wsdl:output wsaw:Action="urn:checkAvailabilityByCityAreaResponse" message="ns:HotelAvailabilityV7Response" />
+      <wsdl:fault name="ResponseDataException" message="ns:ResponseDataFaultMessage" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailabilityByMultipleHotelCodes">
+      <wsdl:input wsaw:Action="urn:checkAvailabilityByMultipleHotelCodes" message="ns:CheckAvailabilityByMultipleHotelCodes" />
+      <wsdl:output wsaw:Action="urn:checkAvailabilityByMultipleHotelCodesResponse" message="ns:HotelAvailabilityV7Response" />
+      <wsdl:fault name="ResponseDataException" message="ns:ResponseDataFaultMessage" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HotelAvailabilityV7ServiceSoap11Binding" type="ns:HotelAvailabilityV7ServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="checkAvailabilityByHotelName">
+      <soap:operation soapAction="urn:checkAvailabilityByHotelName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ResponseDataException">
+        <soap:fault use="literal" name="ResponseDataException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailabilityByHotelCode">
+      <soap:operation soapAction="urn:checkAvailabilityByHotelCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ResponseDataException">
+        <soap:fault use="literal" name="ResponseDataException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailabilityByCountryRegion">
+      <soap:operation soapAction="urn:checkAvailabilityByCountryRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ResponseDataException">
+        <soap:fault use="literal" name="ResponseDataException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailabilityByCity">
+      <soap:operation soapAction="urn:checkAvailabilityByCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ResponseDataException">
+        <soap:fault use="literal" name="ResponseDataException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailabilityByCityArea">
+      <soap:operation soapAction="urn:checkAvailabilityByCityArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ResponseDataException">
+        <soap:fault use="literal" name="ResponseDataException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailabilityByMultipleHotelCodes">
+      <soap:operation soapAction="urn:checkAvailabilityByMultipleHotelCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ResponseDataException">
+        <soap:fault use="literal" name="ResponseDataException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HotelAvailabilityV7Service">
+    <wsdl:port name="HotelAvailabilityV7HttpSoap11Endpoint" binding="ns:HotelAvailabilityV7ServiceSoap11Binding">
+      <soap:address location="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/HotelAvailabilityV7Service.HotelAvailabilityV7HttpSoap11Endpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

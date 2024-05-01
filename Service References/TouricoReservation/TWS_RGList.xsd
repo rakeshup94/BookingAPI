@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tourico.com/webservices/TWS_RGList.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tourico.com/webservices/TWS_RGList.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tourico.com/webservices/TWS_RGList.xsd" id="TWS_RGList" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:Locale="en-US" msdata:EnforceConstraints="False" name="TWS_RGList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ResGroup">
+          <xs:complexType>
+            <xs:attribute form="unqualified" name="RGID" type="xs:int" use="required" />
+            <xs:attribute form="unqualified" name="isPackage" type="xs:boolean" use="required" />
+            <xs:attribute form="unqualified" name="totalPrice" type="xs:double" use="required" />
+            <xs:attribute default="USD" form="unqualified" name="currency" type="xs:string" />
+            <xs:attribute form="unqualified" name="note" type="xs:string" />
+            <xs:attribute form="unqualified" name="dateCreated" type="xs:dateTime" />
+            <xs:attribute form="unqualified" name="reservationCount" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

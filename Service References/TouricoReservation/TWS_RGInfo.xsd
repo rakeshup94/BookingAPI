@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tourico.com/webservices/TWS_RGInfo.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:mstns="http://tourico.com/webservices/TWS_RGInfo.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tourico.com/webservices/TWS_RGInfo.xsd" id="TWS_RGInfo" msdata:schemafragmentcount="2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:Locale="en-US" msdata:EnforceConstraints="False" name="TWS_RGInfo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ResGroup">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Reservation">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="HotelExtraInfo">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="Supplement">
+                            <xs:complexType>
+                              <xs:attribute form="unqualified" name="name" type="xs:string" use="required" />
+                              <xs:attribute form="unqualified" name="price" type="xs:double" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="TotalTaxBreakdown">
+                            <xs:complexType>
+                              <xs:attribute form="unqualified" name="dmf" type="xs:decimal" use="required" />
+                              <xs:attribute form="unqualified" name="gst" type="xs:decimal" use="required" />
+                              <xs:attribute form="unqualified" name="pst" type="xs:decimal" use="required" />
+                              <xs:attribute name="HotelExtraInfo_Id" type="xs:int" use="prohibited" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute form="unqualified" name="hotelID" type="xs:int" use="required" />
+                        <xs:attribute form="unqualified" name="name" type="xs:string" use="required" />
+                        <xs:attribute form="unqualified" name="address" type="xs:string" />
+                        <xs:attribute form="unqualified" name="category" type="xs:string" />
+                        <xs:attribute form="unqualified" name="bestVal" type="xs:byte" />
+                        <xs:attribute form="unqualified" name="numOfStars" type="xs:float" />
+                        <xs:attribute form="unqualified" name="roomType" type="xs:string" use="required" />
+                        <xs:attribute form="unqualified" name="thumb" type="xs:string" />
+                        <xs:attribute form="unqualified" name="bbName" type="xs:string" />
+                        <xs:attribute form="unqualified" name="bbPrice" type="xs:double" />
+                        <xs:attribute form="unqualified" name="dblBed" type="xs:boolean" />
+                        <xs:attribute msdata:AutoIncrement="true" msdata:AllowDBNull="false" name="HotelExtraInfo_Id" type="xs:int" use="prohibited" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="FlightExtraInfo">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="Segment">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="Leg">
+                                  <xs:complexType>
+                                    <xs:attribute form="unqualified" name="depArCode" type="xs:string" use="required" />
+                                    <xs:attribute form="unqualified" name="arrArCode" type="xs:string" use="required" />
+                                    <xs:attribute form="unqualified" name="depDateTime" type="xs:dateTime" use="required" />
+                                    <xs:attribute form="unqualified" name="arrDateTime" type="xs:dateTime" use="required" />
+                                    <xs:attribute form="unqualified" name="airlineCode" type="xs:string" use="required" />
+                                    <xs:attribute form="unqualified" name="airlineName" type="xs:string" use="required" />
+                                    <xs:attribute form="unqualified" name="flightNumber" type="xs:string" use="required" />
+                                    <xs:attribute msprop:Generator_ColumnPropNameInTable="classColumn" msprop:Generator_ColumnVarNameInTable="columnclass" msprop:Generator_UserColumnName="class" form="unqualified" name="class" type="xs:string" use="required" />
+                                    <xs:attribute form="unqualified" name="depTerm" type="xs:string" use="required" />
+                                    <xs:attribute form="unqualified" name="arrTerm" type="xs:string" use="required" />
+                                    <xs:attribute form="unqualified" name="mealType" type="xs:string" />
+                                    <xs:attribute form="unqualified" name="duration" type="xs:dateTime" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute form="unqualified" name="depArCode" type="xs:string" use="required" />
+                              <xs:attribute form="unqualified" name="arrArCode" type="xs:string" use="required" />
+                              <xs:attribute form="unqualified" name="depDate" type="xs:dateTime" use="required" />
+                              <xs:attribute form="unqualified" name="arrDate" type="xs:dateTime" use="required" />
+                              <xs:attribute form="unqualified" name="totalDur" type="xs:string" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute form="unqualified" name="PNR" type="xs:string" use="required" />
+                        <xs:attribute form="unqualified" name="ETick" type="xs:boolean" use="required" />
+                        <xs:attribute default="0" form="unqualified" name="SrvFee" type="xs:double" />
+                        <xs:attribute default="0" form="unqualified" name="DlvrFee" type="xs:double" />
+                        <xs:attribute form="unqualified" name="FlightMode" type="xs:unsignedByte" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="Passenger">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="FrequentTraveler">
+                            <xs:complexType>
+                              <xs:attribute form="unqualified" name="number" type="xs:string" use="required" />
+                              <xs:attribute form="unqualified" name="airlineCode" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="PreferedSeat">
+                            <xs:complexType>
+                              <xs:attribute form="unqualified" name="seatDescription" type="xs:string" use="required" />
+                              <xs:attribute form="unqualified" name="status" type="xs:boolean" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="PreferedMeal">
+                            <xs:complexType>
+                              <xs:attribute form="unqualified" name="mealDescription" type="xs:string" use="required" />
+                              <xs:attribute form="unqualified" name="status" type="xs:boolean" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute form="unqualified" name="firstName" type="xs:string" use="required" />
+                        <xs:attribute form="unqualified" name="middleName" type="xs:string" use="required" />
+                        <xs:attribute form="unqualified" name="lastName" type="xs:string" use="required" />
+                        <xs:attribute form="unqualified" name="homePhone" type="xs:string" />
+                        <xs:attribute form="unqualified" name="mobilePhone" type="xs:string" />
+                        <xs:attribute form="unqualified" name="ageGroup" type="xs:unsignedByte" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute form="unqualified" name="reservationID" type="xs:int" use="required" />
+                  <xs:attribute form="unqualified" name="fromDate" type="xs:dateTime" use="required" />
+                  <xs:attribute form="unqualified" name="toDate" type="xs:dateTime" use="required" />
+                  <xs:attribute form="unqualified" name="totalTax" type="xs:double" />
+                  <xs:attribute form="unqualified" name="price" type="xs:double" use="required" />
+                  <xs:attribute form="unqualified" name="currency" type="xs:string" use="required" />
+                  <xs:attribute form="unqualified" name="status" type="xs:string" use="required" />
+                  <xs:attribute form="unqualified" name="numOfAdults" type="xs:unsignedByte" use="required" />
+                  <xs:attribute form="unqualified" name="numOfSeniors" type="xs:unsignedByte" />
+                  <xs:attribute form="unqualified" name="numOfChildren" type="xs:unsignedByte" />
+                  <xs:attribute form="unqualified" name="numOfInfants" type="xs:unsignedByte" />
+                  <xs:attribute form="unqualified" name="note" type="xs:string" />
+                  <xs:attribute form="unqualified" name="tranNum" type="xs:unsignedLong" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute form="unqualified" name="RGID" type="xs:int" use="required" />
+            <xs:attribute form="unqualified" name="isPackage" type="xs:boolean" use="required" />
+            <xs:attribute form="unqualified" name="totalPrice" type="xs:double" use="required" />
+            <xs:attribute form="unqualified" name="currency" type="xs:string" use="required" />
+            <xs:attribute form="unqualified" name="note" type="xs:string" />
+            <xs:attribute form="unqualified" name="tranNum" type="xs:unsignedLong" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="HotelExtraInfo_Constraint1">
+      <xs:selector xpath=".//mstns:HotelExtraInfo" />
+      <xs:field xpath="@mstns:HotelExtraInfo_Id" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:Reservation" />
+      <xs:field xpath="@reservationID" />
+    </xs:unique>
+    <xs:keyref msdata:IsNested="true" name="FK_HotelExtraInfo_TotalTaxBreakdown" refer="mstns:HotelExtraInfo_Constraint1">
+      <xs:selector xpath=".//mstns:TotalTaxBreakdown" />
+      <xs:field xpath="@mstns:HotelExtraInfo_Id" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

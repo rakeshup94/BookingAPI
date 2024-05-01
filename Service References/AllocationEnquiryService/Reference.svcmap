@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dd6e2d4c-587c-4307-887a-7ed5f4c25841" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/AllocationEnquiryV7Service.wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AllocationEnquiryV7Request.xsd" MetadataType="Schema" ID="4fe33e84-fee2-4542-8524-d3dc5aac2f9c" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/AllocationEnquiryV7Request.xsd" />
+    <MetadataFile FileName="CommonComplexType.xsd" MetadataType="Schema" ID="6434cc3f-1bab-4f7a-80d0-ab4b6c090923" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/CommonComplexType.xsd" />
+    <MetadataFile FileName="AllocationEnquiryV7Response.xsd" MetadataType="Schema" ID="088b6c23-8a43-4d83-900c-ef349610aed5" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/AllocationEnquiryV7Response.xsd" />
+    <MetadataFile FileName="CommonSimpleType.xsd" MetadataType="Schema" ID="3fa81ecb-2a3a-4239-a87a-355706f517d4" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/CommonSimpleType.xsd" />
+    <MetadataFile FileName="AllocationEnquiryV7Service.wsdl" MetadataType="Wsdl" ID="fbb00962-876d-44d2-b0af-52e5250374a1" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/AllocationEnquiryV7Service.wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

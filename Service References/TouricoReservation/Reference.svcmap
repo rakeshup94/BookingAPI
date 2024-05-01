@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="05b3ea96-dd90-4e43-9f85-3a8bcc3cf333" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://demo-wsnew.touricoholidays.com/ApiBridgeReservationsService.asmx?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ApiBridgeReservationsService.wsdl" MetadataType="Wsdl" ID="09a5d6af-9821-4a26-a19d-c4c0fd160879" SourceId="1" SourceUrl="http://demo-wsnew.touricoholidays.com/ApiBridgeReservationsService.asmx?wsdl" />
+    <MetadataFile FileName="TWS_RGInfo.xsd" MetadataType="Schema" ID="9b1b1777-c3d4-4c0f-9c13-5cefcb7b086a" SourceId="1" SourceUrl="http://demo-wsnew.touricoholidays.com/ApiBridgeReservationsService.asmx?schema=TWS_RGInfo" />
+    <MetadataFile FileName="TWS_RGList.xsd" MetadataType="Schema" ID="b1031612-ccc2-4416-b758-36eebde777d7" SourceId="1" SourceUrl="http://demo-wsnew.touricoholidays.com/ApiBridgeReservationsService.asmx?schema=TWS_RGList" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

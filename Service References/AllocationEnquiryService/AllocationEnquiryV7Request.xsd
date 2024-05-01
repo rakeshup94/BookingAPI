@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:smp="http://www.travco.co.uk/trlink/xsd/simpletype" xmlns:cmp="http://www.travco.co.uk/trlink/xsd/complextype" xmlns:tns="http://www.travco.co.uk/trlink/xsd/allocationenquiryv7/request" targetNamespace="http://www.travco.co.uk/trlink/xsd/allocationenquiryv7/request" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="CommonSimpleType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/simpletype" />
+  <xs:import schemaLocation="CommonComplexType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/complextype" />
+  <xs:element name="getAllocationEnquiryForEnquiries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element ref="tns:Enquiries" />
+        <xs:element minOccurs="0" ref="tns:AdditionalData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllocationEnquiry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element ref="tns:EnquiryNo" />
+        <xs:element ref="tns:HotelCode" />
+        <xs:element ref="tns:NoOfAdults" />
+        <xs:element minOccurs="0" ref="tns:NoOfChildren" />
+        <xs:element ref="tns:Duration" />
+        <xs:element ref="tns:CheckInDate" />
+        <xs:element ref="tns:NoOfPaxInRoom" />
+        <xs:element minOccurs="0" ref="tns:AdditionalData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllocationEnquiryForEnquiry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element ref="tns:Enquiry" />
+        <xs:element minOccurs="0" ref="tns:AdditionalData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Enquiries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="tns:Enquiry" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Enquiry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:EnquiryNo" />
+        <xs:element ref="tns:HotelCode" />
+        <xs:element ref="tns:NoOfAdults" />
+        <xs:element minOccurs="0" ref="tns:NoOfChildren" />
+        <xs:element ref="tns:Duration" />
+        <xs:element ref="tns:CheckInDate" />
+        <xs:element ref="tns:NoOfPaxInRoom" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AdditionalData">
+    <xs:complexType>
+      <xs:attribute default="no" name="NeedReductionAmount" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedHotelMessages" type="smp:YesNoType" />
+      <xs:attribute default="no" name="NeedFreeNightDetails" type="smp:YesNoType" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnquiryNo" type="smp:String3Type" />
+  <xs:element name="HotelCode" type="smp:String4Type" />
+  <xs:element name="NoOfAdults" type="smp:Int3PositiveType" />
+  <xs:element name="NoOfChildren" type="smp:Int3PositiveType" />
+  <xs:element name="Duration" type="smp:Int3PositiveType" />
+  <xs:element name="CheckInDate" type="xs:dateTime" />
+  <xs:element name="NoOfPaxInRoom" type="smp:Int1PositiveType" />
+  <xs:element name="RequestBase" type="cmp:RequestBaseType" />
+</xs:schema>

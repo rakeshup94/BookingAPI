@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:smp="http://www.travco.co.uk/trlink/xsd/simpletype" xmlns:cmp="http://www.travco.co.uk/trlink/xsd/complextype" xmlns:tns="http://www.travco.co.uk/trlink/xsd/bookenquiryv7/request" targetNamespace="http://www.travco.co.uk/trlink/xsd/bookenquiryv7/request" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="CommonSimpleType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/simpletype" />
+  <xs:import schemaLocation="CommonComplexType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/complextype" />
+  <xs:element name="getBookEnquiry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element minOccurs="0" ref="tns:ClerkCode" />
+        <xs:element minOccurs="0" ref="tns:NeedHotelMessages" />
+        <xs:element minOccurs="0" ref="tns:NeedAdditionalData" />
+        <xs:element ref="tns:BookEnquiry" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getBookEnquiryByArrivalDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element minOccurs="0" ref="tns:ClerkCode" />
+        <xs:element minOccurs="0" ref="tns:NeedHotelMessages" />
+        <xs:element minOccurs="0" ref="tns:NeedAdditionalData" />
+        <xs:element name="ByArrivalDate" type="tns:BookEnquiryByDateType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getBookEnquiryByBookingDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:RequestBase" />
+        <xs:element minOccurs="0" ref="tns:ClerkCode" />
+        <xs:element minOccurs="0" ref="tns:NeedHotelMessages" />
+        <xs:element minOccurs="0" ref="tns:NeedAdditionalData" />
+        <xs:element name="ByBookingDate" type="tns:BookEnquiryByDateType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClerkCode" type="smp:String3Type" />
+  <xs:element default="no" name="NeedHotelMessages" type="smp:YesNoType" />
+  <xs:element default="no" name="NeedAdditionalData" type="smp:YesNoType" />
+  <xs:element name="BookEnquiry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="PaxName" type="smp:String50Type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="OurRerNo" type="smp:String25Type" />
+      </xs:sequence>
+      <xs:attribute name="RefNo" type="smp:String10Type" use="optional" />
+      <xs:attribute name="Date" type="xs:dateTime" />
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="BookEnquiryByDateType">
+    <xs:attribute name="FromDate" type="xs:dateTime" use="required" />
+    <xs:attribute name="ToDate" type="xs:dateTime" use="required" />
+  </xs:complexType>
+  <xs:element name="RequestBase" type="cmp:RequestBaseType" />
+</xs:schema>

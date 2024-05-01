@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:request="http://www.travco.co.uk/trlink/xsd/bookenquiryv7/request" xmlns:cmp="http://www.travco.co.uk/trlink/xsd/complextype" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsoap="http://www.w3.org/ns/wsdl/soap" xmlns:ns="http://www.travco.co.uk/" xmlns:response="http://www.travco.co.uk/trlink/xsd/bookenquiryv7/response" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:whttp="http://www.w3.org/ns/wsdl/http" targetNamespace="http://www.travco.co.uk/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>BookEnquiryV7Service</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema>
+      <xs:import schemaLocation="BookEnquiryV7Response.xsd" namespace="http://www.travco.co.uk/trlink/xsd/bookenquiryv7/response" />
+      <xs:import schemaLocation="BookEnquiryV7Request.xsd" namespace="http://www.travco.co.uk/trlink/xsd/bookenquiryv7/request" />
+      <xs:import schemaLocation="CommonComplexType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/complextype" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="GetBookEnquiry">
+    <wsdl:part name="parameters1" element="request:getBookEnquiry" />
+  </wsdl:message>
+  <wsdl:message name="GetBookEnquiryByArrivalDate">
+    <wsdl:part name="parameters2" element="request:getBookEnquiryByArrivalDate" />
+  </wsdl:message>
+  <wsdl:message name="GetBookEnquiryByBookingDate">
+    <wsdl:part name="parameters3" element="request:getBookEnquiryByBookingDate" />
+  </wsdl:message>
+  <wsdl:message name="BookEnquiryV7Response">
+    <wsdl:part name="parameters4" element="response:BookEnquiryV7Response" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveParserFaultMessage">
+    <wsdl:part name="fault2" element="cmp:ReceiveParserFault" />
+  </wsdl:message>
+  <wsdl:message name="SendParserFaultMessage">
+    <wsdl:part name="fault3" element="cmp:SendParserFault" />
+  </wsdl:message>
+  <wsdl:message name="UserFaultMessage">
+    <wsdl:part name="fault4" element="cmp:UserFault" />
+  </wsdl:message>
+  <wsdl:message name="CommunicationFaultMessage">
+    <wsdl:part name="fault5" element="cmp:CommunicationFault" />
+  </wsdl:message>
+  <wsdl:message name="ServerFaultMessage">
+    <wsdl:part name="fault6" element="cmp:ServerFault" />
+  </wsdl:message>
+  <wsdl:portType name="BookEnquiryV7ServicePortType">
+    <wsdl:operation name="getBookEnquiry">
+      <wsdl:input wsaw:Action="urn:getBookEnquiry" message="ns:GetBookEnquiry" />
+      <wsdl:output wsaw:Action="urn:getBookEnquiryResponse" message="ns:BookEnquiryV7Response" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getBookEnquiryByArrivalDate">
+      <wsdl:input wsaw:Action="urn:getBookEnquiryByArrivalDate" message="ns:GetBookEnquiryByArrivalDate" />
+      <wsdl:output wsaw:Action="urn:getBookEnquiryByArrivalDateResponse" message="ns:BookEnquiryV7Response" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getBookEnquiryByBookingDate">
+      <wsdl:input wsaw:Action="urn:getBookEnquiryByBookingDate" message="ns:GetBookEnquiryByBookingDate" />
+      <wsdl:output wsaw:Action="urn:getBookEnquiryByBookingDateResponse" message="ns:BookEnquiryV7Response" />
+      <wsdl:fault name="ReceiveParserException" message="ns:ReceiveParserFaultMessage" />
+      <wsdl:fault name="SendParserException" message="ns:SendParserFaultMessage" />
+      <wsdl:fault name="UserException" message="ns:UserFaultMessage" />
+      <wsdl:fault name="CommunicationException" message="ns:CommunicationFaultMessage" />
+      <wsdl:fault name="ServerException" message="ns:ServerFaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BookEnquiryV7ServiceSoap11Binding" type="ns:BookEnquiryV7ServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getBookEnquiry">
+      <soap:operation soapAction="urn:getBookEnquiry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBookEnquiryByArrivalDate">
+      <soap:operation soapAction="urn:getBookEnquiryByArrivalDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBookEnquiryByBookingDate">
+      <soap:operation soapAction="urn:getBookEnquiryByBookingDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ReceiveParserException">
+        <soap:fault use="literal" name="ReceiveParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SendParserException">
+        <soap:fault use="literal" name="SendParserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="UserException">
+        <soap:fault use="literal" name="UserException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CommunicationException">
+        <soap:fault use="literal" name="CommunicationException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ServerException">
+        <soap:fault use="literal" name="ServerException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BookEnquiryV7Service">
+    <wsdl:port name="BookEnquiryV7HttpSoap11Endpoint" binding="ns:BookEnquiryV7ServiceSoap11Binding">
+      <soap:address location="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/BookEnquiryV7Service.BookEnquiryV7HttpSoap11Endpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

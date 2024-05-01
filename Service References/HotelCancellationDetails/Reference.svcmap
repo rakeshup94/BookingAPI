@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b90b0121-6314-4773-add9-020c3ea18b3a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/HotelCancellationDetailService.wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CommonComplexType.xsd" MetadataType="Schema" ID="3cc027da-18e7-44a1-bd1f-2e5797a53d63" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/CommonComplexType.xsd" />
+    <MetadataFile FileName="CommonSimpleType.xsd" MetadataType="Schema" ID="2af07c6f-cfb4-48ac-b15e-f822094e684d" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/CommonSimpleType.xsd" />
+    <MetadataFile FileName="HotelCancellationDetailRequest.xsd" MetadataType="Schema" ID="cb7f5a60-f43f-4180-b8da-79797d655f29" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/HotelCancellationDetailRequest.xsd" />
+    <MetadataFile FileName="HotelCancellationDetailService.wsdl" MetadataType="Wsdl" ID="38cfb2ea-eacd-48be-a37d-e0f3bea932b4" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/HotelCancellationDetailService.wsdl" />
+    <MetadataFile FileName="HotelCancellationDetailResponse.xsd" MetadataType="Schema" ID="13b0b01d-4a85-42c9-abca-b22706c0a953" SourceId="1" SourceUrl="http://v8apitest1.travco.co.uk:8080/trlinkjws/services/HotelCancellationDetailResponse.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

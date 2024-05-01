@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:smp="http://www.travco.co.uk/trlink/xsd/simpletype" xmlns:cmp="http://www.travco.co.uk/trlink/xsd/complextype" xmlns:tns="http://www.travco.co.uk/trlink/xsd/hotelbookingv7/response" targetNamespace="http://www.travco.co.uk/trlink/xsd/hotelbookingv7/response" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="CommonSimpleType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/simpletype" />
+  <xs:import schemaLocation="CommonComplexType.xsd" namespace="http://www.travco.co.uk/trlink/xsd/complextype" />
+  <xs:element name="HotelBookingV7Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:Response" />
+      </xs:sequence>
+      <xs:attribute default="en-GB" name="LangType" type="smp:LangType" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Information" type="cmp:InfoType" />
+        <xs:element name="Bookings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" ref="tns:Booking" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Booking">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="tns:Message" />
+        <xs:element name="PassengerName" type="xs:string" />
+        <xs:element minOccurs="0" name="AgentReference" type="xs:string" />
+        <xs:element minOccurs="0" name="RoomName" type="xs:string" />
+        <xs:element minOccurs="0" name="PriceDisplay" type="xs:string" />
+        <xs:element minOccurs="0" name="Currency" type="cmp:CurrencyType" />
+        <xs:element minOccurs="0" name="HotelRequest" type="xs:string" />
+        <xs:element minOccurs="0" name="AgentText" type="xs:string" />
+        <xs:element minOccurs="0" name="Services">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" ref="tns:Service" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" ref="tns:ChargesForCancellationAmendmentDone" />
+        <xs:element minOccurs="0" name="FullCancellationDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" ref="tns:FullCancellationDetail" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="HotelMessages">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" ref="tns:HotelMessage" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" ref="tns:VoucherDetail" />
+        <xs:element minOccurs="0" maxOccurs="1" name="RatePlanDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RatePlanDescription" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="RatePlanCode" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:maxLength value="6" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="BookingReference" type="smp:String13Type" use="required" />
+      <xs:attribute name="NoOfAdults" type="smp:Int3PositiveType" use="required" />
+      <xs:attribute name="NoOfChildren" type="smp:Int3PositiveType" />
+      <xs:attribute name="Duration" type="smp:Int3PositiveType" use="required" />
+      <xs:attribute name="CheckInDate" type="xs:dateTime" use="required" />
+      <xs:attribute name="HotelCode" type="smp:String4Type" use="required" />
+      <xs:attribute name="RoomCode" type="smp:String3Type" use="required" />
+      <xs:attribute name="BookingStatus" type="smp:String1Type" use="required" />
+      <xs:attribute name="PriceCode" type="smp:String8Type" />
+      <xs:attribute name="Infants" type="smp:Int1PositiveType" />
+      <xs:attribute name="AdultPrice" type="xs:decimal" />
+      <xs:attribute name="ChildPrice" type="xs:decimal" />
+      <xs:attribute name="ArrTransNo" type="smp:String8Type" />
+      <xs:attribute name="ArrFrom" type="smp:String3Type" />
+      <xs:attribute name="ArrTo" type="smp:String3Type" />
+      <xs:attribute name="ArrTime" type="smp:String5Type" />
+      <xs:attribute name="DepTransNo" type="smp:String8Type" />
+      <xs:attribute name="DepFrom" type="smp:String3Type" />
+      <xs:attribute name="DepTo" type="smp:String3Type" />
+      <xs:attribute name="DepTime" type="smp:String5Type" />
+      <xs:attribute name="TotalPrice" type="xs:decimal" />
+      <xs:attribute name="NoOfRooms" type="smp:String3Type" />
+      <xs:attribute name="MainHotelCode" type="smp:String4Type" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Service">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ServicePrice" type="smp:String12Type" />
+      </xs:sequence>
+      <xs:attribute name="ServiceCode" type="smp:String6Type" use="required" />
+      <xs:attribute name="ServiceDate" type="xs:string" use="required" />
+      <xs:attribute name="ServiceDuration" type="smp:Int3PositiveType" />
+      <xs:attribute name="ServicePaxNo" type="smp:Int3PositiveType" use="required" />
+      <xs:attribute name="ServicePrincipal" type="smp:String6Type" use="required" />
+      <xs:attribute name="ServiceLocator" type="smp:String6Type" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChargesForCancellationAmendmentDone">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:Details" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FullCancellationDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="CancellationCharge" type="xs:string" />
+      </xs:sequence>
+      <xs:attribute name="LastPossibleCancellationDate" type="xs:string" />
+      <xs:attribute name="TimeBefore" type="smp:String5Type" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HotelMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="HotelMessageText" type="xs:string" />
+      </xs:sequence>
+      <xs:attribute name="HotelMessageCode" type="smp:String3Type" />
+      <xs:attribute name="FromDate" type="xs:dateTime" use="required" />
+      <xs:attribute name="ToDate" type="xs:dateTime" use="required" />
+      <xs:attribute name="MessageIndicator">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Block" />
+            <xs:enumeration value="Information" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VoucherDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="HotelName" type="xs:string" />
+        <xs:element minOccurs="0" name="HotelAddress" type="xs:string" />
+        <xs:element minOccurs="0" name="HotelPostalCode" type="smp:String16Type" />
+        <xs:element minOccurs="0" name="HotelTelNo" type="smp:String20Type" />
+        <xs:element minOccurs="0" name="HotelFaxNo" type="smp:String20Type" />
+        <xs:element minOccurs="0" name="HotelEmailAddress" type="xs:string" />
+      </xs:sequence>
+      <xs:attribute name="VoucherNo" type="smp:String10Type" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Message">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ErrorDescription" type="xs:string" />
+      </xs:sequence>
+      <xs:attribute name="ErrorCode" type="smp:String3Type" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Detail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="CancellationPolicy" type="xs:string" />
+      </xs:sequence>
+      <xs:attribute name="CancellationDate" type="xs:dateTime" />
+      <xs:attribute name="CancellationTime" type="smp:String5Type" />
+      <xs:attribute name="TotalCancellationFee" type="xs:decimal" />
+      <xs:attribute name="HotelDeadline" type="smp:String5Type" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Details">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="tns:Detail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
