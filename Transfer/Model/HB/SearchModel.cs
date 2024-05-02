@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TravillioXMLOutService.Models.Transfer.HB
+namespace TravillioXMLOutService.Transfer.Models.HB
 {
     public class SearchModel : BaseModel
     {

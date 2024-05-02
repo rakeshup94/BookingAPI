@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace TravillioXMLOutService.Models.Transfer.HB
+namespace TravillioXMLOutService.Transfer.Models.HB
 {
     public class SearchResponseModel
     {

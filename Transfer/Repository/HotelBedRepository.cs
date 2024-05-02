@@ -1,50 +1,60 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using TravillioXMLOutService.Models;
 using TravillioXMLOutService.Transfer.Model;
+using TravillioXMLOutService.Transfer.Models.HB;
 
-namespace TravillioXMLOutService.Transfer.Repository
+namespace TravillioXMLOutService.Repository.Transfer
 {
     public class HotelBedRepository : IDisposable
     {
         HBCredentials model;
+        private static readonly HttpClient _httpClient = new HttpClient();
         public HotelBedRepository(HBCredentials _model)
         {
             model = _model;
+            _httpClient.BaseAddress = new Uri(model.ServiceHost);
+            _httpClient.Timeout = new TimeSpan(0, 0, 30);
+            _httpClient.DefaultRequestHeaders.Clear();
+            _httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
+            _httpClient.DefaultRequestHeaders.Add("Api-key", model.UserName);
+            _httpClient.DefaultRequestHeaders.Add("X-Signature", model.Password);
         }
-        public string GetResponse(RequestModel reqModel)
+
+
+        public async Task<SearchResponseModel> GetSearchAsync(RequestModel reqModel)
         {
             var startTime = DateTime.Now;
+            string stringResponse;
+            SearchResponseModel result;
             string soapResult = string.Empty;
             try
             {
-
-                HttpWebRequest request = WebRequest.Create(model.ServiceHost) as HttpWebRequest;
-                request.Method = "POST";
-                request.ContentType = "application/xml";
-                //  request.KeepAlive = true;
-                Byte[] requestData = Encoding.UTF8.GetBytes(reqModel.RequestStr);
-                Stream requestStream = request.GetRequestStream();
-                requestStream.Write(requestData, 0, requestData.Length);
-                requestStream.Close();
-                using (HttpWebResponse response = request.GetResponse() as HttpWebResponse)
+                using (var request = new HttpRequestMessage(new HttpMethod("GET"), reqModel.RequestStr))
                 {
-                    using (StreamReader myStreamReader = new StreamReader(response.GetResponseStream()))
+                    var response = await _httpClient.SendAsync(request);
+                    if (response.IsSuccessStatusCode)
                     {
-                        soapResult = myStreamReader.ReadToEnd();
+                        stringResponse = await response.Content.ReadAsStringAsync();
+                        result = JsonConvert.DeserializeObject<SearchResponseModel>(stringResponse);
+                    }
+                    else
+                    {
+                        throw new HttpRequestException(response.ReasonPhrase);
                     }
                 }
-                reqModel.ResponseStr = soapResult;
+                reqModel.ResponseStr = stringResponse;
                 reqModel.EndTime = DateTime.Now;
                 SaveLog(reqModel);
-
-                return soapResult;
+                return result;
             }
             catch (Exception ex)
             {
@@ -57,6 +67,8 @@ namespace TravillioXMLOutService.Transfer.Repository
                 SaveLog(reqModel);
                 throw ex;
             }
+
+
         }
 
         public void SaveLog(RequestModel _req)
@@ -121,13 +133,6 @@ namespace TravillioXMLOutService.Transfer.Repository
         {
             Dispose(false);
         }
-
-
-
-
-
-
         #endregion
-
     }
 }

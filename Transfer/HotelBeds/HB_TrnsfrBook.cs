@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Xml.Linq;
 using TravillioXMLOutService.Models;
-using TravillioXMLOutService.Transfer.Service;
+
 
 namespace TravillioXMLOutService.Transfer.HotelBeds
 {

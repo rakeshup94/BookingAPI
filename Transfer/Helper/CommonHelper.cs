@@ -7,7 +7,7 @@ using System.Web;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace TravillioXMLOutService.Transfer.Helper
+namespace TravillioXMLOutService.Transfer.Helpers
 {
     public static class CommonHelper
     {
@@ -79,6 +79,14 @@ namespace TravillioXMLOutService.Transfer.Helper
             return xmlDocument;
         }
 
+        public static int ToINT(this XAttribute item, int defaultValue = 0)
+        {
+            if (item == null)
+                return defaultValue;
+            else
+                return Convert.ToInt32(item.Value);
+        }
+
         public static string GetValueOrDefault(this XElement item, string defaultValue = null)
         {
             if (item == null)
@@ -100,7 +108,7 @@ namespace TravillioXMLOutService.Transfer.Helper
         {
             string data = string.Empty;
             if (item != null)
-            data= item.Value +",";
+                data = item.Value + ",";
             return data;
         }
 
@@ -232,6 +240,111 @@ namespace TravillioXMLOutService.Transfer.Helper
             }
 
         }
+
+        public static string IsNullString(this string str)
+        {
+            string result = string.Empty;
+            if (str != null)
+            {
+                result = str;
+            }
+            return result;
+        }
+        public static decimal IsNullNumber(this decimal? item)
+        {
+            return item.HasValue ? item.Value : 0.00m; ;
+        }
+
+
+
+
+
+        public static XElement mergCXLPolicy(this IEnumerable<XElement> PolicyList)
+        {
+
+            List<XElement> cxlList = new List<XElement>();
+            IEnumerable<XElement> dateLst = PolicyList.GroupBy(r => new
+            {
+                r.Attribute("lastDate").Value.GetDateTime("yyyy-MM-ddTHH:mm:ss").Date,
+                noshow = r.Attribute("noShow").Value
+            }).Select(y => y.First()).
+               OrderBy(p => p.Attribute("lastDate").Value.GetDateTime("yyyy-MM-ddTHH:mm:ss"));
+
+            if (dateLst.Count() > 0)
+            {
+                foreach (var item in dateLst)
+                {
+                    string date = item.Attribute("lastDate").Value;
+                    string noShow = item.Attribute("noShow").Value;
+                    decimal datePrice = 0.0m;
+                    foreach (var rm in PolicyList)
+                    {
+                        var prItem = rm.Descendants("cancellationPolicy").
+                       Where(pq => (pq.Attribute("noShow").Value == noShow && pq.Attribute("lastDate").Value == date)).
+                       FirstOrDefault();
+
+                        if (prItem != null)
+                        {
+                            var price = prItem.Attribute("amount").Value;
+                            datePrice += Convert.ToDecimal(price);
+                        }
+                        else
+                        {
+                            if (noShow == "1")
+                            {
+                                datePrice += Convert.ToDecimal(rm.Element("TotalAmount").Value);
+                            }
+                            else
+                            {
+                                var lastItem = rm.Descendants("cancellationPolicy").
+                                    Where(pq => (pq.Attribute("noShow").Value == noShow && pq.Attribute("lastDate").Value.GetDateTime("yyyy-MM-ddTHH:mm:ss") < date.GetDateTime("yyyy-MM-ddTHH:mm:ss")));
+                                if (lastItem.Count() > 0)
+                                {
+                                    var lastDate = lastItem.Max(y => y.Attribute("lastDate").Value);
+                                    var lastprice = rm.Descendants("cancellationPolicy").
+                                        Where(pq => (pq.Attribute("noShow").Value == noShow && pq.Attribute("lastDate").Value == lastDate)).
+                                        FirstOrDefault().Attribute("amount").Value;
+                                    datePrice += Convert.ToDecimal(lastprice);
+                                }
+                            }
+                        }
+                    }
+
+
+
+
+                    XElement pItem = new XElement("cancellationPolicy",
+                        new XAttribute("lastDate", date),
+                        new XAttribute("amount", datePrice),
+                        new XAttribute("noShow", noShow));
+                    cxlList.Add(pItem);
+                }
+
+                cxlList = cxlList.GroupBy(x => new { x.Attribute("lastDate").Value.GetDateTime("yyyyMMdd HHmm").Date, x.Attribute("noShow").Value }).
+                    Select(y => new XElement("cancellationPolicy",
+                        new XAttribute("lastDate", y.Key.Date.ToString("d MMM, yy")),
+                        new XAttribute("amount", y.Max(p => Convert.ToDecimal(p.Attribute("amount").Value))),
+                        new XAttribute("noShow", y.Key.Value))).OrderBy(p => p.Attribute("lastDate").Value.GetDateTime("d MMM, yy").Date).ToList();
+
+                var fItem = cxlList.FirstOrDefault();
+
+                if (Convert.ToDecimal(fItem.Attribute("amount").Value) != 0.0m)
+                {
+                    cxlList.Insert(0, new XElement("cancellationPolicy", new XAttribute("lastDate", fItem.Attribute("lastDate").Value.GetDateTime("d MMM, yy").AddDays(-1).Date.ToString("d MMM, yy")), new XAttribute("amount", "0.00"), new XAttribute("noShow", "0")));
+                }
+            }
+            XElement cxlItem = new XElement("cancellationPolicies", cxlList);
+            return cxlItem;
+        }
+
+
+
+
+
+
+
+
+
 
 
     }

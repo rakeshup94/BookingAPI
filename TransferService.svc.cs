@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 using TravillioXMLOutService.App_Code;
 using TravillioXMLOutService.Models;
@@ -20,7 +21,7 @@ namespace TravillioXMLOutService
     public class TransferService : ITransferService, IDisposable
     {
         #region Transfer Travayoo
-        public object TransferAvailability(XElement req)
+        public async Task<object> TransferAvailability(XElement req)
         {
             try
             {
@@ -48,7 +49,7 @@ namespace TravillioXMLOutService
                     saveex.SendCustomExcepToDB(ex1);
                 }
                 #endregion
-                availabilityresponse = reqs.getTransferAvailability(req);
+                availabilityresponse = await reqs.getTransferAvailability(req);
                 #region XML Response
                 try
                 {
@@ -114,233 +115,238 @@ namespace TravillioXMLOutService
                 #endregion
             }
         }
-        public object CXLPolicyTransfer(XElement req)
-        {
-            try
-            {
-                XElement cxlpolicyresponse = null;
-                HB_TrnsfrGetCXLPolicy reqs = new HB_TrnsfrGetCXLPolicy();
-                cxlpolicyresponse = reqs.getTransferCXLPolicy(req);
-                #region XML Response
-                try
-                {
-                    APILogDetail log = new APILogDetail();
-                    log.customerID = Convert.ToInt64(req.Descendants("TransferCXLPolicyRequest").Attributes("CustomerID").FirstOrDefault().Value);
-                    log.TrackNumber = req.Descendants("TransferCXLPolicyRequest").Attributes("TransID").FirstOrDefault().Value;
-                    log.LogTypeID = 3;
-                    log.LogType = "CXLPolicy";
-                    log.logrequestXML = req.ToString();
-                    log.logresponseXML = cxlpolicyresponse.ToString();
-                    SaveAPILog savelog = new SaveAPILog();
-                    savelog.SaveAPILogs(log);
-                }
-                catch (Exception ex)
-                {
-                    #region Exception
-                    CustomException ex1 = new CustomException(ex);
-                    ex1.MethodName = "CXLPolicyTransfer";
-                    ex1.PageName = "TransferService";
-                    ex1.CustomerID = req.Descendants("TransferCXLPolicyRequest").Attributes("CustomerID").FirstOrDefault().Value;
-                    ex1.TranID = req.Descendants("TransferCXLPolicyRequest").Attributes("TransID").FirstOrDefault().Value;
-                    SaveAPILog saveex = new SaveAPILog();
-                    saveex.SendCustomExcepToDB(ex1);
-                    #endregion
-                }
-                SerializeXMLOut serialization = new SerializeXMLOut();
-                return serialization.Serialize(cxlpolicyresponse);
-                #endregion
+        //public object CXLPolicyTransfer(XElement req)
+        //{
+        //    try
+        //    {
+        //        XElement cxlpolicyresponse = null;
+        //        HB_TrnsfrGetCXLPolicy reqs = new HB_TrnsfrGetCXLPolicy();
+        //        cxlpolicyresponse = reqs.getTransferCXLPolicy(req);
+        //        #region XML Response
+        //        try
+        //        {
+        //            APILogDetail log = new APILogDetail();
+        //            log.customerID = Convert.ToInt64(req.Descendants("TransferCXLPolicyRequest").Attributes("CustomerID").FirstOrDefault().Value);
+        //            log.TrackNumber = req.Descendants("TransferCXLPolicyRequest").Attributes("TransID").FirstOrDefault().Value;
+        //            log.LogTypeID = 3;
+        //            log.LogType = "CXLPolicy";
+        //            log.logrequestXML = req.ToString();
+        //            log.logresponseXML = cxlpolicyresponse.ToString();
+        //            SaveAPILog savelog = new SaveAPILog();
+        //            savelog.SaveAPILogs(log);
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            #region Exception
+        //            CustomException ex1 = new CustomException(ex);
+        //            ex1.MethodName = "CXLPolicyTransfer";
+        //            ex1.PageName = "TransferService";
+        //            ex1.CustomerID = req.Descendants("TransferCXLPolicyRequest").Attributes("CustomerID").FirstOrDefault().Value;
+        //            ex1.TranID = req.Descendants("TransferCXLPolicyRequest").Attributes("TransID").FirstOrDefault().Value;
+        //            SaveAPILog saveex = new SaveAPILog();
+        //            saveex.SendCustomExcepToDB(ex1);
+        //            #endregion
+        //        }
+        //        SerializeXMLOut serialization = new SerializeXMLOut();
+        //        return serialization.Serialize(cxlpolicyresponse);
+        //        #endregion
 
-            }
-            catch (Exception ex)
-            {
-                #region Exception
-                CustomException ex1 = new CustomException(ex);
-                ex1.MethodName = "CXLPolicyTransfer";
-                ex1.PageName = "TransferService";
-                ex1.CustomerID = req.Descendants("TransferCXLPolicyRequest").Attributes("CustomerID").FirstOrDefault().Value;
-                ex1.TranID = req.Descendants("TransferCXLPolicyRequest").Attributes("TransID").FirstOrDefault().Value;
-                SaveAPILog saveex = new SaveAPILog();
-                saveex.SendCustomExcepToDB(ex1);
-                return ex.Message;
-                #endregion
-            }
-        }
-        public object PreBookTransfer(XElement req)
-        {
-            try
-            {
-                XElement prebookresponse = null;
-                HB_TrnsfrGetPreBook reqs = new HB_TrnsfrGetPreBook();
-                prebookresponse = reqs.PreBookTransfer(req);
-                #region XML Response
-                try
-                {
-                    APILogDetail log = new APILogDetail();
-                    log.customerID = Convert.ToInt64(req.Descendants("PrebookRequest").Attributes("CustomerID").FirstOrDefault().Value);
-                    log.TrackNumber = req.Descendants("PrebookRequest").Attributes("TransID").FirstOrDefault().Value;
-                    log.LogTypeID = 4;
-                    log.LogType = "PreBook";
-                    log.logrequestXML = req.ToString();
-                    log.logresponseXML = prebookresponse.ToString();
-                    SaveAPILog savelog = new SaveAPILog();
-                    savelog.SaveAPILogs(log);
-                }
-                catch (Exception ex)
-                {
-                    #region Exception
-                    CustomException ex1 = new CustomException(ex);
-                    ex1.MethodName = "PreBookTransfer";
-                    ex1.PageName = "TransferService";
-                    ex1.CustomerID = req.Descendants("PrebookRequest").Attributes("CustomerID").FirstOrDefault().Value;
-                    ex1.TranID = req.Descendants("PrebookRequest").Attributes("TransID").FirstOrDefault().Value;
-                    SaveAPILog saveex = new SaveAPILog();
-                    saveex.SendCustomExcepToDB(ex1);
-                    #endregion
-                }
-                SerializeXMLOut serialization = new SerializeXMLOut();
-                return serialization.Serialize(prebookresponse);
-                #endregion
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        #region Exception
+        //        CustomException ex1 = new CustomException(ex);
+        //        ex1.MethodName = "CXLPolicyTransfer";
+        //        ex1.PageName = "TransferService";
+        //        ex1.CustomerID = req.Descendants("TransferCXLPolicyRequest").Attributes("CustomerID").FirstOrDefault().Value;
+        //        ex1.TranID = req.Descendants("TransferCXLPolicyRequest").Attributes("TransID").FirstOrDefault().Value;
+        //        SaveAPILog saveex = new SaveAPILog();
+        //        saveex.SendCustomExcepToDB(ex1);
+        //        return ex.Message;
+        //        #endregion
+        //    }
+        //}
+        //public object PreBookTransfer(XElement req)
+        //{
+        //    try
+        //    {
+        //        XElement prebookresponse = null;
+        //        HB_TrnsfrGetPreBook reqs = new HB_TrnsfrGetPreBook();
+        //        prebookresponse = reqs.PreBookTransfer(req);
+        //        #region XML Response
+        //        try
+        //        {
+        //            APILogDetail log = new APILogDetail();
+        //            log.customerID = Convert.ToInt64(req.Descendants("PrebookRequest").Attributes("CustomerID").FirstOrDefault().Value);
+        //            log.TrackNumber = req.Descendants("PrebookRequest").Attributes("TransID").FirstOrDefault().Value;
+        //            log.LogTypeID = 4;
+        //            log.LogType = "PreBook";
+        //            log.logrequestXML = req.ToString();
+        //            log.logresponseXML = prebookresponse.ToString();
+        //            SaveAPILog savelog = new SaveAPILog();
+        //            savelog.SaveAPILogs(log);
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            #region Exception
+        //            CustomException ex1 = new CustomException(ex);
+        //            ex1.MethodName = "PreBookTransfer";
+        //            ex1.PageName = "TransferService";
+        //            ex1.CustomerID = req.Descendants("PrebookRequest").Attributes("CustomerID").FirstOrDefault().Value;
+        //            ex1.TranID = req.Descendants("PrebookRequest").Attributes("TransID").FirstOrDefault().Value;
+        //            SaveAPILog saveex = new SaveAPILog();
+        //            saveex.SendCustomExcepToDB(ex1);
+        //            #endregion
+        //        }
+        //        SerializeXMLOut serialization = new SerializeXMLOut();
+        //        return serialization.Serialize(prebookresponse);
+        //        #endregion
 
-            }
-            catch (Exception ex)
-            {
-                #region Exception
-                CustomException ex1 = new CustomException(ex);
-                ex1.MethodName = "PreBookTransfer";
-                ex1.PageName = "TransferService";
-                ex1.CustomerID = req.Descendants("PrebookRequest").Attributes("CustomerID").FirstOrDefault().Value;
-                ex1.TranID = req.Descendants("PrebookRequest").Attributes("TransID").FirstOrDefault().Value;
-                SaveAPILog saveex = new SaveAPILog();
-                saveex.SendCustomExcepToDB(ex1);
-                return ex.Message;
-                #endregion
-            }
-        }
-        public object ConfirmBookingTransfer(XElement req)
-        {
-            try
-            {
-                XElement bookresponse = null;
-                #region Booking Request
-                try
-                {
-                    APILogDetail log2 = new APILogDetail();
-                    log2.customerID = Convert.ToInt64(req.Descendants("bookRequest").Attributes("CustomerID").FirstOrDefault().Value);
-                    log2.TrackNumber = req.Descendants("bookRequest").Attributes("TransID").FirstOrDefault().Value;
-                    log2.LogTypeID = 5;
-                    log2.LogType = "Book";
-                    log2.logrequestXML = req.ToString();
-                    SaveAPILog savelog = new SaveAPILog();
-                    savelog.SaveAPILogs(log2);
-                }
-                catch (Exception ex)
-                {
-                    #region Exception
-                    CustomException ex1 = new CustomException(ex);
-                    ex1.MethodName = "ConfirmBookingTransfer";
-                    ex1.PageName = "TransferService";
-                    ex1.CustomerID = req.Descendants("bookRequest").Attributes("CustomerID").FirstOrDefault().Value;
-                    ex1.TranID = req.Descendants("bookRequest").Attributes("TransID").FirstOrDefault().Value;
-                    SaveAPILog saveex = new SaveAPILog();
-                    saveex.SendCustomExcepToDB(ex1);
-                    #endregion
-                }
-                #endregion
-                HB_TrnsfrBook reqs = new HB_TrnsfrBook();
-                bookresponse = reqs.BookTransfer(req);
-                #region XML Response
-                try
-                {
-                    APILogDetail log = new APILogDetail();
-                    log.customerID = Convert.ToInt64(req.Descendants("bookRequest").Attributes("CustomerID").FirstOrDefault().Value);
-                    log.TrackNumber = req.Descendants("bookRequest").Attributes("TransID").FirstOrDefault().Value;
-                    log.LogTypeID = 5;
-                    log.LogType = "Book";
-                    log.logrequestXML = req.ToString();
-                    log.logresponseXML = bookresponse.ToString();
-                    SaveAPILog savelog = new SaveAPILog();
-                    savelog.SaveAPILogs(log);
-                }
-                catch (Exception ex)
-                {
-                    #region Exception
-                    CustomException ex1 = new CustomException(ex);
-                    ex1.MethodName = "ConfirmBookingTransfer";
-                    ex1.PageName = "TransferService";
-                    ex1.CustomerID = req.Descendants("bookRequest").Attributes("CustomerID").FirstOrDefault().Value;
-                    ex1.TranID = req.Descendants("bookRequest").Attributes("TransID").FirstOrDefault().Value;
-                    SaveAPILog saveex = new SaveAPILog();
-                    saveex.SendCustomExcepToDB(ex1);
-                    #endregion
-                }
-                SerializeXMLOut serialization = new SerializeXMLOut();
-                return serialization.Serialize(bookresponse);
-                #endregion
-            }
-            catch (Exception ex)
-            {
-                #region Exception
-                CustomException ex1 = new CustomException(ex);
-                ex1.MethodName = "ConfirmBookingTransfer";
-                ex1.PageName = "TransferService";
-                ex1.CustomerID = req.Descendants("bookRequest").Attributes("CustomerID").FirstOrDefault().Value;
-                ex1.TranID = req.Descendants("bookRequest").Attributes("TransID").FirstOrDefault().Value;
-                SaveAPILog saveex = new SaveAPILog();
-                saveex.SendCustomExcepToDB(ex1);
-                return ex.Message;
-                #endregion
-            }
-        }
-        public object CancelBookingTransfer(XElement req)
-        {
-            try
-            {
-                XElement cancelresponse = null;
-                HB_TrnsfrCancel reqs = new HB_TrnsfrCancel();
-                cancelresponse = reqs.CancelTransfer(req);
-                #region XML Response
-                try
-                {
-                    APILogDetail log = new APILogDetail();
-                    log.customerID = Convert.ToInt64(req.Descendants("TransferCancelRequest").Attributes("CustomerID").FirstOrDefault().Value);
-                    log.TrackNumber = req.Descendants("TransferCancelRequest").Attributes("TransID").FirstOrDefault().Value;
-                    log.LogTypeID = 6;
-                    log.LogType = "Cancel";
-                    log.logrequestXML = req.ToString();
-                    log.logresponseXML = cancelresponse.ToString();
-                    SaveAPILog savelog = new SaveAPILog();
-                    savelog.SaveAPILogs(log);
-                }
-                catch (Exception ex)
-                {
-                    #region Exception
-                    CustomException ex1 = new CustomException(ex);
-                    ex1.MethodName = "CancelBookingTransfer";
-                    ex1.PageName = "TransferService";
-                    ex1.CustomerID = req.Descendants("TransferCancelRequest").Attributes("CustomerID").FirstOrDefault().Value;
-                    ex1.TranID = req.Descendants("TransferCancelRequest").Attributes("TransID").FirstOrDefault().Value;
-                    SaveAPILog saveex = new SaveAPILog();
-                    saveex.SendCustomExcepToDB(ex1);
-                    #endregion
-                }
-                SerializeXMLOut serialization = new SerializeXMLOut();
-                return serialization.Serialize(cancelresponse);
-                #endregion
-            }
-            catch (Exception ex)
-            {
-                #region Exception
-                CustomException ex1 = new CustomException(ex);
-                ex1.MethodName = "CancelBookingTransfer";
-                ex1.PageName = "TransferService";
-                ex1.CustomerID = req.Descendants("TransferCancelRequest").Attributes("CustomerID").FirstOrDefault().Value;
-                ex1.TranID = req.Descendants("TransferCancelRequest").Attributes("TransID").FirstOrDefault().Value;
-                SaveAPILog saveex = new SaveAPILog();
-                saveex.SendCustomExcepToDB(ex1);
-                return ex.Message;
-                #endregion
-            }
-        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        #region Exception
+        //        CustomException ex1 = new CustomException(ex);
+        //        ex1.MethodName = "PreBookTransfer";
+        //        ex1.PageName = "TransferService";
+        //        ex1.CustomerID = req.Descendants("PrebookRequest").Attributes("CustomerID").FirstOrDefault().Value;
+        //        ex1.TranID = req.Descendants("PrebookRequest").Attributes("TransID").FirstOrDefault().Value;
+        //        SaveAPILog saveex = new SaveAPILog();
+        //        saveex.SendCustomExcepToDB(ex1);
+        //        return ex.Message;
+        //        #endregion
+        //    }
+        //}
+        //public object ConfirmBookingTransfer(XElement req)
+        //{
+        //    try
+        //    {
+        //        XElement bookresponse = null;
+        //        #region Booking Request
+        //        try
+        //        {
+        //            APILogDetail log2 = new APILogDetail();
+        //            log2.customerID = Convert.ToInt64(req.Descendants("bookRequest").Attributes("CustomerID").FirstOrDefault().Value);
+        //            log2.TrackNumber = req.Descendants("bookRequest").Attributes("TransID").FirstOrDefault().Value;
+        //            log2.LogTypeID = 5;
+        //            log2.LogType = "Book";
+        //            log2.logrequestXML = req.ToString();
+        //            SaveAPILog savelog = new SaveAPILog();
+        //            savelog.SaveAPILogs(log2);
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            #region Exception
+        //            CustomException ex1 = new CustomException(ex);
+        //            ex1.MethodName = "ConfirmBookingTransfer";
+        //            ex1.PageName = "TransferService";
+        //            ex1.CustomerID = req.Descendants("bookRequest").Attributes("CustomerID").FirstOrDefault().Value;
+        //            ex1.TranID = req.Descendants("bookRequest").Attributes("TransID").FirstOrDefault().Value;
+        //            SaveAPILog saveex = new SaveAPILog();
+        //            saveex.SendCustomExcepToDB(ex1);
+        //            #endregion
+        //        }
+        //        #endregion
+        //        HB_TrnsfrBook reqs = new HB_TrnsfrBook();
+        //        bookresponse = reqs.BookTransfer(req);
+        //        #region XML Response
+        //        try
+        //        {
+        //            APILogDetail log = new APILogDetail();
+        //            log.customerID = Convert.ToInt64(req.Descendants("bookRequest").Attributes("CustomerID").FirstOrDefault().Value);
+        //            log.TrackNumber = req.Descendants("bookRequest").Attributes("TransID").FirstOrDefault().Value;
+        //            log.LogTypeID = 5;
+        //            log.LogType = "Book";
+        //            log.logrequestXML = req.ToString();
+        //            log.logresponseXML = bookresponse.ToString();
+        //            SaveAPILog savelog = new SaveAPILog();
+        //            savelog.SaveAPILogs(log);
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            #region Exception
+        //            CustomException ex1 = new CustomException(ex);
+        //            ex1.MethodName = "ConfirmBookingTransfer";
+        //            ex1.PageName = "TransferService";
+        //            ex1.CustomerID = req.Descendants("bookRequest").Attributes("CustomerID").FirstOrDefault().Value;
+        //            ex1.TranID = req.Descendants("bookRequest").Attributes("TransID").FirstOrDefault().Value;
+        //            SaveAPILog saveex = new SaveAPILog();
+        //            saveex.SendCustomExcepToDB(ex1);
+        //            #endregion
+        //        }
+        //        SerializeXMLOut serialization = new SerializeXMLOut();
+        //        return serialization.Serialize(bookresponse);
+        //        #endregion
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        #region Exception
+        //        CustomException ex1 = new CustomException(ex);
+        //        ex1.MethodName = "ConfirmBookingTransfer";
+        //        ex1.PageName = "TransferService";
+        //        ex1.CustomerID = req.Descendants("bookRequest").Attributes("CustomerID").FirstOrDefault().Value;
+        //        ex1.TranID = req.Descendants("bookRequest").Attributes("TransID").FirstOrDefault().Value;
+        //        SaveAPILog saveex = new SaveAPILog();
+        //        saveex.SendCustomExcepToDB(ex1);
+        //        return ex.Message;
+        //        #endregion
+        //    }
+        //}
+        //public object CancelBookingTransfer(XElement req)
+        //{
+        //    try
+        //    {
+        //        XElement cancelresponse = null;
+        //        HB_TrnsfrCancel reqs = new HB_TrnsfrCancel();
+        //        cancelresponse = reqs.CancelTransfer(req);
+        //        #region XML Response
+        //        try
+        //        {
+        //            APILogDetail log = new APILogDetail();
+        //            log.customerID = Convert.ToInt64(req.Descendants("TransferCancelRequest").Attributes("CustomerID").FirstOrDefault().Value);
+        //            log.TrackNumber = req.Descendants("TransferCancelRequest").Attributes("TransID").FirstOrDefault().Value;
+        //            log.LogTypeID = 6;
+        //            log.LogType = "Cancel";
+        //            log.logrequestXML = req.ToString();
+        //            log.logresponseXML = cancelresponse.ToString();
+        //            SaveAPILog savelog = new SaveAPILog();
+        //            savelog.SaveAPILogs(log);
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            #region Exception
+        //            CustomException ex1 = new CustomException(ex);
+        //            ex1.MethodName = "CancelBookingTransfer";
+        //            ex1.PageName = "TransferService";
+        //            ex1.CustomerID = req.Descendants("TransferCancelRequest").Attributes("CustomerID").FirstOrDefault().Value;
+        //            ex1.TranID = req.Descendants("TransferCancelRequest").Attributes("TransID").FirstOrDefault().Value;
+        //            SaveAPILog saveex = new SaveAPILog();
+        //            saveex.SendCustomExcepToDB(ex1);
+        //            #endregion
+        //        }
+        //        SerializeXMLOut serialization = new SerializeXMLOut();
+        //        return serialization.Serialize(cancelresponse);
+        //        #endregion
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        #region Exception
+        //        CustomException ex1 = new CustomException(ex);
+        //        ex1.MethodName = "CancelBookingTransfer";
+        //        ex1.PageName = "TransferService";
+        //        ex1.CustomerID = req.Descendants("TransferCancelRequest").Attributes("CustomerID").FirstOrDefault().Value;
+        //        ex1.TranID = req.Descendants("TransferCancelRequest").Attributes("TransID").FirstOrDefault().Value;
+        //        SaveAPILog saveex = new SaveAPILog();
+        //        saveex.SendCustomExcepToDB(ex1);
+        //        return ex.Message;
+        //        #endregion
+        //    }
+        //}
+
+
+
+
+
         #region Dispose
         /// <summary>
         /// Dispose all used resources.

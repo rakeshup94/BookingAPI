@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace TravillioXMLOutService
@@ -15,15 +16,15 @@ namespace TravillioXMLOutService
     {
         #region Transfer
         [OperationContract, XmlSerializerFormat]
-        object TransferAvailability(XElement req);
-        [OperationContract, XmlSerializerFormat]
-        object CXLPolicyTransfer(XElement req);
-        [OperationContract, XmlSerializerFormat]
-        object PreBookTransfer(XElement req);
-        [OperationContract, XmlSerializerFormat]
-        object ConfirmBookingTransfer(XElement req);
-        [OperationContract, XmlSerializerFormat]
-        object CancelBookingTransfer(XElement req);
+        Task<object> TransferAvailability(XElement req);
+        //[OperationContract, XmlSerializerFormat]
+        //object CXLPolicyTransfer(XElement req);
+        //[OperationContract, XmlSerializerFormat]
+        //object PreBookTransfer(XElement req);
+        //[OperationContract, XmlSerializerFormat]
+        //object ConfirmBookingTransfer(XElement req);
+        //[OperationContract, XmlSerializerFormat]
+        //object CancelBookingTransfer(XElement req);
         #endregion
     }
 }
