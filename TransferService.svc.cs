@@ -36,7 +36,7 @@ namespace TravillioXMLOutService
                     log2.LogTypeID = 0;
                     log2.LogType = "TimeStart";
                     log2.logrequestXML = req.ToString();
-                    APILog.SaveAPILogs(log2);
+                    //APILog.SaveAPILogs(log2);
                 }
                 catch (Exception ex)
                 {
@@ -46,7 +46,7 @@ namespace TravillioXMLOutService
                     ex1.CustomerID = req.Descendants("SearchRequest").Attributes("CustomerID").FirstOrDefault().Value;
                     ex1.TranID = req.Descendants("SearchRequest").Attributes("TransID").FirstOrDefault().Value;
                     SaveAPILog saveex = new SaveAPILog();
-                    saveex.SendCustomExcepToDB(ex1);
+                    //saveex.SendCustomExcepToDB(ex1);
                 }
                 #endregion
                 availabilityresponse = await reqs.getTransferAvailability(req);
@@ -61,7 +61,7 @@ namespace TravillioXMLOutService
                     log.logrequestXML = req.ToString();
                     log.logresponseXML = availabilityresponse.ToString();
                     SaveAPILog savelog = new SaveAPILog();
-                    savelog.SaveAPILogs(log);
+                    //savelog.SaveAPILogs(log);
                     #region Time End
                     try
                     {
@@ -71,7 +71,7 @@ namespace TravillioXMLOutService
                         log3.LogTypeID = 0;
                         log3.LogType = "TimeEnd";
                         SaveAPILog savelog3 = new SaveAPILog();
-                        savelog3.SaveAPILogs(log3);
+                        //savelog3.SaveAPILogs(log3);
                     }
                     catch (Exception ex)
                     {
@@ -81,7 +81,7 @@ namespace TravillioXMLOutService
                         ex1.CustomerID = req.Descendants("SearchRequest").Attributes("CustomerID").FirstOrDefault().Value;
                         ex1.TranID = req.Descendants("SearchRequest").Attributes("TransID").FirstOrDefault().Value;
                         SaveAPILog saveex = new SaveAPILog();
-                        saveex.SendCustomExcepToDB(ex1);
+                        //saveex.SendCustomExcepToDB(ex1);
                     }
                     #endregion
                 }
@@ -94,7 +94,7 @@ namespace TravillioXMLOutService
                     ex1.CustomerID = req.Descendants("SearchRequest").Attributes("CustomerID").FirstOrDefault().Value;
                     ex1.TranID = req.Descendants("SearchRequest").Attributes("TransID").FirstOrDefault().Value;
                     SaveAPILog saveex = new SaveAPILog();
-                    saveex.SendCustomExcepToDB(ex1);
+                    //saveex.SendCustomExcepToDB(ex1);
                     #endregion
                 }
                 SerializeXMLOut serialization = new SerializeXMLOut();
@@ -110,7 +110,7 @@ namespace TravillioXMLOutService
                 ex1.CustomerID = req.Descendants("SearchRequest").Attributes("CustomerID").FirstOrDefault().Value;
                 ex1.TranID = req.Descendants("SearchRequest").Attributes("TransID").FirstOrDefault().Value;
                 SaveAPILog saveex = new SaveAPILog();
-                saveex.SendCustomExcepToDB(ex1);
+                //saveex.SendCustomExcepToDB(ex1);
                 return ex.Message;
                 #endregion
             }

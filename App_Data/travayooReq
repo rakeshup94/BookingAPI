@@ -1,0 +1,42 @@
+﻿
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header>
+    <Authentication>
+      <AgentID>TRV</AgentID>
+      <UserName>Travillio</UserName>
+      <Password>ing@tech</Password>
+      <ServiceType>HT_001</ServiceType>
+      <ServiceVersion>v1.0</ServiceVersion>
+    </Authentication>
+  </soapenv:Header>
+  <soapenv:Body>
+    <SearchRequest TransID="5703dc65-a69a-4845-a455-da054fbf17a1-s1" CustomerID="10017" Ip="147.235.197.181">
+      <SupplierList>
+        <supplierdetail supplierid="10" username="TESTCHAINS" password="TESTCHAINS">HotelBed</supplierdetail>
+      </SupplierList>
+      <Itinerary type="IN">
+        <PickupLocation type="1">
+          <Code>SAW</Code>
+          <PickupTime date="27 Jun, 23" time="16:45" />
+        </PickupLocation>
+        <DestinationLocation type="2">
+          <Code>656686</Code>
+          <DropOffTime date="27 Jun, 23" time="" />
+        </DestinationLocation>
+      </Itinerary>
+      <Itinerary type="OUT">
+        <PickupLocation type="2">
+          <Code>656686</Code>
+          <PickupTime date="1 Jul, 23" time="16:45" />
+        </PickupLocation>
+        <DestinationLocation type="1">
+          <Code>SAW</Code>
+          <DropOffTime date="1 Jul, 23" time="" />
+        </DestinationLocation>
+      </Itinerary>
+      <Occupancy adult="2" child="0" />
+      <language>ENG</language>
+      <CurrencyCode>USD</CurrencyCode>
+    </SearchRequest>
+  </soapenv:Body>
+</soapenv:Envelope>

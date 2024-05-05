@@ -88,7 +88,7 @@ namespace TravillioXMLOutService.Transfer.HotelBeds
                     ex1.PageName = "HB_transferAvail";
                     ex1.CustomerID = req.Descendants("SearchRequest").Attributes("CustomerID").FirstOrDefault().Value;
                     ex1.TranID = req.Descendants("SearchRequest").Attributes("TransID").FirstOrDefault().Value;
-                    APILog.SendCustomExcepToDB(ex1);
+                    //APILog.SendCustomExcepToDB(ex1);
                     return searchdoc;
                     #endregion
                 }

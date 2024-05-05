@@ -255,6 +255,8 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="ServiceLog\ServiceLog.txt" />
+    <Content Include="App_Data\SupplierCredentialTransfer\transfercredentials.xml" />
+    <None Include="App_Data\travayooReq" />
     <Content Include="log.txt" />
     <Content Include="packages.config" />
     <Content Include="packages\jQuery.1.4.4\jQuery.1.4.4.nupkg" />
