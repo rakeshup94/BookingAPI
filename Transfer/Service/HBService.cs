@@ -123,10 +123,10 @@ namespace TravillioXMLOutService.Transfer.Services
                                   new XAttribute("longitude", srv.pickupInformation.pickup.longitude.IsNullNumber()),
                                   new XAttribute("stopName", srv.pickupInformation.pickup.stopName.IsNullString()),
                                   new XAttribute("pickupId", srv.pickupInformation.pickup.pickupId.IsNullString()),
-                                  new XAttribute("image", srv.pickupInformation.pickup.image.IsNullString())),
+                                  new XAttribute("image", srv.pickupInformation.pickup.image.IsNullString()))),
                                   new XElement("dropOff", new XAttribute("code", srv.pickupInformation.to.code),
                                   new XAttribute("type", srv.pickupInformation.to.type),
-                                  new XElement("name", srv.pickupInformation.to.description),
+                                  new XElement("name", srv.pickupInformation.to.description)),
                                   new XElement("price", new XAttribute("totalAmount", srv.price.totalAmount),
                                   new XAttribute("currencyId", srv.price.currencyId), new XElement("rateKey", srv.rateKey)),
                                   new XElement("capacity", new XAttribute("minPaxCapacity", srv.minPaxCapacity), new XAttribute("maxPaxCapacity", srv.maxPaxCapacity),
@@ -150,7 +150,7 @@ namespace TravillioXMLOutService.Transfer.Services
                                   from cxl in srv.cancellationPolicies
                                   select new XElement("cancellationPolicy", new XAttribute("lastDate", cxl.@from),
                                   new XAttribute("amount", cxl.amount), new XAttribute("noShow", 0))
-                                  ))));
+                                  ));
 
             int count = srvTransfers.Where(x => x.Attribute("direction").Value == "OUT").Count();
             if (count > 0)
@@ -162,7 +162,9 @@ namespace TravillioXMLOutService.Transfer.Services
             }
             else
             {
-                joinTransfers = srvTransfers;
+                joinTransfers = from srv in srvTransfers
+                                select new XElement("serviceTransfer", new XAttribute("supplierId", 10), srv,
+                                srv.Descendants("cancellationPolicy").Concat(srv.Descendants("cancellationPolicy")).mergCXLPolicy());
             }
             var response = new XElement("searchResponse", new XElement("serviceTransfers",
 new XAttribute("adults", respHb.search.occupancy.adults),
