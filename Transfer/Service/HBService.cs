@@ -12,7 +12,7 @@ using TravillioXMLOutService.Transfer.Services.Interfaces;
 
 namespace TravillioXMLOutService.Transfer.Services
 {
-    public class HBService: IHBService, IDisposable
+    public class HBService : IHBService, IDisposable
     {
         RequestModel reqModel;
         HBCredentials model;
@@ -92,8 +92,23 @@ namespace TravillioXMLOutService.Transfer.Services
             }
 
             SearchResponseModel rsmodel = await _repo.GetSearchAsync(reqModel);
-            var reponse = this.BindResponse(rsmodel);
-            return reponse;
+
+            if (rsmodel != null)
+            {
+                var reponse = this.BindResponse(rsmodel);
+                return reponse;
+            }
+            else
+            {
+
+                var response = new XElement("searchResponse", new XElement("serviceTransfers",
+new XAttribute("adults", model.adults),
+new XAttribute("children", model.children),
+new XAttribute("infants", model.infants), new XElement("ErrorTxt", "Unable to find any transfer service ")));
+                return response;
+            }
+
+
 
         }
 

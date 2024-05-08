@@ -44,7 +44,16 @@ namespace TravillioXMLOutService.Repository.Transfer
                     if (response.IsSuccessStatusCode)
                     {
                         stringResponse = await response.Content.ReadAsStringAsync();
-                        result = JsonConvert.DeserializeObject<SearchResponseModel>(stringResponse);
+
+                        if(string.IsNullOrEmpty(stringResponse))
+                        {
+                            result = JsonConvert.DeserializeObject<SearchResponseModel>(stringResponse);
+                        }
+                        else
+                        {
+                            result = null;
+                        }
+                        
                     }
                     else
                     {
